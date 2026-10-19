@@ -1,0 +1,194 @@
+{
+ "stock": {
+  "bpb_target": 1.5371065356987408,
+  "bpb_english": 1.2591328158730528,
+  "tokens_target": 139222,
+  "tokens_english": 26255,
+  "repetition_target": 0.4280701754385965,
+  "repetition_english": 0.2385964912280702,
+  "generations": {
+   "target": [
+    {
+     "prompt": "Երկուշաբթի օրը Բժշկության Ստենֆորդի համալսարանի դպրոցի գիտնա",
+     "continuation": "կան աշխատանքների առանձ անդամների անդամների անդամների անդամնե",
+     "repetition": 0.49122807017543857
+    },
+    {
+     "prompt": "Առաջատար հետազոտողները նշում են, որ սա կարող է բուժվող հիվան",
+     "continuation": "ասանը անական անական համար անական համար անական համար անական հ",
+     "repetition": 0.6491228070175439
+    },
+    {
+     "prompt": "Տեղական ժամանակով 9:30 (02:30` ունիվերսալ ժամային գոտի) JAS ",
+     "continuation": "կարող է կարողանալ անական համար անական համար համարել անական հ",
+     "repetition": 0.4035087719298246
+    },
+    {
+     "prompt": "Օդաչուն ջոկատի հրամանատար Դայլոկրիտ Պատավին էր:",
+     "continuation": " Նա համարեց այս հրամանատար անակ համարական համարման համար անա",
+     "repetition": 0.24561403508771928
+    },
+    {
+     "prompt": "Տեղական լրատվամիջոցները հայտնում են, որ օդանավակայանի մի հրդ",
+     "continuation": "ի համար կարող են կարողանել անական համարել անական համարելու հ",
+     "repetition": 0.3508771929824561
+    }
+   ],
+   "english": [
+    {
+     "prompt": "On Monday, scientists from the Stanford University School of",
+     "continuation": " Science and the University of California, San Diego, and the University of Chicago have published a study that shows that the number of people who have been infected with the virus in the United States is increasing rapidly. The study says that the number of people who have been infected with the virus is increasing rapidly because",
+     "repetition": 0.17543859649122806
+    },
+    {
+     "prompt": "Lead researchers say this may bring early detection of cance",
+     "continuation": "\n... and early treatment of the disease. The study was conducted in the\n... of the country. The researchers used a new type of technology to\n... the disease. The study was conducted in the\n... of the country. The researchers used a new type of technology to\n... the disease",
+     "repetition": 0.4385964912280702
+    },
+    {
+     "prompt": "The JAS 39C Gripen crashed onto a runway at around 9:30 am l",
+     "continuation": ". 10, 2013, and the pilot was killed. The investigation into the crash was conducted by the National Institute of Aviation and Space Technology, and the results of the investigation were published in the journal of the International Journal of Aviation and Space Technology. The investigation into the crash",
+     "repetition": 0.08771929824561409
+    },
+    {
+     "prompt": "The pilot was identified as Squadron Leader Dilokrit Pattave",
+     "continuation": ", a former pilot of the Royal Air Force, who was born in 1950. He was a member of the Royal Air Force, and was a member of the Royal Air Force's Air Transport Command. He was a member of the Royal Air Force's Air Transport Command, and was",
+     "repetition": 0.33333333333333337
+    },
+    {
+     "prompt": "Local media reports an airport fire vehicle rolled over whil",
+     "continuation": " the fire department was still on the scene. The fire department was on the scene, but the fire department was not able to get the fire truck to the scene. What is the correct answer?\n\nA) The fire department was able to get the fire truck to the scene.  \nB) The fire",
+     "repetition": 0.1578947368421053
+    }
+   ]
+  }
+ },
+ "stage1": {
+  "bpb_target": 1.244233400566019,
+  "bpb_english": 1.2596728188958473,
+  "tokens_target": 39464,
+  "tokens_english": 26255,
+  "repetition_target": 0.543859649122807,
+  "repetition_english": 0.2385964912280702,
+  "generations": {
+   "target": [
+    {
+     "prompt": "Երկուշաբթի օրը Բժշկության Ստենֆորդի համալսարանի դպրոցի գիտնա",
+     "continuation": "յացները Անալեգտիկայի անդամանայացների անդամանայացները անալեգտիկայի",
+     "repetition": 0.4035087719298246
+    },
+    {
+     "prompt": "Առաջատար հետազոտողները նշում են, որ սա կարող է բուժվող հիվան",
+     "continuation": ", իսկ 2023 թվականի մայիսի 1-ից հետո կարող է 2024 թվականի մայիսի 1-ին։ Այս մասին այսօր 2023 թվականի մայիսի 1-ին Հայաստանական Հանաձորի Հանաձորի Հա",
+     "repetition": 0.26315789473684215
+    },
+    {
+     "prompt": "Տեղական ժամանակով 9:30 (02:30` ունիվերսալ ժամային գոտի) JAS ",
+     "continuation": "1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 ",
+     "repetition": 0.9122807017543859
+    },
+    {
+     "prompt": "Օդաչուն ջոկատի հրամանատար Դայլոկրիտ Պատավին էր:",
+     "continuation": " Այստեղ այն անհայտ է, որ այն անհայտ է, որ այն անհայտ է, որ այն անհայտ է, որ այն անհայտ է",
+     "repetition": 0.6842105263157895
+    },
+    {
+     "prompt": "Տեղական լրատվամիջոցները հայտնում են, որ օդանավակայանի մի հրդ",
+     "continuation": "անքը համար է անհայտության մասնակցական անհայտության դեպքում անհայտության դեպքում անհայտության դեպքում անհայտության դեպքում անհայտության դեպքում անհայտ",
+     "repetition": 0.45614035087719296
+    }
+   ],
+   "english": [
+    {
+     "prompt": "On Monday, scientists from the Stanford University School of",
+     "continuation": " Science and the University of California, San Diego, and the University of Chicago have published a study that shows that the number of people who have been infected with the virus in the United States is increasing rapidly. The study says that the number of people who have been infected with the virus is increasing rapidly because",
+     "repetition": 0.17543859649122806
+    },
+    {
+     "prompt": "Lead researchers say this may bring early detection of cance",
+     "continuation": "\n... and early treatment of the disease. The study was conducted in the\n... of the country. The researchers used a new type of technology to\n... the disease. The study was conducted in the\n... of the country. The researchers used a new type of technology to\n... the disease",
+     "repetition": 0.4385964912280702
+    },
+    {
+     "prompt": "The JAS 39C Gripen crashed onto a runway at around 9:30 am l",
+     "continuation": ". 10, 2013, and the pilot was killed. The investigation into the crash was conducted by the National Institute of Aviation and Space Technology, and the results of the investigation were published in the journal of the International Journal of Aviation and Space Technology. The investigation into the crash",
+     "repetition": 0.08771929824561409
+    },
+    {
+     "prompt": "The pilot was identified as Squadron Leader Dilokrit Pattave",
+     "continuation": ", a former pilot of the Royal Air Force, who was born in 1950. He was a member of the Royal Air Force, and was a member of the Royal Air Force's Air Transport Command. He was a member of the Royal Air Force's Air Transport Command, and was",
+     "repetition": 0.33333333333333337
+    },
+    {
+     "prompt": "Local media reports an airport fire vehicle rolled over whil",
+     "continuation": " the fire department was still on the scene. The fire department was on the scene, but the fire department was not able to get the fire truck to the scene. What is the correct answer?\n\nA) The fire department was able to get the fire truck to the scene.  \nB) The fire",
+     "repetition": 0.1578947368421053
+    }
+   ]
+  }
+ },
+ "base": {
+  "bpb_target": 1.23580817869434,
+  "bpb_english": 1.3313307396804968,
+  "tokens_target": 139222,
+  "tokens_english": 26255,
+  "repetition_target": 0.19298245614035092,
+  "repetition_english": 0.3508771929824562,
+  "generations": {
+   "target": [
+    {
+     "prompt": "Երկուշաբթի օրը Բժշկության Ստենֆորդի համալսարանի դպրոցի գիտնա",
+     "continuation": "կանները համարվում է առաջարկություն առաջարկում անձինք անձինք ",
+     "repetition": 0.22807017543859653
+    },
+    {
+     "prompt": "Առաջատար հետազոտողները նշում են, որ սա կարող է բուժվող հիվան",
+     "continuation": "դների համար առաջարկություն կարող է կատարել այն համարձակ համա",
+     "repetition": 0.08771929824561409
+    },
+    {
+     "prompt": "Տեղական ժամանակով 9:30 (02:30` ունիվերսալ ժամային գոտի) JAS ",
+     "continuation": "համար համապատասխանում է համապատասխանում այն համապատասխանում ",
+     "repetition": 0.5087719298245614
+    },
+    {
+     "prompt": "Օդաչուն ջոկատի հրամանատար Դայլոկրիտ Պատավին էր:",
+     "continuation": " Այս հրամանատարը համարվում է այն դեպքում, երբ Արտահանուն Արտ",
+     "repetition": 0.01754385964912286
+    },
+    {
+     "prompt": "Տեղական լրատվամիջոցները հայտնում են, որ օդանավակայանի մի հրդ",
+     "continuation": "ի համար կարող են անհրաժեշտ լինել այն համարձակ անձնական համար",
+     "repetition": 0.1228070175438597
+    }
+   ],
+   "english": [
+    {
+     "prompt": "On Monday, scientists from the Stanford University School of",
+     "continuation": " Science have developed a new type of 3D-printed printing technology that can print 3D models of complex geometries with high precision. The technology is based on a new type of 3D printing that is based on a 3D-printing of 3D-printed 3",
+     "repetition": 0.1578947368421053
+    },
+    {
+     "prompt": "Lead researchers say this may bring early detection of cance",
+     "continuation": "\n... the first of its kind in the world, and it has the potential to change the way we approach the treatment of the disease. The research was led by the University of Chicago and the National Institute of Health Research (NIHR) in the United Kingdom. The study was published in the Journal",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "The JAS 39C Gripen crashed onto a runway at around 9:30 am l",
+     "continuation": " 10:00 am, 10:00 am, 10:00 am, 10:00 am, 10:00 am, 10:00 am, 10:00 am, 10:",
+     "repetition": 0.8596491228070176
+    },
+    {
+     "prompt": "The pilot was identified as Squadron Leader Dilokrit Pattave",
+     "continuation": ", who was the 10th in the order of the 1st Class of the 1st Class of the 1st Class of the 1st Class of the 1st Class of the 1st Class of the 1st Class of the 1st Class of",
+     "repetition": 0.7017543859649122
+    },
+    {
+     "prompt": "Local media reports an airport fire vehicle rolled over whil",
+     "continuation": " the fire was on fire, and the fire was on fire.  1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14",
+     "repetition": 0.03508771929824561
+    }
+   ]
+  }
+ }
+}

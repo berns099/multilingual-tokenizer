@@ -34,3 +34,10 @@ __pycache__/
 # excluded.
 results/**/*.pt
 results/**/*.ckpt
+
+# Extended tokenizers are ~11 MB each; regenerate with `python -m tokpremium.vocab.run`.
+# sweep.csv, new_merges.json and decomposition.json stay committed.
+results/vocab/**/tokenizer.json
+/checkpoints
+/data
+/.venv
