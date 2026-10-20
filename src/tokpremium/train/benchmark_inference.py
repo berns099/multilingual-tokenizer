@@ -120,3 +120,140 @@ def benchmark_prefill(
         "tokens_per_second": input_tokens / median,
         "bytes_per_second": input_bytes / median,
     }
+
+
+def comparison_ratio(
+    result: dict[str, float | int],
+    reference: dict[str, float | int],
+) -> dict[str, float]:
+    """Compare one benchmark result against a reference model."""
+    return {
+        "token_ratio": float(result["input_tokens"]) / float(reference["input_tokens"]),
+        "prefill_time_ratio": (
+            float(result["median_seconds"]) / float(reference["median_seconds"])
+        ),
+        "bytes_per_second_ratio": (
+            float(result["bytes_per_second"]) / float(reference["bytes_per_second"])
+        ),
+    }
+
+
+def main(argv: list[str] | None = None) -> int:
+    """Benchmark prefill latency for one or more model/tokenizer pairs."""
+    import argparse
+    import json
+    import platform
+    import sys
+    from pathlib import Path
+
+    from ..data.flores import load_sentences
+
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument(
+        "models",
+        nargs="+",
+        help="name=path_or_hub_id; include a model named 'stock' as the reference",
+    )
+    ap.add_argument("--lang", default="hye_Armn")
+    ap.add_argument("--split", default="dev")
+    ap.add_argument("--out", default=None)
+    ap.add_argument("--warmup", type=int, default=5)
+    ap.add_argument("--repeats", type=int, default=20)
+    ap.add_argument(
+        "--max-sentences",
+        type=int,
+        default=100,
+        help="number of FLORES sentences to benchmark",
+    )
+    args = ap.parse_args(argv)
+
+    import transformers
+    from transformers import AutoModelForCausalLM, PreTrainedTokenizerFast
+
+    specs = {}
+    for spec in args.models:
+        if "=" not in spec:
+            ap.error(f"model must be name=path_or_hub_id, got {spec!r}")
+        name, path = spec.split("=", 1)
+        if not name or not path:
+            ap.error(f"model must be name=path_or_hub_id, got {spec!r}")
+        if name in specs:
+            ap.error(f"duplicate model name: {name}")
+        specs[name] = path
+
+    if "stock" not in specs:
+        ap.error("a model named 'stock' is required as the comparison reference")
+    if args.max_sentences <= 0:
+        ap.error("--max-sentences must be positive")
+
+    texts = load_sentences(args.lang, split=args.split)[: args.max_sentences]
+    dev = common.device()
+
+    results = {}
+    for name, path in specs.items():
+        print(f"benchmarking {name}={path} on {dev} ...", flush=True)
+
+        tok = PreTrainedTokenizerFast.from_pretrained(path)
+        model = AutoModelForCausalLM.from_pretrained(
+            path,
+            dtype=torch.bfloat16,
+        ).to(dev)
+
+        results[name] = benchmark_prefill(
+            model,
+            tok,
+            texts,
+            warmup=args.warmup,
+            repeats=args.repeats,
+        )
+
+        del model
+        if dev.type == "mps":
+            torch.mps.empty_cache()
+        elif dev.type == "cuda":
+            torch.cuda.empty_cache()
+
+    stock = results["stock"]
+    comparisons = {
+        f"{name}_vs_stock": comparison_ratio(result, stock)
+        for name, result in results.items()
+        if name != "stock"
+    }
+
+    report = {
+        "benchmark": {
+            "lang": args.lang,
+            "split": args.split,
+            "sentences": len(texts),
+            "warmup": args.warmup,
+            "repeats": args.repeats,
+        },
+        "environment": {
+            "device": str(dev),
+            "platform": platform.platform(),
+            "python": sys.version.split()[0],
+            "torch": torch.__version__,
+            "transformers": transformers.__version__,
+            "dtype": "bfloat16",
+        },
+        "models": results,
+        "comparisons": comparisons,
+    }
+
+    out = Path(
+        args.out
+        or f"results/vocab/{args.lang}/inference_benchmark.json"
+    )
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(
+        json.dumps(report, indent=2, ensure_ascii=False),
+        encoding="utf-8",
+    )
+
+    print(json.dumps(report, indent=2, ensure_ascii=False))
+    print(f"wrote {out}", flush=True)
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

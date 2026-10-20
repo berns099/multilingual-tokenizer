@@ -4,6 +4,7 @@ torch = pytest.importorskip("torch")
 
 from tokpremium.train.benchmark_inference import (  # noqa: E402
     benchmark_prefill,
+    comparison_ratio,
     summarize_timings,
     timed_call,
 )
@@ -107,3 +108,22 @@ def test_benchmark_prefill_rejects_empty_texts():
             warmup=0,
             repeats=1,
         )
+
+
+def test_comparison_ratio():
+    stock = {
+        "input_tokens": 100,
+        "median_seconds": 2.0,
+        "bytes_per_second": 500.0,
+    }
+    stage1 = {
+        "input_tokens": 30,
+        "median_seconds": 0.8,
+        "bytes_per_second": 1250.0,
+    }
+
+    out = comparison_ratio(stage1, stock)
+
+    assert out["token_ratio"] == pytest.approx(0.3)
+    assert out["prefill_time_ratio"] == pytest.approx(0.4)
+    assert out["bytes_per_second_ratio"] == pytest.approx(2.5)
