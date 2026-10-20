@@ -1,0 +1,34 @@
+# Tokenizer study: does step B's vowel-sign ceiling generalize beyond Telugu?
+#
+#   python -m tokpremium.vocab.continue_bpe --config configs/vocab_study_qwen.yaml
+#   python -m tokpremium.vocab.measure      --config configs/vocab_study_qwen.yaml
+#
+# Same pipeline as configs/vocab.yaml (the team's Telugu/Armenian run), separate
+# languages and output folders so it never changes what that config produces.
+#   tam_Taml  Brahmic like Telugu (vowel signs are combining marks): expect the
+#             same ceiling under `shipped` and none under `keep_marks_target`.
+#   amh_Ethi  Script-uncovered like Telugu, but Ethiopic writes vowels into the
+#             letter itself, not as marks: expect no ceiling under either rule.
+
+base:
+  model_id: Qwen/Qwen3-0.6B
+  tokenizer_id: Qwen/Qwen3-0.6B
+
+languages: [tam_Taml, amh_Ethi]
+n_new_tokens: [1024, 2048, 4096]
+pretokenizers: [shipped, keep_marks_target]
+
+corpus:
+  max_chars: 50_000_000
+  cache_dir: data/vocab/corpus   # shared cache with configs/vocab.yaml (gitignored)
+  sources:
+    tam_Taml: {repo: ai4bharat/IndicCorpV2, data_files: data/ta.txt}
+    amh_Ethi: {repo: HuggingFaceFW/fineweb-2, config: amh_Ethi}
+
+output:
+  results_dir: results/vocab_study/qwen
+  tokenizer_dir: data/vocab_study/tokenizers/qwen   # gitignored
+
+eval:
+  pivot: eng_Latn
+  controls: [eng_Latn, cmn_Hans]
