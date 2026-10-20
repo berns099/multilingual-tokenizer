@@ -19,11 +19,6 @@ Qwen/Qwen3-0.6B,Latin,128247,</s>,3.0,False
 Qwen/Qwen3-0.6B,Hebrew,134071,וֹ,2.0,True
 Qwen/Qwen3-0.6B,Hebrew,137045,וּ,2.0,True
 Qwen/Qwen3-0.6B,Hebrew,137662,שׁ,2.0,True
-Qwen/Qwen3-0.6B,Hebrew,145522,וּ,2.0,False
-Qwen/Qwen3-0.6B,Hebrew,146267,וֹ,2.0,False
-Qwen/Qwen3-0.6B,Tibetan,147387,གྷ,2.0,False
-Qwen/Qwen3-0.6B,Devanagari,149312,य़,2.0,False
-Qwen/Qwen3-0.6B,Bengali,149527,য়,2.0,False
 Xenova/gpt-4o,Latin,3413, I',2.0,
 Xenova/gpt-4o,none,3914,"
 //",2.0,

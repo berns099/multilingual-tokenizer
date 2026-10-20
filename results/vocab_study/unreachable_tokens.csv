@@ -1,12 +1,12 @@
 script,tokenizer,reachable,split_by_pretokenizer,changed_by_normalizer,merge_order,fragment,tokens,unlocked_by_keep_marks
 Alef,Qwen/Qwen3-0.6B,1,0,0,0,0,1,0
 Angstrom,Qwen/Qwen3-0.6B,0,0,1,0,0,1,0
-Arabic,Qwen/Qwen3-0.6B,3909,75,0,0,0,3984,73
+Arabic,Qwen/Qwen3-0.6B,3909,73,2,0,0,3984,73
 Armenian,Qwen/Qwen3-0.6B,73,0,0,0,0,73,0
 Balinese,Qwen/Qwen3-0.6B,2,0,0,0,0,2,0
 Bamum,Qwen/Qwen3-0.6B,4,0,0,0,0,4,0
 Batak,Qwen/Qwen3-0.6B,1,0,0,0,0,1,0
-Bengali,Qwen/Qwen3-0.6B,42,1,0,0,0,43,0
+Bengali,Qwen/Qwen3-0.6B,42,0,1,0,0,43,0
 Black-Letter,Qwen/Qwen3-0.6B,2,0,0,0,0,2,0
 Bopomofo,Qwen/Qwen3-0.6B,16,0,0,0,0,16,0
 Buginese,Qwen/Qwen3-0.6B,5,0,0,0,0,5,0
@@ -17,7 +17,7 @@ Combining,Qwen/Qwen3-0.6B,2,0,0,0,0,2,0
 Coptic,Qwen/Qwen3-0.6B,27,0,0,0,0,27,0
 Cuneiform,Qwen/Qwen3-0.6B,6,0,0,0,0,6,0
 Cyrillic,Qwen/Qwen3-0.6B,4142,0,0,0,0,4142,0
-Devanagari,Qwen/Qwen3-0.6B,63,1,0,0,0,64,0
+Devanagari,Qwen/Qwen3-0.6B,63,0,1,0,0,64,0
 Double-Struck,Qwen/Qwen3-0.6B,7,0,0,0,0,7,0
 Egyptian,Qwen/Qwen3-0.6B,9,0,0,0,0,9,0
 Ethiopic,Qwen/Qwen3-0.6B,112,0,0,0,0,112,0
@@ -33,7 +33,7 @@ Gurmukhi,Qwen/Qwen3-0.6B,10,0,0,0,0,10,0
 Halfwidth,Qwen/Qwen3-0.6B,63,0,0,0,0,63,0
 Han,Qwen/Qwen3-0.6B,25583,1,194,0,0,25778,1
 Hangul,Qwen/Qwen3-0.6B,3567,0,0,0,0,3567,0
-Hebrew,Qwen/Qwen3-0.6B,3154,25,0,0,0,3179,3
+Hebrew,Qwen/Qwen3-0.6B,3154,3,22,0,0,3179,3
 Hiragana,Qwen/Qwen3-0.6B,1172,0,0,0,0,1172,0
 Ideographic,Qwen/Qwen3-0.6B,2,0,0,0,0,2,0
 Information,Qwen/Qwen3-0.6B,1,0,0,0,0,1,0
@@ -81,7 +81,7 @@ Tamil,Qwen/Qwen3-0.6B,28,0,0,0,0,28,0
 Telugu,Qwen/Qwen3-0.6B,14,0,0,0,0,14,0
 Thaana,Qwen/Qwen3-0.6B,8,0,0,0,0,8,0
 Thai,Qwen/Qwen3-0.6B,988,1578,0,0,0,2566,1578
-Tibetan,Qwen/Qwen3-0.6B,24,1,0,0,0,25,0
+Tibetan,Qwen/Qwen3-0.6B,24,0,1,0,0,25,0
 Tifinagh,Qwen/Qwen3-0.6B,25,0,0,0,0,25,0
 Vai,Qwen/Qwen3-0.6B,1,0,0,0,0,1,0
 Variation,Qwen/Qwen3-0.6B,1,0,0,0,0,1,0

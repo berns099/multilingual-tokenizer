@@ -11,10 +11,14 @@ For every token in a byte-level BPE tokenizer's model vocabulary (special
 tokens excluded), the token's own text is encoded and classified:
 
   reachable              encodes to exactly that token
+  changed_by_normalizer  the normalizer rewrites its text (e.g. NFC), so the
+                         raw form never reaches BPE whatever the split regex
+                         does. Checked first: Qwen's 22 Hebrew presentation
+                         forms (U+FB1D-FB4F, e.g. U+FB35 vav with dagesh) are
+                         decomposed by NFC into letter + point, which would
+                         otherwise look like a split-regex problem.
   split_by_pretokenizer  the split regex cuts its text into more than one chunk,
                          so BPE never sees it whole
-  changed_by_normalizer  the normalizer rewrites its text (e.g. NFC), so the
-                         raw form never reaches BPE
   merge_order            one chunk, unchanged, yet BPE's merge priorities build
                          a different split of it
   fragment               not valid UTF-8 on its own (part of a multi-byte
@@ -96,10 +100,10 @@ def classify(spec: dict) -> pd.DataFrame:
         norm = tok.normalizer.normalize_str(text) if tok.normalizer else text
         chunks = [c for c, _ in tok.pre_tokenizer.pre_tokenize_str(norm)]
         row["chunks"] = len(chunks)
-        if len(chunks) > 1:
-            row["category"] = "split_by_pretokenizer"
-        elif norm != text:
+        if norm != text:
             row["category"] = "changed_by_normalizer"
+        elif len(chunks) > 1:
+            row["category"] = "split_by_pretokenizer"
         else:
             row["category"] = "merge_order"
 

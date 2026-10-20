@@ -52,6 +52,14 @@ def test_token_the_normalizer_rewrites_is_unreachable():
     assert category(df, tid) == "changed_by_normalizer"
 
 
+def test_normalizer_takes_precedence_over_the_split_regex():
+    # U+FB35 (Hebrew vav with dagesh) NFC-decomposes to vav + U+05BC, a mark the
+    # split regex then cuts off. The normalizer is the reason it is unreachable.
+    spec, tid = plant(make_base(), "וּ")
+    df = classify(spec)
+    assert category(df, tid) == "changed_by_normalizer"
+
+
 def test_partial_character_is_a_fragment():
     spec, tid = plant(make_base(), "త")  # plant the whole char, then check its 2-byte prefix
     pieces = byte_pieces(spec, "త")
