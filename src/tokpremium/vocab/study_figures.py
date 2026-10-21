@@ -92,64 +92,87 @@ def ceiling(out: Path) -> None:
 
 
 def ceiling_slide(out: Path) -> None:
-    """Two panels, big type, every number the audience needs written on the chart."""
+    """The ceiling finding for someone seeing it cold: every term explained on the figure.
+
+    Telugu and Ethiopic text needs fonts that cover them; Windows ships Nirmala
+    UI and Ebrima, and matplotlib falls back through the family list per glyph.
+    """
     panels = [
         ("results/vocab/summary.csv", "tel_Telu",
-         "Telugu: vowels written as separate signs"),
+         "Telugu: vowels are separate signs attached to letters (త + ె = తె)"),
         ("results/vocab_study/qwen/summary.csv", "amh_Ethi",
-         "Amharic: vowels built into each letter"),
+         "Amharic (control): each letter already includes its vowel (ማ = ma)"),
     ]
-    rules = [("shipped", "Qwen's original word-splitting (cuts at vowel signs)", BLUE, "-", "o"),
-             ("keep_marks_target", "Vowel signs kept with their word", ORANGE, "--", "s")]
+    rules = [
+        ("shipped", BLUE, "-", "o",
+         "Qwen's original rule: cuts each word at every vowel sign before tokens are built"
+         "  →  తెలుగు becomes త | ెల | ుగ | ు, so at best 4 tokens"),
+        ("keep_marks_target", ORANGE, "--", "s",
+         "Modified rule: Telugu vowel signs stay attached to their word"
+         "  →  తెలుగు can become 1 token"),
+    ]
     data = [(pd.read_csv(p).query("lang == @lang"), t) for p, lang, t in panels]
     top = max(df["premium_median"].max() for df, _ in data) * 1.12
 
-    fig, axes = plt.subplots(1, 2, figsize=(11, 4.6), sharey=True)
-    for ax, (df, title) in zip(axes, data, strict=True):
-        sizes = sorted(df["n_new"].unique())
-        pos = {n: i for i, n in enumerate(sizes)}
-        ends = {}
-        for rule, label, color, ls, marker in rules:
-            s = df[df["pretokenizer"] == rule].sort_values("n_new")
-            ax.plot([pos[n] for n in s["n_new"]], s["premium_median"], color=color, linestyle=ls,
-                    linewidth=3, marker=marker, markersize=8, markeredgecolor="white",
-                    markeredgewidth=1.5, label=label, zorder=3)
-            ends[rule] = s["premium_median"].iloc[-1]
-        start = df.loc[df["n_new"] == 0, "premium_median"].iloc[0]
-        ax.annotate(f"{start:.1f}× today", (0, start), xytext=(10, 0), textcoords="offset points",
-                    va="center", fontsize=11, color=INK)
-        x_end = len(sizes) - 1
-        if abs(ends["shipped"] - ends["keep_marks_target"]) < 0.05:
-            ax.annotate(f"{ends['shipped']:.2f}×\nno gap", (x_end, ends["shipped"]),
-                        xytext=(10, 0), textcoords="offset points", va="center", fontsize=11,
-                        color=INK, fontweight="bold")
-        else:
-            ax.annotate(f"{ends['shipped']:.2f}×  stuck", (x_end, ends["shipped"]),
-                        xytext=(10, 0), textcoords="offset points", va="center", fontsize=11,
-                        color=BLUE, fontweight="bold")
-            ax.annotate(f"{ends['keep_marks_target']:.2f}×  keeps falling",
-                        (x_end, ends["keep_marks_target"]), xytext=(10, 0),
-                        textcoords="offset points", va="center", fontsize=11, color=ORANGE,
-                        fontweight="bold")
-        ax.axhline(1, color=MUTED, linewidth=1.2, linestyle=":", zorder=1)
-        ax.text(0, 1, "English = 1×", va="bottom", ha="left", fontsize=9.5, color=MUTED)
-        ax.set_xticks(range(len(sizes)), [f"{n // 1024}k" if n else "0" for n in sizes],
-                      fontsize=11)
-        ax.set_xlim(-0.2, len(sizes) + 0.6)
-        ax.set_ylim(0, top)
-        ax.set_title(title, loc="left", color=INK, fontsize=13)
-        ax.set_xlabel("new tokens added to Qwen's vocabulary", color=INK_2, fontsize=11)
-        ax.tick_params(axis="y", labelsize=11)
-        _style(ax)
-    axes[0].set_ylabel("tokens per sentence vs English", color=INK_2, fontsize=11)
-    handles, labels = axes[0].get_legend_handles_labels()
-    fig.legend(handles, labels, loc="upper left", bbox_to_anchor=(0.01, 1.0), ncol=2,
-               frameon=False, fontsize=11, labelcolor=INK)
-    fig.text(0.01, 0.01, "Same result for Tamil, and for Llama 3.2's tokenizer. "
-             "Measured on FLORES+ test sentences.", color=MUTED, fontsize=9.5)
-    fig.tight_layout(rect=(0, 0.04, 1, 0.91))
-    fig.savefig(out, dpi=200)
-    plt.close(fig)
+    with plt.rc_context({"font.family": ["DejaVu Sans", "Nirmala UI", "Ebrima"]}):
+        fig, axes = plt.subplots(1, 2, figsize=(13, 6.4), sharey=True)
+        for k, (ax, (df, title)) in enumerate(zip(axes, data, strict=True)):
+            sizes = sorted(df["n_new"].unique())
+            pos = {n: i for i, n in enumerate(sizes)}
+            ends = {}
+            for rule, color, ls, marker, label in rules:
+                s = df[df["pretokenizer"] == rule].sort_values("n_new")
+                ax.plot([pos[n] for n in s["n_new"]], s["premium_median"], color=color,
+                        linestyle=ls, linewidth=3, marker=marker, markersize=8,
+                        markeredgecolor="white", markeredgewidth=1.5, label=label, zorder=3)
+                ends[rule] = s["premium_median"].iloc[-1]
+            start = df.loc[df["n_new"] == 0, "premium_median"].iloc[0]
+            ax.annotate(f"original tokenizer: {start:.1f}×", (0, start), xytext=(10, 4),
+                        textcoords="offset points", va="bottom", fontsize=11, color=INK)
+            x_end = len(sizes) - 1
+            if abs(ends["shipped"] - ends["keep_marks_target"]) < 0.05:
+                ax.annotate(f"{ends['shipped']:.2f}×  both rules give the\nsame result "
+                            "(lines overlap)", (x_end, ends["shipped"]), xytext=(-40, 22),
+                            textcoords="offset points", va="bottom", fontsize=10.5, color=INK)
+            else:
+                ax.annotate(f"{ends['shipped']:.2f}×  levels off", (x_end, ends["shipped"]),
+                            xytext=(10, 0), textcoords="offset points", va="center",
+                            fontsize=11, color=BLUE, fontweight="bold")
+                ax.annotate(f"{ends['keep_marks_target']:.2f}×  keeps falling",
+                            (x_end, ends["keep_marks_target"]), xytext=(10, 0),
+                            textcoords="offset points", va="center", fontsize=11,
+                            color=ORANGE, fontweight="bold")
+            ax.axhline(1, color=MUTED, linewidth=1.2, linestyle=":", zorder=1)
+            ax.text(0, 1, "English = 1×", va="bottom", ha="left", fontsize=9.5, color=MUTED)
+            ax.set_xticks(range(len(sizes)), [f"+{n:,}" if n else "0" for n in sizes],
+                          fontsize=10.5)
+            ax.set_xlim(-0.2, len(sizes) + 0.9)
+            ax.set_ylim(0, top)
+            ax.set_title(title, loc="left", color=INK, fontsize=12)
+            lang = "Telugu" if k == 0 else "Amharic"
+            ax.set_xlabel(f"new tokens learned from {lang} text and added to the tokenizer",
+                          color=INK_2, fontsize=10.5)
+            ax.tick_params(axis="y", labelsize=10.5)
+            _style(ax)
+        axes[0].set_ylabel("× more tokens than the same\nsentence in English", color=INK_2,
+                           fontsize=10.5)
+
+        fig.suptitle("New vocabulary cuts Telugu's token cost, but stalls at ~2.5× "
+                     "unless vowel signs stay with their words",
+                     x=0.01, ha="left", y=0.985, fontsize=14.5, fontweight="bold", color=INK)
+        fig.text(0.01, 0.905, "Token premium of Qwen3-0.6B's tokenizer: how many times more "
+                 "tokens a sentence needs than the same sentence in English "
+                 "(median over 1,012 FLORES+ test sentences).", fontsize=10.5, color=INK_2)
+        handles, labels = axes[0].get_legend_handles_labels()
+        fig.legend(handles, labels, loc="upper left", bbox_to_anchor=(0.005, 0.89), ncol=1,
+                   frameon=False, fontsize=10.5, labelcolor=INK, handlelength=3)
+        fig.text(0.01, 0.012, "New tokens are learned by continuing Qwen's byte-pair-encoding "
+                 "merges on 50M characters of news and web text (never the test sentences). "
+                 "Same pattern for Tamil, and for Llama 3.2's tokenizer.",
+                 color=MUTED, fontsize=9.5)
+        fig.tight_layout(rect=(0, 0.035, 1, 0.815))
+        fig.savefig(out, dpi=200)
+        plt.close(fig)
 
 
 def unreachable(out: Path, csv: str = "results/vocab_study/unreachable_tokens.csv") -> None:
