@@ -5,6 +5,9 @@
   results/vocab_study/figures/ceiling.png
       Median premium vs new tokens, one panel per (model, language), shipped vs
       keep_marks_target. The flat shipped line is the vowel-sign ceiling.
+  results/vocab_study/figures/ceiling_slide.png
+      The same finding cut down for a slide: Telugu vs Amharic only, plain
+      labels, results written on the chart.
   results/vocab_study/figures/unreachable.png
       Unreachable vocabulary per tokenizer, and Qwen's by script and cause.
 
@@ -88,6 +91,67 @@ def ceiling(out: Path) -> None:
     plt.close(fig)
 
 
+def ceiling_slide(out: Path) -> None:
+    """Two panels, big type, every number the audience needs written on the chart."""
+    panels = [
+        ("results/vocab/summary.csv", "tel_Telu",
+         "Telugu: vowels written as separate signs"),
+        ("results/vocab_study/qwen/summary.csv", "amh_Ethi",
+         "Amharic: vowels built into each letter"),
+    ]
+    rules = [("shipped", "Qwen's original word-splitting (cuts at vowel signs)", BLUE, "-", "o"),
+             ("keep_marks_target", "Vowel signs kept with their word", ORANGE, "--", "s")]
+    data = [(pd.read_csv(p).query("lang == @lang"), t) for p, lang, t in panels]
+    top = max(df["premium_median"].max() for df, _ in data) * 1.12
+
+    fig, axes = plt.subplots(1, 2, figsize=(11, 4.6), sharey=True)
+    for ax, (df, title) in zip(axes, data, strict=True):
+        sizes = sorted(df["n_new"].unique())
+        pos = {n: i for i, n in enumerate(sizes)}
+        ends = {}
+        for rule, label, color, ls, marker in rules:
+            s = df[df["pretokenizer"] == rule].sort_values("n_new")
+            ax.plot([pos[n] for n in s["n_new"]], s["premium_median"], color=color, linestyle=ls,
+                    linewidth=3, marker=marker, markersize=8, markeredgecolor="white",
+                    markeredgewidth=1.5, label=label, zorder=3)
+            ends[rule] = s["premium_median"].iloc[-1]
+        start = df.loc[df["n_new"] == 0, "premium_median"].iloc[0]
+        ax.annotate(f"{start:.1f}× today", (0, start), xytext=(10, 0), textcoords="offset points",
+                    va="center", fontsize=11, color=INK)
+        x_end = len(sizes) - 1
+        if abs(ends["shipped"] - ends["keep_marks_target"]) < 0.05:
+            ax.annotate(f"{ends['shipped']:.2f}×\nno gap", (x_end, ends["shipped"]),
+                        xytext=(10, 0), textcoords="offset points", va="center", fontsize=11,
+                        color=INK, fontweight="bold")
+        else:
+            ax.annotate(f"{ends['shipped']:.2f}×  stuck", (x_end, ends["shipped"]),
+                        xytext=(10, 0), textcoords="offset points", va="center", fontsize=11,
+                        color=BLUE, fontweight="bold")
+            ax.annotate(f"{ends['keep_marks_target']:.2f}×  keeps falling",
+                        (x_end, ends["keep_marks_target"]), xytext=(10, 0),
+                        textcoords="offset points", va="center", fontsize=11, color=ORANGE,
+                        fontweight="bold")
+        ax.axhline(1, color=MUTED, linewidth=1.2, linestyle=":", zorder=1)
+        ax.text(0, 1, "English = 1×", va="bottom", ha="left", fontsize=9.5, color=MUTED)
+        ax.set_xticks(range(len(sizes)), [f"{n // 1024}k" if n else "0" for n in sizes],
+                      fontsize=11)
+        ax.set_xlim(-0.2, len(sizes) + 0.6)
+        ax.set_ylim(0, top)
+        ax.set_title(title, loc="left", color=INK, fontsize=13)
+        ax.set_xlabel("new tokens added to Qwen's vocabulary", color=INK_2, fontsize=11)
+        ax.tick_params(axis="y", labelsize=11)
+        _style(ax)
+    axes[0].set_ylabel("tokens per sentence vs English", color=INK_2, fontsize=11)
+    handles, labels = axes[0].get_legend_handles_labels()
+    fig.legend(handles, labels, loc="upper left", bbox_to_anchor=(0.01, 1.0), ncol=2,
+               frameon=False, fontsize=11, labelcolor=INK)
+    fig.text(0.01, 0.01, "Same result for Tamil, and for Llama 3.2's tokenizer. "
+             "Measured on FLORES+ test sentences.", color=MUTED, fontsize=9.5)
+    fig.tight_layout(rect=(0, 0.04, 1, 0.91))
+    fig.savefig(out, dpi=200)
+    plt.close(fig)
+
+
 def unreachable(out: Path, csv: str = "results/vocab_study/unreachable_tokens.csv") -> None:
     d = pd.read_csv(csv)
     d["unreachable"] = d["split_by_pretokenizer"] + d["changed_by_normalizer"] + d["merge_order"]
@@ -147,8 +211,9 @@ def main(argv: list[str] | None = None) -> int:
     out = Path(args.outdir)
     out.mkdir(parents=True, exist_ok=True)
     ceiling(out / "ceiling.png")
+    ceiling_slide(out / "ceiling_slide.png")
     unreachable(out / "unreachable.png")
-    print(f"wrote {out / 'ceiling.png'} and {out / 'unreachable.png'}")
+    print(f"wrote ceiling.png, ceiling_slide.png and unreachable.png to {out}")
     return 0
 
 
