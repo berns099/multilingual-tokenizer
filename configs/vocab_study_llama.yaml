@@ -1,0 +1,31 @@
+# Tokenizer study: is step B's vowel-sign ceiling a Qwen quirk or a property of
+# the regex Qwen shares with Llama 3 and GPT-4 (letter runs are \p{L}+)?
+#
+#   python -m tokpremium.vocab.continue_bpe --config configs/vocab_study_llama.yaml
+#   python -m tokpremium.vocab.measure      --config configs/vocab_study_llama.yaml
+#
+# Telugu on Llama 3.2's tokenizer, under both rules, with the same corpus and
+# budget as the team's Qwen run in configs/vocab.yaml, so the two compare directly.
+# Tokenizer only: no Llama training is planned.
+
+base:
+  model_id: meta-llama/Llama-3.2-1B     # gated; read for the compute cost model only
+  tokenizer_id: meta-llama/Llama-3.2-1B
+
+languages: [tel_Telu]
+n_new_tokens: [1024, 2048, 4096]
+pretokenizers: [shipped, keep_marks_target]
+
+corpus:
+  max_chars: 50_000_000
+  cache_dir: data/vocab/corpus
+  sources:
+    tel_Telu: {repo: ai4bharat/IndicCorpV2, data_files: data/te.txt}
+
+output:
+  results_dir: results/vocab_study/llama
+  tokenizer_dir: data/vocab_study/tokenizers/llama
+
+eval:
+  pivot: eng_Latn
+  controls: [eng_Latn, cmn_Hans]
