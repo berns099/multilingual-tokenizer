@@ -1,0 +1,3086 @@
+{
+ "stock": {
+  "bpb_target": 1.5370502364083127,
+  "bpb_english": 1.25910940411597,
+  "tokens_target": 139222,
+  "tokens_english": 26255,
+  "repetition_target": 0.503859649122807,
+  "repetition_target_stats": {
+   "mean": 0.503859649122807,
+   "median": 0.5175438596491229,
+   "p90": 0.736842105263158,
+   "max": 0.8771929824561404
+  },
+  "n_prompts_target": 100,
+  "repetition_english": 0.3435087719298246,
+  "repetition_english_stats": {
+   "mean": 0.3435087719298246,
+   "median": 0.34210526315789475,
+   "p90": 0.6491228070175439,
+   "max": 0.8771929824561404
+  },
+  "n_prompts_english": 100,
+  "generations": {
+   "target": [
+    {
+     "prompt": "Երկուշաբթի օրը Բժշկության Ստենֆորդի համալսարանի դպրոցի գիտնա",
+     "continuation": "կան աշխատանքների առանձ անդամների անդամների անդամների անդամնե",
+     "repetition": 0.49122807017543857
+    },
+    {
+     "prompt": "Առաջատար հետազոտողները նշում են, որ սա կարող է բուժվող հիվան",
+     "continuation": "անակումների առանձ արագության արագության համար անական առագանք",
+     "repetition": 0.21052631578947367
+    },
+    {
+     "prompt": "Տեղական ժամանակով 9:30 (02:30` ունիվերսալ ժամային գոտի) JAS ",
+     "continuation": "կարող է կարողանալ անական համար անական համար համարել անական հ",
+     "repetition": 0.4035087719298246
+    },
+    {
+     "prompt": "Օդաչուն ջոկատի հրամանատար Դայլոկրիտ Պատավին էր:",
+     "continuation": " Նա համարեց այն հրամանատար անական հարաբերական անդամ անդամն ա",
+     "repetition": 0.08771929824561409
+    },
+    {
+     "prompt": "Տեղական լրատվամիջոցները հայտնում են, որ օդանավակայանի մի հրդ",
+     "continuation": "ի համար կարող են կարողանել անական համարել անական համարելու հ",
+     "repetition": 0.3508771929824561
+    },
+    {
+     "prompt": "28-ամյա Վիդալը Սևիլյայից միացել է Բարսելոնային երեք սեզոն առ",
+     "continuation": "անալ է այս համար անալիզի մասին անալիզի միանիք անալիզի միանիք",
+     "repetition": 0.3508771929824561
+    },
+    {
+     "prompt": "Կատալոնիայի մայրաքաղաք տեղափոխվելուց ի վեր Վիդալն ակումբի կա",
+     "continuation": "րիաների մասին համար անական համարման կարող է անել այն համարմա",
+     "repetition": 0.17543859649122806
+    },
+    {
+     "prompt": "Բողոքի ցույցը սկսվեց տեղական ժամանակով մոտավորապես 11։00-ին ",
+     "continuation": "անգամ անցան անական անդամների միասյան անդամների միասյան անդամ",
+     "repetition": 0.4385964912280702
+    },
+    {
+     "prompt": "Անմիջապես 11։00-ից հետո ցուցարարներն արգելափակեցին Ուայթհոլի",
+     "continuation": "սի անական անական անական անական անական անական անական անական ա",
+     "repetition": 0.8421052631578947
+    },
+    {
+     "prompt": "Ժամը 11:20-ին ոստիկանությունը խնդրեց ցուցարարներին տեղափոխվե",
+     "continuation": "լ այս համար անական անդամների միջում անական անդամների միջում ",
+     "repetition": 0.38596491228070173
+    },
+    {
+     "prompt": "Բողոքի ակցիան ժամը 11:29-ի կողմերը շարժվեց Ուայթհոլի ուղղութ",
+     "continuation": "յան անական անդամների միջում անայլ անդամների միջում անայլ անդ",
+     "repetition": 0.4736842105263158
+    },
+    {
+     "prompt": "Նադալի կանադացու հետ դեմ առ դեմ հանդիպման արդյունքը 7 - 2 է։",
+     "continuation": " Արդյունքը արդեն անական է անական անական անական անական անական",
+     "repetition": 0.543859649122807
+    },
+    {
+     "prompt": "Վերջերս նա պարտվեց Ռաոնիկին Բրիսբեյնի բաց առաջնությունում։",
+     "continuation": " Այս համար նա համարեց անական անդամների միաներկու անդամների մ",
+     "repetition": 0.21052631578947367
+    },
+    {
+     "prompt": "Հանդիպման ժամանակ Նադալը զուտ 88% միավոր հավաքեց՝ առաջին մատ",
+     "continuation": "ուղացումների համար անական արագության համար անական արագության",
+     "repetition": 0.368421052631579
+    },
+    {
+     "prompt": "Խաղից հետո Կավի արքան ասաց․«Ես պարզապես հուզված եմ, որ հնարա",
+     "continuation": "վարություն եմ տարին անակ անակ անակ անակ անակ անակ անակ անակ ",
+     "repetition": 0.5789473684210527
+    },
+    {
+     "prompt": "«Պանամա Փեյփըրս»-ն ընդհանուր եզրույթ է Պանամայի «Մոսակ Ֆոնսե",
+     "continuation": "րի անունը և անունը անական անունը և անունը անունը անունը անու",
+     "repetition": 0.6491228070175439
+    },
+    {
+     "prompt": "Փաստաթղթերը հիմնավորում էին, որ տասնչորս բանկ օգնել է հարուս",
+     "continuation": "տանել այն տարբերակների համար անական անդամների միանիմ անդամնե",
+     "repetition": 0.1228070175438597
+    },
+    {
+     "prompt": "Բրիտանական Դը Գարդիան ամսագիրը ենթադրում է, որ Դոյչե բանկը վ",
+     "continuation": "երականացնել է անական անդամների անդամների անդամների անդամների",
+     "repetition": 0.49122807017543857
+    },
+    {
+     "prompt": "Ողջ աշխարհով մեկ տեղի էին ունենում բողոքի ցույցեր, մի քանի ք",
+     "continuation": "անի անական անական անական անական անական անական անական անական ",
+     "repetition": 0.8245614035087719
+    },
+    {
+     "prompt": "Ծնված լինելով Հոնկոնգում՝ Ման սովորել է Նյու Յորքի համալսարա",
+     "continuation": "նի համար անդամանալու համար անդամանալու համար անդամանալու համ",
+     "repetition": 0.6491228070175439
+    },
+    {
+     "prompt": "Ընտրությունների ընթացքում Հսիեն ընթադրում էր, որ Ման ճգնաժամ",
+     "continuation": "ան անդամների անդամների անդամների անդամների անդամների անդամնե",
+     "repetition": 0.7894736842105263
+    },
+    {
+     "prompt": "Հսիեհը նաև պնդում էր, որ ֆոտոգենիկ Ման ավելի շատ ոճ էր իրենի",
+     "continuation": " մի համար, այս համար նա կարողար է անարագ անել այն մի համար, ",
+     "repetition": 0.19298245614035092
+    },
+    {
+     "prompt": "Չնայած այս մեղադրանքներին՝ Ման հեշտությամբ հաղթեց մի հարթակո",
+     "continuation": "ւն անական անդամների անդամների միջում անական անդամների միջում",
+     "repetition": 0.5263157894736843
+    },
+    {
+     "prompt": "Վաշինգթոն Քեփիթըլսի օրվա մարզիկը Ալեքս Օվեչկինն է:",
+     "continuation": " Այս մարզիկը անարանային անդամն է անարանային անդամն են անարան",
+     "repetition": 0.368421052631579
+    },
+    {
+     "prompt": "Վաշինգտոնի ընդդեմ Ատլանտա Տրեշերզի 5-3 հաշվով հաղթանակի ժամա",
+     "continuation": "նական համարատույան արագացան անդամի անդամի անդամի անդամի անդա",
+     "repetition": 0.42105263157894735
+    },
+    {
+     "prompt": "Օվեչկինի երեկոյի գոլային առաջին փոխանցման նպատակը նորեկ Նիկո",
+     "continuation": "լաս անունում է անական անդամների համար անական անդամների համար",
+     "repetition": 0.3508771929824561
+    },
+    {
+     "prompt": "երեկոյի ընթացքում նրա երկրորդ գոլը դարձավ խաղաշրջանում խփած ",
+     "continuation": "անական անդամների միան անդամների միան անդամների միան անդամներ",
+     "repetition": 0.6666666666666667
+    },
+    {
+     "prompt": "Բաթենը 190-րդն է 2008 թվականի ամենահարուստ 400 ամերիկացիների",
+     "continuation": " անդամը ունեցած անդամների միաներկու անդամների միաներկու անդա",
+     "repetition": 0.4385964912280702
+    },
+    {
+     "prompt": "1950 թվականին նա ավարտեց Վիրջինիայի համալսարանի արվեստի և գի",
+     "continuation": "տիչի առանձ անդամների առանձ անդամների առանձ անդամների առանձ ա",
+     "repetition": 0.6666666666666667
+    },
+    {
+     "prompt": "Ապստամբության ընթացքում Իրաքի Աբու Ղարիբ բանտը հրդեհվել է:",
+     "continuation": " Արագանական համարատուղարական համարատուղարական համարատուղարակ",
+     "repetition": 0.5789473684210527
+    },
+    {
+     "prompt": "Կալանավայրը վատ հռչակ ձեռք բերեց այն բանից հետո, երբ ԱՄՆ զոր",
+     "continuation": "անալ է այն բանից հետո անարան անարան անարան անարան անարան անա",
+     "repetition": 0.5087719298245614
+    },
+    {
+     "prompt": "Պիկե կրտսերը վթարի է ենթարկվել 2008 թ.-ին Սինգապուրի Գրանդ Պ",
+     "continuation": "ատմիանի համար անդամների համար անդամների անդամների անդամների ",
+     "repetition": 0.5789473684210527
+    },
+    {
+     "prompt": "Քանի որ Ալոնսոյից առաջ ընթացող ավտոմեքենաները բենզինը լիցքավ",
+     "continuation": "որելու համար անալիտար առանձանություն է անալիտար առանձանությո",
+     "repetition": 0.3508771929824561
+    },
+    {
+     "prompt": "2009 թվականի հունգարական «Գրանդ Պրի»-ից հետո Պիկե Կրտսերն աշ",
+     "continuation": "խատում է այն համար ունեմ անական անդամների միաներկու մասին ան",
+     "repetition": 0.01754385964912286
+    },
+    {
+     "prompt": "Առավոտյան ուղիղ 8:46-ին քաղաքում լռություն տիրեց՝ ազդարարելո",
+     "continuation": "ւ համար անական անդամանակում անական անդամանակում անական անդամ",
+     "repetition": 0.543859649122807
+    },
+    {
+     "prompt": "Լույսի երկու ճառագայթն ուղղված էր գիշերային երկնքին։",
+     "continuation": " Այստեղ են երկանարանային անդամներ են անական անդամներ են անակ",
+     "repetition": 0.29824561403508776
+    },
+    {
+     "prompt": "Տարածքում ընթանում է հինգ նոր երկնաքերերի շինարարություն, որ",
+     "continuation": "ը կարողանա անալիտարական համար անալիտարական համար անալիտարակա",
+     "repetition": 0.49122807017543857
+    },
+    {
+     "prompt": "Փի-Բի-Էս շոուն ունի Էմմիի երկու տասնյակից ավել մրցանակ, և նր",
+     "continuation": "ա երկու տասնյակից ավել մրցանակ են անային երկու տասնյակից ավե",
+     "repetition": 0.29824561403508776
+    },
+    {
+     "prompt": "Ցուցադրման ամեն դրվագ կկենտրոնանա առանձին գրքի որևէ թեմայի վ",
+     "continuation": "րա անական անդամներ անական անդամներ անական անդամներ անական ան",
+     "repetition": 0.6842105263157895
+    },
+    {
+     "prompt": "Յուրաքանչյուր ցուցադրում նաև գրքերի խորհուրդներ էր տրամադրու",
+     "continuation": "մ այս համար անական անդամների համար անական անդամների համար ան",
+     "repetition": 0.5087719298245614
+    },
+    {
+     "prompt": "WNED Բուֆֆալոյից Ջոն Գռանտը (Ծիածանի տնային կայանի ընթերցանո",
+     "continuation": "ւմ անդամանական անդամանակում անդամանակում անդամանակում անդամա",
+     "repetition": 0.6842105263157895
+    },
+    {
+     "prompt": "Որոշ մարդիկ, ներառյալ Ջոն Գրանտը, հավատում են, որ թե՛ ֆինանս",
+     "continuation": "ական համար անական համարատուղացում կարող է անական համարատուղա",
+     "repetition": 0.4035087719298246
+    },
+    {
+     "prompt": "Փոթորիկը, լինելով Կաբո Վերդեի կղզիներից 645 մղոն (1040 կմ) ա",
+     "continuation": "ռավել անական անդամների միաներկու անդամների միաներկու անդամնե",
+     "repetition": 0.4385964912280702
+    },
+    {
+     "prompt": "Այս պահին Ֆրեդն ընթանում է 105 մղոն (165 կմ/ժ) քամու արագութ",
+     "continuation": "յան արագության արագության արագության արագության արագության ա",
+     "repetition": 0.8070175438596492
+    },
+    {
+     "prompt": "Ֆրեդն ամենաուժեղ արևադարձային ցիկլոնն է, որն այսքան ժամանակ ",
+     "continuation": "է անալիտի անալիտի անալիտի անալիտի անալիտի անալիտի անալիտի ան",
+     "repetition": 0.8421052631578947
+    },
+    {
+     "prompt": "1759 թվականի սեպտեմբերի 24-ին, Արթուր Գիննեսը ստորագրեց 9,00",
+     "continuation": "0 դրամի անական անդամի անդամների անդամների անդամների անդամներ",
+     "repetition": 0.5789473684210527
+    },
+    {
+     "prompt": "250 տարի անց Գիննեսը վերածվել է համաշխարհային բիզնեսի, որն ա",
+     "continuation": "նական անդամների համար համարձանալու համար անական անդամների հա",
+     "repetition": 0.38596491228070173
+    },
+    {
+     "prompt": "Նոր Զելանդիայի A1GP թիմի փոխարինող վարորդ Ջոնի Ռեյդն այսօր օ",
+     "continuation": "ր անականացան այստեղ անականացումների միջում անականացումների ա",
+     "repetition": 0.3508771929824561
+    },
+    {
+     "prompt": "Պարոն Ռեյդին հաջողվեց վարել Նոր Զելանդիայի A1GP ավտոմեքենան՝",
+     "continuation": " այն համարիր անական անդամի անդամի անդամի անդամի անդամի անդամ",
+     "repetition": 0.543859649122807
+    },
+    {
+     "prompt": "Նոր Զելանդիայի ոստիկանությունը խնդիրներ ունեցավ արագության ռ",
+     "continuation": "ազման մասին անական համարելու համար անական համարելու համար ան",
+     "repetition": 0.45614035087719296
+    },
+    {
+     "prompt": "Վերջին 3 ամսում Կենտրոնական կալանավայրից 80-ից ավելի ձերբակա",
+     "continuation": "րած անդամներ են գրանացնում այս կանացի կանացի կանացի կանացի կ",
+     "repetition": 0.368421052631579
+    },
+    {
+     "prompt": "Այս տարի ապրիլին ժամանակավոր զսպող հրաման է սահմանվել դատավո",
+     "continuation": "րական համար անական համարման համար անական համարման համար անակ",
+     "repetition": 0.6842105263157895
+    },
+    {
+     "prompt": "Հանձնակատարը գրավ է սահմանում, եթե տրամադրվի, և ձևավորում ձե",
+     "continuation": "ք կարող են կարողանել կարողանել կարողանել կարողանել կարողանել",
+     "repetition": 0.7017543859649122
+    },
+    {
+     "prompt": "Լսումը նաև նշում է այն ամսաթիվը, երբ կասկածյալն իրավունք ուն",
+     "continuation": "են այն ամսը անական ամսաների ամսաների համար անական ամսաների ա",
+     "repetition": 0.42105263157894735
+    },
+    {
+     "prompt": "Ավստրալիայի գանձապահ Պիտեր Կոստելլոն, որը, ամենայն հավանական",
+     "continuation": " անդամի անդամը անական անդամների անդամների անդամների անդամներ",
+     "repetition": 0.5789473684210527
+    },
+    {
+     "prompt": "Պարոն Կոստելլոն ասաց, որ երբ միջուկային էլեկտրաէներգիայի արտ",
+     "continuation": "ադրանք անական անդամանակումների միջամուտ անական անդամանակումն",
+     "repetition": 0.33333333333333337
+    },
+    {
+     "prompt": "«Եթե այն առևտրային դառնա, ապա պետք է ունենանք այն։ Այն է՝ մի",
+     "continuation": "աներկու անական անդամներ անական անդամներ անական անդամներ անակ",
+     "repetition": 0.5964912280701755
+    },
+    {
+     "prompt": "Համաձայն Անսայի՝ «Ոստիկանությունը մտավախություն ուներ մի քան",
+     "continuation": "ակում անձի համար անձի համար անձի համար անձի համար անձի համար",
+     "repetition": 0.7192982456140351
+    },
+    {
+     "prompt": "Ոստիկանությունը հայտնեց, որ Լո Պիկոլոն ուներ արտոնյալ կարգավ",
+     "continuation": "որումների համար անական անդամների համար անական անդամների համա",
+     "repetition": 0.5263157894736843
+    },
+    {
+     "prompt": "Այս ղեկավարներին կարգի հրավիրեց Պրովենցանոն, երբ վերջ դրեց Ռ",
+     "continuation": "ադիոն արագացան անական արագացան անական արագացան անական արագաց",
+     "repetition": 0.6666666666666667
+    },
+    {
+     "prompt": "Apple-ի գլխավոր գործադիր տնօրեն Սթիվ Ջոբսը ներկայացրեց սարքը",
+     "continuation": " անական անդամների համար անական անդամների համար անական անդամն",
+     "repetition": 0.5964912280701755
+    },
+    {
+     "prompt": "Իր 2 ժամ տևող ելույթում նա նշեց, որ «այսօր Apple-ը կվերստեղծ",
+     "continuation": "են անալիտիկ համար անալիտիկ համար անալիտիկ համար անալիտիկ համ",
+     "repetition": 0.7017543859649122
+    },
+    {
+     "prompt": "Բրազիլիան Երկիր մոլորակի ամենամեծ հռոմեական կաթոլիկ երկիրն է",
+     "continuation": " միանկաման մարմարային մարմարային մարմարային մարմարային մարմա",
+     "repetition": 0.6491228070175439
+    },
+    {
+     "prompt": "Բրազիլիայի Ազգային կոնգրեսը 10 տարի շարունակ դրա օրինականացո",
+     "continuation": "ւմ է անական անդամների միան անդամների միան անդամների միան անդ",
+     "repetition": 0.5789473684210527
+    },
+    {
+     "prompt": "Սկզբնական օրինագիծը մշակվել էր Սան Պաուլոյի նախկին քաղաքապետ",
+     "continuation": "ության համար անական համարատուղարական համարային մարմարի մասին",
+     "repetition": 0.22807017543859653
+    },
+    {
+     "prompt": "Ցուցարարները հույս ունեն, որ կհավաքագրեն 1,2 միլիոն ստորագրո",
+     "continuation": "ւթյուններ անել այս համար անական անդամները անական անդամները ա",
+     "repetition": 0.29824561403508776
+    },
+    {
+     "prompt": "Այն բանից հետո, երբ պարզ դարձավ, որ բազմաթիվ ընտանիքներ իրավ",
+     "continuation": "ական համար անական համար կարող է անական համար համարել այն համ",
+     "repetition": 0.42105263157894735
+    },
+    {
+     "prompt": "Երբ վարձակալները սկսեցին պատմել իրենց պատահածը, ներգրավված ը",
+     "continuation": "նկածության անդամանացումները կարող են անալիտարական կամ անալիտ",
+     "repetition": 0.08771929824561409
+    },
+    {
+     "prompt": "Լոքվուդ Գարդենսի վարձակալները կարծում են, որ միգուցե ևս 40 ը",
+     "continuation": "նկանավորումների առավատ անդամների առավատ անդամների առավատ անդ",
+     "repetition": 0.5263157894736843
+    },
+    {
+     "prompt": "Նվագախումբը չեղարկեց Մաուրիի Պատերազմի հիշատակի ստադիոնում կ",
+     "continuation": "արող է անալիտարական համար անալիտարական համար անալիտարական հա",
+     "repetition": 0.5614035087719298
+    },
+    {
+     "prompt": "Խմբի կառավարման ընկերությունը՝ Էյչ-Քեյ Մենեջմենթ ինկորպորացի",
+     "continuation": "ան անական անդամների միջում անական անդամների միջում անական ան",
+     "repetition": 0.5789473684210527
+    },
+    {
+     "prompt": "Հայտնի հույն իրավաբանները՝ Սակիս Կեչագիոգլուն և Ջորջ Նիկոլակ",
+     "continuation": "իոն անուղիմների համար անդաման համարելու համար անդաման համարե",
+     "repetition": 0.368421052631579
+    },
+    {
+     "prompt": "Դրա հետևանքով հունական իրավական համայնքում մեծ սկանդալ հասու",
+     "continuation": "ն համար անական համար համարեք անական համար համարեք անական համ",
+     "repetition": 0.6491228070175439
+    },
+    {
+     "prompt": "Մի քանի շաբաթ առաջ, երբ լրագրող Մակիս Տրիանտաֆիլոպուլոսն «Ալ",
+     "continuation": "իքարի արագության անդամանացում անական անդամանացում անական անդ",
+     "repetition": 0.4035087719298246
+    },
+    {
+     "prompt": "Ավելին, գլխավոր դատավոր Էվանգելոս Կալուսիսն բանտարկված է, քա",
+     "continuation": "նի այն է անական անական անական անական անական անական անական ան",
+     "repetition": 0.736842105263158
+    },
+    {
+     "prompt": "Ռոբերտսը կտրականապես հրաժարվեց ասել այն մասին, թե իր կարծիքո",
+     "continuation": "ւմ է անական անական անական անական անական անական անական անական",
+     "repetition": 0.8070175438596492
+    },
+    {
+     "prompt": "Սակայն նա կրկնեց իր ավելի վաղ արած հայտարարությունը, որ Ռո վ",
+     "continuation": "ան անարագ է անարագ անարագ անարագ անարագ անարագ անարագ անարագ",
+     "repetition": 0.7719298245614035
+    },
+    {
+     "prompt": "Նա նաև հաստատեց, որ հավատում էր գաղտնիության ենթադրյալ իրավո",
+     "continuation": "ւն անական համար անական համար անական համար անական համար անակա",
+     "repetition": 0.736842105263158
+    },
+    {
+     "prompt": "Մարուչիդորը ավարտել է առաջատար դիրքում՝ Նուսային թողնելով վե",
+     "continuation": "րականացնել են այս դերը անական անդամների միջով անական անդամնե",
+     "repetition": 0.22807017543859653
+    },
+    {
+     "prompt": "Երկու կողմերը կհանդիպեն գլխավոր կիսաեզրափակչում, որտեղ Նոոսա",
+     "continuation": "ն անունվում է անական կամ անական կամ անական կամ անական կամ ան",
+     "repetition": 0.5789473684210527
+    },
+    {
+     "prompt": "Մարուչիդորն այնուհետև պարտության մատնեց Քաբուլտուրին նախնակա",
+     "continuation": "ն անդամն անական անդամն անդամն անդամն անդամն անդամն անդամն ան",
+     "repetition": 0.7719298245614035
+    },
+    {
+     "prompt": "Հեսպեռոնիչուս էլիզաբեթին համարվում է Դրոմաոսաուռիդի ընտանիքի",
+     "continuation": " մասին մերձային մարդկանության մի մասին մերձային մարդկանությա",
+     "repetition": 0.45614035087719296
+    },
+    {
+     "prompt": "Ենթադրվում էր, որ այս ամբողջովին փետրապատ, որսի տաքարյուն թռ",
+     "continuation": "ույթը անարանի մի անարանում է անարանի մի անարանում է անարանի ",
+     "repetition": 0.5789473684210527
+    },
+    {
+     "prompt": "Դրա երկրորդ ճիրանն ավելի մեծ էր, այստեղից էլ Հեսպերոնիխուս ա",
+     "continuation": "նական անական անական անական անական անական անական անական անակա",
+     "repetition": 0.8771929824561404
+    },
+    {
+     "prompt": "Ի լրումն կործանիչ սառույցի ծայրահեղ եղանակային պայմանները խո",
+     "continuation": "րանալու համար արագացած անդամանական համարատարում անդամանական ",
+     "repetition": 0.22807017543859653
+    },
+    {
+     "prompt": "Փիթմանը ենթադրեց, որ պայմանները չեն բարելավվի մինչև հաջորդ շ",
+     "continuation": "արինակութության միանեկու մասին միանեկու մասին միանեկու մասին",
+     "repetition": 0.49122807017543857
+    },
+    {
+     "prompt": "Ըստ Փիթմենի՝ սառույցի քանակն ու հաստությունը վերջին 15 տարվա",
+     "continuation": " ամսան անցան անական անդամների համար անական անդամների համար ա",
+     "repetition": 0.45614035087719296
+    },
+    {
+     "prompt": "Մինչ անցկացվում էր Ջեֆ Վեյզի և ինը տուժածներից երեքի հուղարկ",
+     "continuation": "ումների համար անական անդամներ են անական անդամներ են անական ա",
+     "repetition": 0.4736842105263158
+    },
+    {
+     "prompt": "Իշխանությունները քիչ բան ասացին այսօրվա ձերբակալությունը հաս",
+     "continuation": "նել կարող է անել այս համար անական անդամանությունը անել այս հ",
+     "repetition": 0.1578947368421053
+    },
+    {
+     "prompt": "Այնուամենայնիվ, հետաքննության մասին իմացող մի աղբյուր հայտնե",
+     "continuation": "րի համար անական համարման համար անական համարման համար անական ",
+     "repetition": 0.6666666666666667
+    },
+    {
+     "prompt": "Ներկայումս հայտնի չէ, թե ինչ տույժեր են կիրառվելու կամ ինչն ",
+     "continuation": "են կարծի անական անական անական անական անական անական անական ան",
+     "repetition": 0.736842105263158
+    },
+    {
+     "prompt": "Լոդինը նաև ասաց, որ պաշտոնյաները որոշել են չեղարկել ընտրությ",
+     "continuation": "ան անդամատանակում անական անդամատանակում անական անդամատանակու",
+     "repetition": 0.631578947368421
+    },
+    {
+     "prompt": "Դիվանագետներն ասացին, որ բավականաչափ երկիմաստություն են գտել",
+     "continuation": "ու անական անդամների անդամների անդամների անդամների անդամների ",
+     "repetition": 0.6666666666666667
+    },
+    {
+     "prompt": "Սա հակասում է ավելի վաղ արված զեկույցներին, որ երկրորդ փուլի",
+     "continuation": " անդամն է անարան անարան անարան անարան անարան անարան անարան ա",
+     "repetition": 0.7192982456140351
+    },
+    {
+     "prompt": "Օդանավն ուղղորդվել էր դեպի Իրկուտսկ և գործարկվում էր ներքին ",
+     "continuation": "անական անդամների միաներկու մասերի միջև մի մի մի մի մի մի մի ",
+     "repetition": 0.3508771929824561
+    },
+    {
+     "prompt": "Հարցումն ստեղծվել է հետաքննելու համար:",
+     "continuation": " Համարած է համարածել այն համարածելու համար անական համարածութ",
+     "repetition": 0.33333333333333337
+    },
+    {
+     "prompt": "Իլ 76-ը թե՛ ռուսական, թե՛ Խորհրդային բանակի հիմնական մասն է ",
+     "continuation": "անալիտի անդաման անդաման անդաման անդաման անդաման անդաման անդա",
+     "repetition": 0.736842105263158
+    },
+    {
+     "prompt": "Հոկտեմբերի 7-ին շարժիչը վերելքի պահին անջատվել էր, սակայն վի",
+     "continuation": "րական անդամն անդամն անդամն անդամն անդամն անդամն անդամն անդամ",
+     "repetition": 0.8070175438596492
+    },
+    {
+     "prompt": "Տրանս Ալյասկայի խողովակաշարի 800 մղոնը փակվեց այն բանից հետո",
+     "continuation": " անարագային արագության արագության արագության արագության արագ",
+     "repetition": 0.6491228070175439
+    },
+    {
+     "prompt": "Հրդեհաշիջման համակարգի հերթական փորձարկումից հետո Էլեկտրաէնե",
+     "continuation": "րգիայի համար արագացած անդամների միաներկու մակերանային արագաց",
+     "repetition": 0.07017543859649122
+    }
+   ],
+   "english": [
+    {
+     "prompt": "On Monday, scientists from the Stanford University School of",
+     "continuation": " Science and the University of California, San Diego, and the University of Chicago have published a study that shows that the number of people who have been infected with the virus in the United States is increasing rapidly. The study says that the number of people who have been infected with the virus is increasing rapidly because",
+     "repetition": 0.17543859649122806
+    },
+    {
+     "prompt": "Lead researchers say this may bring early detection of cance",
+     "continuation": "\n... and early treatment of the disease. The study was conducted in the\n... of the country. The researchers used a new type of technology to\n... the disease. The study was conducted in the\n... of the country. The researchers used a new type of technology to\n... the disease",
+     "repetition": 0.4385964912280702
+    },
+    {
+     "prompt": "The JAS 39C Gripen crashed onto a runway at around 9:30 am l",
+     "continuation": ". 10, 2013, and the pilot was killed. The investigation into the crash was conducted by the National Institute of Aviation and Space Technology, and the results of the investigation were published in the journal of the International Journal of Aviation and Space Technology. The investigation into the crash",
+     "repetition": 0.08771929824561409
+    },
+    {
+     "prompt": "The pilot was identified as Squadron Leader Dilokrit Pattave",
+     "continuation": ", a former pilot of the Royal Air Force, who was born in 1950. He was a member of the Royal Air Force, and was a member of the Royal Air Force's Air Transport Command. He was a member of the Royal Air Force's Air Transport Command, and was",
+     "repetition": 0.33333333333333337
+    },
+    {
+     "prompt": "Local media reports an airport fire vehicle rolled over whil",
+     "continuation": " the fire department was still on the scene. The fire department was on the scene, but the fire department was not able to get the fire truck to the scene. What is the correct answer?\n\nA) The fire department was able to get the fire truck to the scene.  \nB) The fire",
+     "repetition": 0.1578947368421053
+    },
+    {
+     "prompt": "28-year-old Vidal had joined Barça three seasons ago, from S",
+     "continuation": "orel, and is now in the 2023/24 season. He has been playing for the club since 2019, and has been in the top 10 in the league for the past 10 seasons. He has also been in the top ",
+     "repetition": 0.03508771929824561
+    },
+    {
+     "prompt": "Since moving to the Catalan-capital, Vidal had played 49 gam",
+     "continuation": "ings in the first 100 games of the season, and then 100 games in the next 100 games of the season. So, the total number of games played is 49 + 100 + 100 = 249 games",
+     "repetition": 0.17543859649122806
+    },
+    {
+     "prompt": "The protest started around 11:00 local time (UTC+1) on White",
+     "continuation": " House grounds, and the demonstrators were led by a group of 100 people. The protesters were led by a group of 100 people, and the group was led by a group of 100 people. The protesters were led by a group of 100 people",
+     "repetition": 0.5087719298245614
+    },
+    {
+     "prompt": "Just after 11:00, protesters blocked traffic on the northbou",
+     "continuation": "levard, and the police were able to get to the scene quickly. This is because of the _______.\n\nA. 12:00 PM\nB. 10:00 AM\nC. 11:00 AM\nD. 11:00",
+     "repetition": 0.10526315789473684
+    },
+    {
+     "prompt": "At 11:20, the police asked the protesters to move back on to",
+     "continuation": " the street. The protesters were not able to move back, so the police said that the protesters were not at the location where they were. This is an example of which type of fallacy? A. A. A. A. A. A. A. A. A. A. A",
+     "repetition": 0.2807017543859649
+    },
+    {
+     "prompt": "Around 11:29, the protest moved up Whitehall, past Trafalgar",
+     "continuation": " Square, and into the streets of London. The protest was initially peaceful, but the police were called to the scene. The protest was initially peaceful, but the police were called to the scene. The protest was initially peaceful, but the police were called to the scene. The protest was initially peaceful,",
+     "repetition": 0.5964912280701755
+    },
+    {
+     "prompt": "Nadal's head to head record against the Canadian is 7–2.",
+     "continuation": " The record is 7–2, and the team has 10 players. How many players are in the team? The answer is 10. So, the answer is 10. But why is the answer 10? Because the team has 10 players. So",
+     "repetition": 0.14035087719298245
+    },
+    {
+     "prompt": "He recently lost against Raonic in the Brisbane Open.",
+     "continuation": " The match was a close one, with the winner being the first to score 20 points. The score was 20-10. The score was won by the first player to score 20 points. The first player to score 20 points in the match was the winner",
+     "repetition": 0.19298245614035092
+    },
+    {
+     "prompt": "Nadal bagged 88% net points in the match winning 76 points i",
+     "continuation": ".e. 88% of 76 is 68.88. So the total points scored by Nadal in the match is 76 points. So the answer is 76 points.\n**Final Answer**\nThe total points scored by Nadal in the match is \\",
+     "repetition": 0.1578947368421053
+    },
+    {
+     "prompt": "After the match, King of Clay said, \"I am just excited about",
+     "continuation": " the match, and I have a new idea. I will not let the other side of the match, the side of the other person, have the chance to play. I will let the other side of the match, the side of the person who is the same, have the chance to play.",
+     "repetition": 0.22807017543859653
+    },
+    {
+     "prompt": "\"Panama Papers\" is an umbrella term for roughly ten million ",
+     "continuation": " people, and the number of people in the country is about 10 million. The number of people in the country is about 10 million. The number of people in the country is about 10 million. The number of people in the country is about 10 million. The",
+     "repetition": 0.6842105263157895
+    },
+    {
+     "prompt": "The documents showed fourteen banks helped wealthy clients h",
+     "continuation": "\n\nThe documents showed fourteen banks helped wealthy clients in the past year. The documents also showed that the banks had a high level of risk. The documents also showed that the banks had a high level of risk. The documents also showed that the banks had a high level of risk. The documents also showed",
+     "repetition": 0.5263157894736843
+    },
+    {
+     "prompt": "British newspaper The Guardian suggested Deutsche Bank contr",
+     "continuation": "ived to the situation in the UK, and that the UK government should be held accountable for the situation. The Guardian's report was published in the UK on 15th April 2017, and the report was based on the information provided by the UK government and the information provided by",
+     "repetition": 0.01754385964912286
+    },
+    {
+     "prompt": "There were protests worldwide, several criminal prosecutions",
+     "continuation": ", and the establishment of a new government. The new government was established in the early 1960s, and the country was under the influence of the Cold War. The new government was also a leader of the anti-communist movement. The country was under the influence of the Cold War",
+     "repetition": 0.14035087719298245
+    },
+    {
+     "prompt": "Born in Hong Kong, Ma studied at New York University and Har",
+     "continuation": "vard University, and then went to the University of Chicago. He is a professor at the University of Chicago and has been working in the field of mathematics. He has been working in the field of mathematics for 20 years. He has been working in the field of mathematics for 20 years",
+     "repetition": 0.3157894736842105
+    },
+    {
+     "prompt": "Hsieh implied during the election that Ma might flee the cou",
+     "continuation": "ps, but the government has not yet decided on a policy to address the issue. This is a problem for the government to solve, and the government should take action to address the issue. The government should take action to address the issue. The government should take action to address the issue. The government",
+     "repetition": 0.3508771929824561
+    },
+    {
+     "prompt": "Hsieh also argued that the photogenic Ma was more style than",
+     "continuation": " the Ma. This is because the Ma was a type of Ma, and the Ma was a type of Ma. This is because the Ma was a type of Ma. This is because the Ma was a type of Ma. This is because the Ma was a type of Ma. This is because the",
+     "repetition": 0.7017543859649122
+    },
+    {
+     "prompt": "Despite these accusations, Ma won handily on a platform advo",
+     "continuation": ", and the platform was able to get the most of the ad. This is because of the platform's ability to provide a good service, which is the key to the success of the platform. The platform's ability to provide a good service is the key to the success of the platform. The platform",
+     "repetition": 0.24561403508771928
+    },
+    {
+     "prompt": "Today's Player of the Day is Alex Ovechkin of the Washington",
+     "continuation": " Redskins. He has a total of 1000000000000000000000000000000000000000000000000000",
+     "repetition": 0.8245614035087719
+    },
+    {
+     "prompt": "He had 2 goals and 2 assists in Washington's 5-3 win over th",
+     "continuation": "ursday night. He also had 1 goal and 1 assist in the 2-1 win over the 10th. He had 1 goal and 1 assist in the 3-1 win over the 11th. He had 1 goal and 1 assist in",
+     "repetition": 0.368421052631579
+    },
+    {
+     "prompt": "Ovechkin's first assist of the night was on the game-winning",
+     "continuation": " shot at 10:00, and the game was tied at 1-1. The score was 1-1, and the game was tied at 1-1. The score was 1-1, and the game was tied at 1-1. The score",
+     "repetition": 0.543859649122807
+    },
+    {
+     "prompt": "his second goal of the night was his 60th of the season, bec",
+     "continuation": "use he was on the team. He was on the team for 12 years, and he has been on the team for 12 years. So, he has been on the team for 12 years. So, he has been on the team for 12 years. So",
+     "repetition": 0.5263157894736843
+    },
+    {
+     "prompt": "Batten was ranked 190th on the 2008 400 Richest Americans li",
+     "continuation": "ars list. What is the probability that the number of people who have been liars in the past 100 years is at least 190? (Assume that the number of people who have been liars in the past 100 years is a binomial random variable",
+     "repetition": 0.2807017543859649
+    },
+    {
+     "prompt": "He graduated from the College of Arts & Sciences of the Univ",
+     "continuation": ". of Florida in 2005, and has been working in the field of computer science for 12 years. He has been working in the field of computer science for 12 years. He has been working in the field of computer science for 12 years. He has",
+     "repetition": 0.5263157894736843
+    },
+    {
+     "prompt": "Iraq's Abu Ghraib prison has been set alight during a riot.",
+     "continuation": " The fire started in the prison, and the fire was reported to have been caused by a bomb. The fire was reported to have been caused by a bomb that was detonated in the prison. The fire was reported to have been caused by a bomb that was detonated in the prison. The fire",
+     "repetition": 0.45614035087719296
+    },
+    {
+     "prompt": "The jail became notorious after prisoner abuse was discovere",
+     "continuation": ". The jail's management was criticized for not providing proper security. The prison's management was criticized for not providing proper security. The prison's management was criticized for not providing proper security. The prison's management was criticized for not providing proper security. The prison's management was criticized for not providing proper security",
+     "repetition": 0.736842105263158
+    },
+    {
+     "prompt": "Piquet Jr. crashed in the 2008 Singapore Grand Prix just aft",
+     "continuation": " of the track. He was trying to get to the top of the track, but he was stuck in the back of a car. He was trying to get to the top of the track, but he was stuck in the back of a car. He was trying to get to the top of the",
+     "repetition": 0.543859649122807
+    },
+    {
+     "prompt": "As the cars ahead of Alonso went in for fuel under the safet",
+     "continuation": "ysign, the driver of the car behind, who was the first to reach the scene, was able to see the car in front. The driver of the car behind, who was the first to reach the scene, was able to see the car in front. The driver of the car behind,",
+     "repetition": 0.49122807017543857
+    },
+    {
+     "prompt": "Piquet Jr. was sacked after the 2009 Hungarian Grand Prix.",
+     "continuation": " What is the name of the team that he was playing for? Also, what is the name of the team that he was playing for in the 2010 Hungarian Grand Prix? Additionally, what is the name of the team that he was playing for in the 2011 Hungarian",
+     "repetition": 0.42105263157894735
+    },
+    {
+     "prompt": "At exactly 8:46 a.m. a hush fell across the city, marking th",
+     "continuation": "... the end of the story. The story is about a city where the people are all in a state of... what? A. A state of peace B. A state of war C. A state of peace D. A state of war\n\nThe story is about a city where the people are",
+     "repetition": 0.19298245614035092
+    },
+    {
+     "prompt": "Two beams of light have been rigged up to point skywards ove",
+     "continuation": "... and the two beams have been set up to have a certain amount of energy. The two beams have been set up to have a certain amount of energy. The two beams have been set up to have a certain amount of energy. The two beams have been set up to have a certain amount of",
+     "repetition": 0.6842105263157895
+    },
+    {
+     "prompt": "Construction is ongoing for five new skyscrapers at the site",
+     "continuation": ". The construction is expected to take 10 years to complete. The total cost of the construction is $10 million. The construction is expected to be completed in 10 years. The total cost of the construction is $10 million. The construction is expected to be completed in ",
+     "repetition": 0.4035087719298246
+    },
+    {
+     "prompt": "The PBS show has more than two-dozen Emmy awards, and its ru",
+     "continuation": "... \n\nOkay, let's see. The user mentioned that the PBS show has more than two-dozen Emmy awards. Wait, two-dozen is 24, so more than 24. But the original sentence is \"more than two-dozen Emmy awards, and its ru...\" which",
+     "repetition": 0.052631578947368474
+    },
+    {
+     "prompt": "Each episode of the show would focus on a theme in a specifi",
+     "continuation": "\nA. This is the first episode of the series, and the first episode is about the history of the United States. The second episode is about the history of the United States. The third episode is about the history of the United States. The fourth episode is about the history of the United States",
+     "repetition": 0.38596491228070173
+    },
+    {
+     "prompt": "Each show would also provide recommendations for books that ",
+     "continuation": "100% are not in the library's collection. This is a good idea, but it's not a good idea to do so. The problem is that the library has a lot of books that are not in the library's collection. The library has a lot of books that are not in",
+     "repetition": 0.21052631578947367
+    },
+    {
+     "prompt": "John Grant, from WNED Buffalo (Reading Rainbow's home statio",
+     "continuation": ") and the other two hosts, and the other two hosts, and the other two hosts, and the other two hosts, and the other two hosts, and the other two hosts, and the other two hosts, and the other two hosts, and the other two hosts, and the other two hosts",
+     "repetition": 0.8771929824561404
+    },
+    {
+     "prompt": "It is believed by some, including John Grant, that both the ",
+     "continuation": "1980 and 1990 presidential elections were won by the same candidate, but the actual winner of the 1980 election was the same as the winner of the 1990 election. This is an example of a _______.\n\nA)  paradox\n",
+     "repetition": 0.10526315789473684
+    },
+    {
+     "prompt": "The storm, situated about 645 miles (1040 km) west of the Ca",
+     "continuation": "ucus Mountains, is a major contributor to the formation of the Great Barrier Reef. The reef is a natural wonder of the world, and is home to a wide variety of marine life. The Great Barrier Reef is also a significant part of the Australian economy, and is a major tourist attraction. The",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "Fred currently has winds of 105 miles per hour (165 km/h) an",
+     "continuation": " hour. What is the total number of hours that the wind has been blowing for?\n\nTo find the total number of hours that the wind has been blowing for, we need to divide the total distance by the wind speed. The total distance is 105 miles per hour, and the wind speed",
+     "repetition": 0.1578947368421053
+    },
+    {
+     "prompt": "Fred is the strongest tropical cyclone ever recorded so far ",
+     "continuation": "2023, and it is the first to reach the highest possible altitude of 100,000 feet. This is the first time in history that a tropical cyclone has reached such an altitude. The first time in history that a tropical cyclone has reached such an altitude",
+     "repetition": 0.19298245614035092
+    },
+    {
+     "prompt": "On September 24, 1759, Arthur Guinness signed a 9,000 year l",
+     "continuation": "ighthouse. The lighthouse is located at the edge of a cliff overlooking the sea. The cliff is 100 feet high and the lighthouse is 100 feet away from the base of the cliff. What is the height of the lighthouse above the water level? \n\nTo solve",
+     "repetition": 0.052631578947368474
+    },
+    {
+     "prompt": "250 years later, Guinness has grown to a global business tha",
+     "continuation": "... - \n\nThe question is asking for the answer to the sentence: \"22250 years later, Guinness has grown to a global business that...\" \n\nThe sentence is in the middle of a paragraph. The paragraph is about the history of the Guinness logo and its global business. The first",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "Jonny Reid, co-driver for the A1GP New Zealand team, today m",
+     "continuation": "umbled a comment that could have been a warning to the team's drivers. The comment was made during the race, and it was the first time the team has faced such a situation in their history. The comment was made during the race, and it was the first time the team has faced such a",
+     "repetition": 0.3157894736842105
+    },
+    {
+     "prompt": "Mr Reid managed to drive the New Zealand's A1GP car, Black B",
+     "continuation": "1, in the 1980s. He was the first to drive a car in the 1980s. He was the first to drive a car in the 1980s. He was the first to drive a car in the 1980",
+     "repetition": 0.6666666666666667
+    },
+    {
+     "prompt": "The New Zealand police had trouble using their speed radar g",
+     "continuation": "ages to detect the movement of people in the streets. The reason for this was that the radar gages were not calibrated properly. The police had to use other methods to detect the movement of people. This is an example of _______.\n\nA.  A problem of information overload\nB. ",
+     "repetition": 0.052631578947368474
+    },
+    {
+     "prompt": "In the last 3 months, over 80 arrestees were released from t",
+     "continuation": "awny prison. The prison has a total of 1200 cells. The number of cells that were released was 1/3 of the total number of cells. The number of cells that were released was 1/4 of the total number of cells. The number of cells that",
+     "repetition": 0.33333333333333337
+    },
+    {
+     "prompt": "In April this year, a temporary restaining order was issued ",
+     "continuation": "10 days before the 10th of April. The order was issued by the government, and it was supposed to be completed by the 10th of April. However, the order was not completed by the 10th of April, but by the 10th of",
+     "repetition": 0.26315789473684215
+    },
+    {
+     "prompt": "The commissioner sets bail, if granted, and formalizes the c",
+     "continuation": "ensure. The censure is formalized by the court, and the censure is recorded in the official records. The censure is also recorded in the official records of the state. The censure is also recorded in the official records of the state. The censure is also recorded in the official",
+     "repetition": 0.4385964912280702
+    },
+    {
+     "prompt": "The hearing also marks the date for the suspect’s right to a",
+     "continuation": " fair trial, which is a fundamental right in many countries. This is a key point in the case, and it is important to highlight the importance of the right to a fair trial in the context of the case. The hearing is a crucial part of the legal process, and it is important to emphasize",
+     "repetition": 0.052631578947368474
+    },
+    {
+     "prompt": "Peter Costello, Australian treasurer and the man most likely",
+     "continuation": " to be the first to be elected to the Australian Parliament, was the first to be elected as a member of the Australian Parliament. He was the first to be elected as a member of the Australian Parliament, and he was the first to be elected as a member of the Australian Parliament. He was the",
+     "repetition": 0.4736842105263158
+    },
+    {
+     "prompt": "Mr Costello said that when nuclear power generation becomes ",
+     "continuation": "100% renewable, the world would be in a state of \"a new normal\" and that the world would be \"more stable and secure\" than ever before. He said that the world would be in a state of \"a new normal\" and that the world would be \"more stable",
+     "repetition": 0.368421052631579
+    },
+    {
+     "prompt": "\"If it becomes commercial, we should have it. That is, there",
+     "continuation": " is a need for it. If it becomes commercial, we should have it. That is, there is a need for it.\" So, the sentence is a bit of a paradox. It seems that the need for it is not necessarily there, but the sentence is trying to say that there is a",
+     "repetition": 0.03508771929824561
+    },
+    {
+     "prompt": "According to Ansa, \"police were concerned by a couple of top",
+     "continuation": " executives who were in the same company, and the company was not able to provide a solution to the problem. The company was not able to provide a solution to the problem, and the company was not able to provide a solution to the problem, and the company was not able to provide a solution to",
+     "repetition": 0.543859649122807
+    },
+    {
+     "prompt": "Police said Lo Piccolo had the upper hand because he had bee",
+     "continuation": " the first to arrive at the site. But the other side, the other police, had the lower hand. This is because of the fact that the other police had not been able to get the necessary supplies. The other police had not been able to get the necessary supplies. The other police had not",
+     "repetition": 0.24561403508771928
+    },
+    {
+     "prompt": "These bosses had been reined in by Provenzano when he put an",
+     "continuation": " end to the old system. The new system was based on the idea that the government should be responsible for the education of its citizens, not the private sector. This led to the creation of the first public schools in the world, and the establishment of the first public universities. The government was responsible for",
+     "repetition": 0.01754385964912286
+    },
+    {
+     "prompt": "Apple CEO Steve Jobs unveiled the device by walking onto the",
+     "continuation": " stage, and the first thing he said was, \"This is a new era of computing.\" The first thing he said was, \"This is a new era of computing.\" The first thing he said was, \"This is a new era of computing.\" The first thing he said was, \"This",
+     "repetition": 0.6491228070175439
+    },
+    {
+     "prompt": "During his 2 hour speech he stated that \"Today Apple is goin",
+     "continuation": "' to be a great success, but I know that the market is going to be a big challenge. I know that the market is going to be a big challenge. I know that the market is going to be a big challenge. I know that the market is going to be a big challenge.",
+     "repetition": 0.631578947368421
+    },
+    {
+     "prompt": "Brazil is the largest Roman Catholic country on Earth, and t",
+     "continuation": " the largest in the world. It is the only country in the world to have a president who is a member of the United Nations Security Council. The country is also the only one to have a president who is a member of the UN Security Council. It is the only one to have a president who",
+     "repetition": 0.24561403508771928
+    },
+    {
+     "prompt": "The National Congress of Brazil has debated legalization for",
+     "continuation": " the first time in the 19th century. The debate was not only about the legal status of the people, but also about the future of the country. The debate was not only about the people, but also about the future of the country. The debate was not only about the people,",
+     "repetition": 0.4035087719298246
+    },
+    {
+     "prompt": "The original bill was drafted by former mayor of São Paulo, ",
+     "continuation": "2000, and the current bill is the same. The bill was passed by the Senate and the House of Representatives. The bill was passed by both houses. The bill was passed by the Senate and the House of Representatives. The bill was passed by both houses. The bill was passed by",
+     "repetition": 0.4736842105263158
+    },
+    {
+     "prompt": "Protesters hope to collect a petition of 1.2 million signatu",
+     "continuation": "... and the number of people who have signed the petition is 1.2 million. The number of people who have signed the petition is 1.2 million. The number of people who have signed the petition is 1.2 million. The number of people who have signed the petition is",
+     "repetition": 0.6666666666666667
+    },
+    {
+     "prompt": "After it became apparent that many families were seeking leg",
+     "continuation": "acies, the first step in the process of creating a legacy is to determine the purpose of the legacy. The purpose of a legacy is the core of the legacy. The purpose of a legacy is the core of the legacy. The purpose of a legacy is the core of the legacy. The purpose of",
+     "repetition": 0.49122807017543857
+    },
+    {
+     "prompt": "When the tenants started sharing what had occurred to them, ",
+     "continuation": " the first thing they did was to share the same room.  The second thing they did was to share the same food.  The third thing they did was to share the same books.  The fourth thing they did was to share the same room.  The fifth thing they did was to share",
+     "repetition": 0.38596491228070173
+    },
+    {
+     "prompt": "Tenants at Lockwood Gardens believe that there may be anothe",
+     "continuation": "...? Let me think. The question is asking for the next possible tenant in the sequence, given that the current tenant is 10, and the pattern is 10, 11, 12, 13, 14, 15, 16",
+     "repetition": 0.03508771929824561
+    },
+    {
+     "prompt": "The band canceled the show at Maui's War Memorial Stadium, w",
+     "continuation": "/ the show's original plan to have a 10-minute show. The show was canceled because of the weather. The weather caused the show to be canceled. The weather caused the show to be canceled. The weather caused the show to be canceled. The weather caused the show to be canceled.",
+     "repetition": 0.4385964912280702
+    },
+    {
+     "prompt": "The band's management company, HK Management Inc., gave no i",
+     "continuation": ".e., no one, but the band's manager, Mr. Lee, is still in the band. The band's manager, Mr. Lee, is still in the band. The band's manager, Mr. Lee, is still in the band. The band's manager, Mr. Lee,",
+     "repetition": 0.6140350877192983
+    },
+    {
+     "prompt": "The famous Greek lawyers, Sakis Kechagioglou and George Niko",
+     "continuation": "letti, are known for their work in the field of legal ethics. They are also known for their work in the field of legal ethics. They are also known for their work in the field of legal ethics. They are also known for their work in the field of legal ethics. They are also",
+     "repetition": 0.6842105263157895
+    },
+    {
+     "prompt": "As a result of this, a big scandal within the Greek legal co",
+     "continuation": "-operation with the United States, and the United Nations, and the European Union, and the European Commission, and the European Parliament, and the European Council, and the European Court of Justice, and the European Commission, and the European Parliament, and the European Council, and the European Court of Justice,",
+     "repetition": 0.42105263157894735
+    },
+    {
+     "prompt": "A few weeks ago, after the information published by the jour",
+     "continuation": "na... I think the best way to approach this is to start with the first sentence. The first sentence is: \"A few weeks ago, after the information published by the journal...\". The second sentence is: \"I think the best way to approach this is to start with the first sentence.\"",
+     "repetition": 0.21052631578947367
+    },
+    {
+     "prompt": "Moreover, top judge Evangelos Kalousis is imprisoned as he f",
+     "continuation": "alters from the weight of his own political ambitions. This is the first time in his career that he has been imprisoned, and it is the first time in his career that he has been imprisoned for political reasons. This is the first time in his career that he has been imprisoned for political reasons.",
+     "repetition": 0.42105263157894735
+    },
+    {
+     "prompt": "Roberts flatly refused to say about when he believes life be",
+     "continuation": " a machine, but he did say that he believes in the importance of the machine. So, what is the correct answer to the question? A) the machine is a machine, B) the machine is not a machine, C) the machine is a machine, D) the machine is not a",
+     "repetition": 0.14035087719298245
+    },
+    {
+     "prompt": "He did, however, reiterate his earlier statement that Roe v.",
+     "continuation": " Wade was a case of \"a matter of law, not of policy.\" This is a key point that the Court has been trying to address, and that the Court is not in a position to decide. The Court has been trying to address this issue, and that the Court is not in a position",
+     "repetition": 0.17543859649122806
+    },
+    {
+     "prompt": "He also confirmed that he believed in the implied right to p",
+     "continuation": "ious living, which is a right that is not explicitly stated in the law, but is implied by the fact that the person is a member of a religious community. This is a right that is not only for the individual but also for the community. This is a right that is not only for the",
+     "repetition": 0.21052631578947367
+    },
+    {
+     "prompt": "Maroochydore had finished on top of the ladder, six points c",
+     "continuation": "ycled, and the first two points were won by the first two runners. The first runner was the one who won the first two points, and the second runner was the one who won the second two points. The third runner was the one who won the third two points, and so on. The",
+     "repetition": 0.17543859649122806
+    },
+    {
+     "prompt": "The two sides would meet in the major semi final where Noosa",
+     "continuation": " would be the first to play against the other team. The two teams would then play in the semi final, and the winner would be the first to play in the final. The two teams would then play in the final, and the winner would be the first to play in the final. The two",
+     "repetition": 0.42105263157894735
+    },
+    {
+     "prompt": "Maroochydore then defeated Caboolture in the Preliminary Fin",
+     "continuation": "ale of the 2019 World Championship. This was the first time in the 2019 World Championship since 2013 when a team from the same country has won a World Championship. This was also the first time in the 2019 World Championship since",
+     "repetition": 0.3157894736842105
+    },
+    {
+     "prompt": "Hesperonychus elizabethae is a species of the family Dromaeo",
+     "continuation": "idea, and is a member of the genus Dromaeoidea. It is a member of the family Dromaeoidea, and is a member of the genus Dromaeoidea. It is a member of the family Dromaeoidea, and is a member of the",
+     "repetition": 0.6140350877192983
+    },
+    {
+     "prompt": "This fully feathered, warm blooded bird of prey was believed",
+     "continuation": " to be a bird of prey, but it is now known to be a bird of prey. The bird is a member of the family of the family of the family of the family of the family of the family of the family of the family of the family of the family of the family of the family",
+     "repetition": 0.5789473684210527
+    },
+    {
+     "prompt": "Its second claw was larger, giving rise to the name Hesperon",
+     "continuation": ". The first claw was smaller, giving rise to the name Hesperos. The second claw was larger, giving rise to the name Hesperos. The third claw was larger, giving rise to the name Hesperos. The fourth claw was larger, giving rise to the name Hesperos",
+     "repetition": 0.49122807017543857
+    },
+    {
+     "prompt": "In addition to the crushing ice, extreme weather conditions ",
+     "continuation": " can also lead to the occurrence of icebergs.  The icebergs are formed by the process of ice accumulation and the formation of the icebergs.  The icebergs are formed by the process of ice accumulation and the formation of the icebergs.  The icebergs",
+     "repetition": 0.49122807017543857
+    },
+    {
+     "prompt": "Pittman suggested that conditions wouldn't improve until som",
+     "continuation": "atic and somatic-somatic somatic somatic somatic somatic somatic somatic somatic somatic somatic somatic somatic somatic somatic somatic somatic somatic somatic somatic somatic somatic somatic somatic somatic somatic somatic somatic somatic",
+     "repetition": 0.8596491228070176
+    },
+    {
+     "prompt": "The amount and thickness of the pack ice, according to Pittm",
+     "continuation": "ack and others, is determined by the amount of heat and the amount of water in the ocean. The heat is the amount of energy that the ocean can store, and the water is the amount of water that the ocean can hold. The heat and water are the two factors that determine the amount of",
+     "repetition": 0.052631578947368474
+    },
+    {
+     "prompt": "News spread in the Red Lake community today as funerals for ",
+     "continuation": "100-year-old residents are being held. The community is facing a challenge in the form of a large number of people who are coming to the funeral home. The community is also facing a challenge in the form of a large number of people who are coming to the funeral home. The community is",
+     "repetition": 0.368421052631579
+    },
+    {
+     "prompt": "Authorities said little officially beyond confirming today's",
+     "continuation": " findings, but the findings are still in the process of being fully validated. This is the first time in the history of the game, the number of people who have been confirmed to be in the game's official database. The number of confirmed players is now 1,000,00",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "However, a source with knowledge of the investigation told t",
+     "continuation": "... \n\nOkay, let's see. The user provided a sentence: \"However, a source with knowledge of the investigation told t...\". The task is to figure out what the missing part is. The original sentence is in English, and the user is asking for the missing part. The sentence is",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "It is not known at this time what charges will be laid or wh",
+     "continuation": "ethere will be any charges. The question is whether the charges will be laid or not. The answer is no. The answer is no. The answer is no. The answer is no. The answer is no. The answer is no. The answer is no. The answer is no. The",
+     "repetition": 0.5964912280701755
+    },
+    {
+     "prompt": "Lodin also said officials decided to cancel the runoff in or",
+     "continuation": " before the deadline. This is a good example of the importance of the deadline in the process of decision-making. The deadline is a key factor in the decision-making process. The deadline is a key factor in the decision-making process. The deadline is a key factor in the decision-making process. The deadline",
+     "repetition": 0.42105263157894735
+    },
+    {
+     "prompt": "Diplomats said that they had found enough ambiguity in the A",
+     "continuation": "chaean Empire's history to make it a good candidate for the next election. The Achaean Empire's leaders were in a state of crisis, and the leaders were in a state of crisis because of the recent events. The leaders were in a state of crisis because of the recent events, and",
+     "repetition": 0.24561403508771928
+    },
+    {
+     "prompt": "This contradicts earlier reports, which said that cancelling",
+     "continuation": " the order would not affect the market. But the fact that the order was cancelled, and the market reacted, shows that the market is not in a state of equilibrium. This is because the market is not in equilibrium, and the order is not a coincidence. The market is in a state of equilibrium",
+     "repetition": 0.07017543859649122
+    },
+    {
+     "prompt": "The aircraft had been headed to Irkutsk and was being operat",
+     "continuation": "... \n\nOkay, let's see. The user provided a sentence: \"The aircraft had been headed to Irkutsk and was being operated...\" and wants me to analyze it. First, I need to check if there are any grammatical errors. The sentence seems correct. The subject is \"",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "An inquiry was established to investigate.",
+     "continuation": " The question is: \"What is the probability that a randomly selected person from the population of the United States is a woman?\" The sample was taken from the population of the United States. The sample size was 1000. The results were that 1000 people were selected,",
+     "repetition": 0.10526315789473684
+    },
+    {
+     "prompt": "The Il-76 has been a major component of both the Russian and",
+     "continuation": " the Soviet Union's military aviation, and has been used in many different countries. It is a very popular aircraft, and has been used in many different countries. It is a very popular aircraft, and has been used in many different countries. It is a very popular aircraft, and has been used in",
+     "repetition": 0.6140350877192983
+    },
+    {
+     "prompt": "On October 7 an engine separated on takeoff, without injurie",
+     "continuation": ", and the engine was not used for any other purpose. The engine was used for the purpose of taking off, and the engine was not used for any other purpose. The engine was used for the purpose of taking off, and the engine was not used for any other purpose. The engine was used",
+     "repetition": 0.6140350877192983
+    },
+    {
+     "prompt": "800 miles of the Trans-Alaska Pipeline System were closed do",
+     "continuation": " not include the pipeline that goes through the city of Anchorage. The pipeline that goes through the city of Anchorage is the only one that is closed. The pipeline that goes through the city of Anchorage is the only one that is closed. The pipeline that goes through the city of Anchorage is",
+     "repetition": 0.5789473684210527
+    },
+    {
+     "prompt": "A power failure following a routine fire-command system test",
+     "continuation": " at a power plant in the state of California, which is the first in the country, has been reported. The power failure occurred during a routine fire-command system test, and the system was supposed to be operational. The power plant is located in a region where the power is supplied by a large hydro",
+     "repetition": 0.0
+    }
+   ]
+  }
+ },
+ "stage1": {
+  "bpb_target": 1.2236353348121332,
+  "bpb_english": 1.2625765028464044,
+  "tokens_target": 39009,
+  "tokens_english": 26255,
+  "repetition_target": 0.6649046529366895,
+  "repetition_target_stats": {
+   "mean": 0.6649046529366895,
+   "median": 0.736842105263158,
+   "p90": 0.8947368421052632,
+   "max": 0.9649122807017544
+  },
+  "n_prompts_target": 100,
+  "repetition_english": 0.3435087719298246,
+  "repetition_english_stats": {
+   "mean": 0.3435087719298246,
+   "median": 0.34210526315789475,
+   "p90": 0.6491228070175439,
+   "max": 0.8771929824561404
+  },
+  "n_prompts_english": 100,
+  "generations": {
+   "target": [
+    {
+     "prompt": "Երկուշաբթի օրը Բժշկության Ստենֆորդի համալսարանի դպրոցի գիտնա",
+     "continuation": "ության հետ 2016 թվականի հունվարին 2016 թվականի հունվարին 2016 թվականի հունվարին 2016 թվականի հունվարին 2016 թվականի հունվարին 2016 թվականի հունվարին 201",
+     "repetition": 0.8070175438596492
+    },
+    {
+     "prompt": "Առաջատար հետազոտողները նշում են, որ սա կարող է բուժվող հիվան",
+     "continuation": ", որը կարող է հանգեցնել այն, ինչ է կարող է բուժել է, քանի որ նա կարող է բուժել է.<|endoftext|>",
+     "repetition": 0.08695652173913049
+    },
+    {
+     "prompt": "Տեղական ժամանակով 9:30 (02:30` ունիվերսալ ժամային գոտի) JAS ",
+     "continuation": "10-Ն 2023-04-10 10:30:00 2023-04-10 10:30:00 2023-04-10 10:30",
+     "repetition": 0.5964912280701755
+    },
+    {
+     "prompt": "Օդաչուն ջոկատի հրամանատար Դայլոկրիտ Պատավին էր:",
+     "continuation": " 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16. 17. ",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "Տեղական լրատվամիջոցները հայտնում են, որ օդանավակայանի մի հրդ",
+     "continuation": "ուում է, որ նա էլ է մի քանի անգամ, որ նա էլ է մի քանի անգամ, որ նա էլ է մի քանի անգամ, որ նա էլ է մի քանի անգամ, որ նա էլ է մի քանի անգամ, որ նա էլ է մի քանի անգամ, որ նա էլ է մի քանի անգամ,",
+     "repetition": 0.8070175438596492
+    },
+    {
+     "prompt": "28-ամյա Վիդալը Սևիլյայից միացել է Բարսելոնային երեք սեզոն առ",
+     "continuation": "երք, որը կոչվում է \"Հայաստան-Հայաստան\"  (Հայաստան-Հայաստան)։<|endoftext|>",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "Կատալոնիայի մայրաքաղաք տեղափոխվելուց ի վեր Վիդալն ակումբի կա",
+     "continuation": ". Այժմ այժմ այժմ այժմ այժմ այժմ այժմ այժմ այժմ այժմ այժմ այժմ այժմ այժմ այ",
+     "repetition": 0.8771929824561404
+    },
+    {
+     "prompt": "Բողոքի ցույցը սկսվեց տեղական ժամանակով մոտավորապես 11։00-ին ",
+     "continuation": "անկարծ 11:00-ին անկարծ 11:00-ին անկարծ 11:00-ին անկարծ 11:00-ին անկարծ 11:00-ին անկարծ 1",
+     "repetition": 0.8070175438596492
+    },
+    {
+     "prompt": "Անմիջապես 11։00-ից հետո ցուցարարներն արգելափակեցին Ուայթհոլի",
+     "continuation": " և Հարավանանանի ս. մերձավորությամբ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ",
+     "repetition": 0.5964912280701755
+    },
+    {
+     "prompt": "Ժամը 11:20-ին ոստիկանությունը խնդրեց ցուցարարներին տեղափոխվե",
+     "continuation": " միջնորդության և 11:20-ին 11:20-ին 11:20-ին 11:20-ին 11:20-ին 11:20-ին 11:20-ին 11:20-ին ",
+     "repetition": 0.8245614035087719
+    },
+    {
+     "prompt": "Բողոքի ակցիան ժամը 11:29-ի կողմերը շարժվեց Ուայթհոլի ուղղութ",
+     "continuation": "անի կողմից. Որո՞նավոր անկարծագիծի հետ անկարծագիծի հետ անկարծագիծի հետ անկարծագիծի հետ անկարծագիծի հետ անկարծ",
+     "repetition": 0.6491228070175439
+    },
+    {
+     "prompt": "Նադալի կանադացու հետ դեմ առ դեմ հանդիպման արդյունքը 7 - 2 է։",
+     "continuation": "\n\n**Answer**\n**7-ը 2-ը 1-ը 1-ը 1-ը 1-ը 1-ը 1-ը 1-ը 1-ը 1-ը 1-ը 1-ը 1-ը 1-ը 1-ը 1-ը 1-ը 1",
+     "repetition": 0.7894736842105263
+    },
+    {
+     "prompt": "Վերջերս նա պարտվեց Ռաոնիկին Բրիսբեյնի բաց առաջնությունում։",
+     "continuation": " Նա դարձավ և շարունակեց իր հետ։ Այժմ մի քանի անգամ նա շարունակեց իր հետ։ Այժմ մի քանի անգամ նա շարունակեց իր հետ։ Այժմ մի քանի անգամ նա շարունակեց իր հետ։ Այժմ մի քանի անգամ նա շարունակեց իր հետ։",
+     "repetition": 0.7192982456140351
+    },
+    {
+     "prompt": "Հանդիպման ժամանակ Նադալը զուտ 88% միավոր հավաքեց՝ առաջին մատ",
+     "continuation": "անին 100% յուղին 100000 դրամ յուղին 100000 դրամ յուղին 100000 դրամ յուղին 100000 դրամ յուղին 1",
+     "repetition": 0.7192982456140351
+    },
+    {
+     "prompt": "Խաղից հետո Կավի արքան ասաց․«Ես պարզապես հուզված եմ, որ հնարա",
+     "continuation": "նք այժմ անդրանիկանանք, որ ես էլ անդրանիկանանք, որ ես էլ անդրանիկանանք, որ ես էլ անդրանիկանանք, որ ես էլ ա",
+     "repetition": 0.6666666666666667
+    },
+    {
+     "prompt": "«Պանամա Փեյփըրս»-ն ընդհանուր եզրույթ է Պանամայի «Մոսակ Ֆոնսե",
+     "continuation": "րի 2020» 2020 թվականի հունիսին 10-ին 10-ին 10-ին 10-ին 10-ին 10-ին 10-ին 10-ին 10-ին 10-ին 10",
+     "repetition": 0.6666666666666667
+    },
+    {
+     "prompt": "Փաստաթղթերը հիմնավորում էին, որ տասնչորս բանկ օգնել է հարուս",
+     "continuation": "անկին, և այդ պատճառով էլ է հաւատել է, որ նա էլ է հաւատել է, որ նա էլ է հաւատել է, որ նա էլ է հաւատել է, որ նա էլ է հաւատել է, որ նա էլ է հաւ",
+     "repetition": 0.7192982456140351
+    },
+    {
+     "prompt": "Բրիտանական Դը Գարդիան ամսագիրը ենթադրում է, որ Դոյչե բանկը վ",
+     "continuation": "այրկյանների և Դոյչեումի հետ միասին, իսկ Դոյչեումի հետ միասին, որը կոչվում է «Արարատյան Դոյչե» (անգլ.՝ The Սիմona), և նա է «Արարատյան Դոյչե» (անգլ.՝ The Սիմ",
+     "repetition": 0.33333333333333337
+    },
+    {
+     "prompt": "Ողջ աշխարհով մեկ տեղի էին ունենում բողոքի ցույցեր, մի քանի ք",
+     "continuation": "րդական է եղել, որը է եղել է եղել է եղել է եղել է եղել է եղել է եղել է եղել է եղել է եղել է եղել է եղել է եղել է եղել է եղել է եղել է եղել է եղել է եղել է եղել է եղել է եղել է եղել է եղել է եղել է եղել է եղել",
+     "repetition": 0.8596491228070176
+    },
+    {
+     "prompt": "Ծնված լինելով Հոնկոնգում՝ Ման սովորել է Նյու Յորքի համալսարա",
+     "continuation": "ն, 2016 թվականի հունիսին 15-ին. Այժմ 2016 թվականի հունիսին 15-ին, նա 15 տարեկան էր, 15 տարեկան էր, 15 տարեկան էր, 15 տարեկան էր, ",
+     "repetition": 0.45614035087719296
+    },
+    {
+     "prompt": "Ընտրությունների ընթացքում Հսիեն ընթադրում էր, որ Ման ճգնաժամ",
+     "continuation": "ի հետ կապված է, որ նա դեռ չի կարող անել, և նա դեռ չի կարող անել, և նա դեռ չի կարող անել, և նա դեռ չի կարող անել, և նա դեռ չի կարող անել, և նա դեռ չի կարող անել, և նա դեռ չի կարող անել, և նա դեռ չի կարող անել",
+     "repetition": 0.7719298245614035
+    },
+    {
+     "prompt": "Հսիեհը նաև պնդում էր, որ ֆոտոգենիկ Ման ավելի շատ ոճ էր իրենի",
+     "continuation": " հետ, քանի դեռ նա իր հետ չկարողացավ իր հետ, քանի դեռ նա իր հետ չկարողացավ իր հետ, քանի դեռ նա իր հետ չկարողացավ իր հետ, քանի դեռ նա իր հետ չկարողացավ իր հետ, քանի դեռ նա իր հետ չկարողացավ իր հետ, քանի դեռ նա",
+     "repetition": 0.8070175438596492
+    },
+    {
+     "prompt": "Չնայած այս մեղադրանքներին՝ Ման հեշտությամբ հաղթեց մի հարթակո",
+     "continuation": "ւմ անդրանիկ անդրանիկ անդրանիկ անդրանիկ անդրանիկ անդրանիկ անդրանիկ անդրանիկ անդրանիկ անդրանիկ անդրանիկ անդրանիկ անդրանիկ անդրանիկ ա",
+     "repetition": 0.8947368421052632
+    },
+    {
+     "prompt": "Վաշինգթոն Քեփիթըլսի օրվա մարզիկը Ալեքս Օվեչկինն է:",
+     "continuation": " Անկարծին անկարծին անկարծին անկարծին անկարծին անկարծին անկարծին անկարծին անկարծին անկարծին",
+     "repetition": 0.8596491228070176
+    },
+    {
+     "prompt": "Վաշինգտոնի ընդդեմ Ատլանտա Տրեշերզի 5-3 հաշվով հաղթանակի ժամա",
+     "continuation": " նիստի անվանական անվանական անվանական անվանական անվանական անվանական անվանական ա",
+     "repetition": 0.8245614035087719
+    },
+    {
+     "prompt": "Օվեչկինի երեկոյի գոլային առաջին փոխանցման նպատակը նորեկ Նիկո",
+     "continuation": "նյանը ֆեյսբուքյան իր էջում գրում է. նա իր ֆեյսբուքյան էջում գրում է. նա իր էջում գրում է. նա իր էջում գրում է. նա իր էջում գրում է. նա իր էջում գրում է. նա իր էջում գրում է. նա իր էջում գրում է. նա իր էջում գրում է. նա իր էջում",
+     "repetition": 0.7719298245614035
+    },
+    {
+     "prompt": "երեկոյի ընթացքում նրա երկրորդ գոլը դարձավ խաղաշրջանում խփած ",
+     "continuation": "արասի արասի արասի արասի արասի արասի արասի արասի արասի արասի արասի արասի արասի արասի արասի ",
+     "repetition": 0.9298245614035088
+    },
+    {
+     "prompt": "Բաթենը 190-րդն է 2008 թվականի ամենահարուստ 400 ամերիկացիների",
+     "continuation": " վրա 190-րդ դարում 2008 թվականի 190-րդ դարում 2008 թվականի 190-րդ դարում 2008 թվականի 190-րդ դարում 2008 թվականի 190-րդ դարում 2008",
+     "repetition": 0.7719298245614035
+    },
+    {
+     "prompt": "1950 թվականին նա ավարտեց Վիրջինիայի համալսարանի արվեստի և գի",
+     "continuation": "րանական համալսարանի բժշկական կենտրոն։ Այժմ այժմ այժմ այժմ այժմ այժմ այժմ այժմ այժմ այժմ այժմ այժմ ",
+     "repetition": 0.7017543859649122
+    },
+    {
+     "prompt": "Ապստամբության ընթացքում Իրաքի Աբու Ղարիբ բանտը հրդեհվել է:",
+     "continuation": " 2023 թվականի հունիսին 10-ին 1000000000000000000000000000000000000000000000",
+     "repetition": 0.7192982456140351
+    },
+    {
+     "prompt": "Կալանավայրը վատ հռչակ ձեռք բերեց այն բանից հետո, երբ ԱՄՆ զոր",
+     "continuation": "ամասը համարվեց այժմ անկարծում, երբ նա անկարծում անկարծում անկարծում անկարծում անկարծում անկարծում անկարծում անկարծ",
+     "repetition": 0.5789473684210527
+    },
+    {
+     "prompt": "Պիկե կրտսերը վթարի է ենթարկվել 2008 թ.-ին Սինգապուրի Գրանդ Պ",
+     "continuation": "ոլսում 2008 թ.-ին 2008 թ.-ին 2008 թ.-ին 2008 թ.-ին 2008 թ.-ին 2008 թ.-ին 2008 թ.-ին 2",
+     "repetition": 0.8245614035087719
+    },
+    {
+     "prompt": "Քանի որ Ալոնսոյից առաջ ընթացող ավտոմեքենաները բենզինը լիցքավ",
+     "continuation": "ան է, 1000000000000000000000000000000000000000000000000000000",
+     "repetition": 0.8771929824561404
+    },
+    {
+     "prompt": "2009 թվականի հունգարական «Գրանդ Պրի»-ից հետո Պիկե Կրտսերն աշ",
+     "continuation": "ուն 2009 թվականի հունգարական «Գրանդ Պրի»-ից հետո 2009 թվականի հունգրարում «Գրանդ Պրի»-ից հետո 2009 թվականի հունգրարում «Գրանդ Պրի»-ից հետո 2",
+     "repetition": 0.543859649122807
+    },
+    {
+     "prompt": "Առավոտյան ուղիղ 8:46-ին քաղաքում լռություն տիրեց՝ ազդարարելո",
+     "continuation": "ւմ անկարծարաաբերությամբ անկարծարաաբերությամբ անկարծարաաբերությամբ անկարծարաաբերությամբ անկարծարաաբերությամբ անկարծարաաբերությամբ անկարծ",
+     "repetition": 0.8070175438596492
+    },
+    {
+     "prompt": "Լույսի երկու ճառագայթն ուղղված էր գիշերային երկնքին։",
+     "continuation": "\n\nՍակայն, եթե դուք կարող եք օգնել ձեր մաշկի հետ, դուք կարող եք անել ձեր մաշկի հետ, որ դուք կարող եք անել ձեր մաշկի հետ, որ դուք կարող եք անել ձեր մաշկի հետ, որ դուք կարող եք անել ձեր մաշկի հետ, որ դուք կարող եք անել ձեր մաշ",
+     "repetition": 0.6140350877192983
+    },
+    {
+     "prompt": "Տարածքում ընթանում է հինգ նոր երկնաքերերի շինարարություն, որ",
+     "continuation": " նա 1990 թվականի հունվարին 1991 թվականի հունվարին 1992 թվականի հունվարին 1993 թվականի հունվարին 1994 թվականի հունվարին 1995 թվականի հունվարին 1996",
+     "repetition": 0.45614035087719296
+    },
+    {
+     "prompt": "Փի-Բի-Էս շոուն ունի Էմմիի երկու տասնյակից ավել մրցանակ, և նր",
+     "continuation": "ան այժմ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ ա",
+     "repetition": 0.8245614035087719
+    },
+    {
+     "prompt": "Ցուցադրման ամեն դրվագ կկենտրոնանա առանձին գրքի որևէ թեմայի վ",
+     "continuation": "աշտի հերթապահի թույլտվությամբ. Այժմ, եթե դուք կարող եք ասել, որ այսպիսի դրվագ է, ապա դուք կարող եք ասել, որ այսպիսի դրվագ է, եւ եթե դուք կարող եք ասել, որ այսպիսի դրվագ է, եւ եթե դուք կարող",
+     "repetition": 0.4385964912280702
+    },
+    {
+     "prompt": "Յուրաքանչյուր ցուցադրում նաև գրքերի խորհուրդներ էր տրամադրու",
+     "continuation": "ել է. 1990 թվականի նոյեմբերի 17-ին, երբ նա սկսեց 18 տարեկան, նա սկսեց 18 տարեկան, նա սկսեց 18 տարեկան, նա սկսեց 18 տարեկան, նա սկսեց 18 տարեկան, նա սկսեց 18 տարեկան, նա սկսեց",
+     "repetition": 0.5964912280701755
+    },
+    {
+     "prompt": "WNED Բուֆֆալոյից Ջոն Գռանտը (Ծիածանի տնային կայանի ընթերցանո",
+     "continuation": "ւմ 2019) անկարծ 2020 թ. անկարծ 2021 թ. անկարծ 2022 թ. անկարծ 2023 թ. անկարծ 202",
+     "repetition": 0.45614035087719296
+    },
+    {
+     "prompt": "Որոշ մարդիկ, ներառյալ Ջոն Գրանտը, հավատում են, որ թե՛ ֆինանս",
+     "continuation": "ավորվել է, որ նա դեռ չի կարող լինել, որ նա դեռ չի կարող լինել, որ նա դեռ չի կարող լինել, որ նա դեռ չի կարող լինել, որ նա դեռ չի կարող լինել, որ նա դեռ չի կարող լինել, որ նա դեռ չի կարող լինել, որ նա դեռ չի կարող լինել,",
+     "repetition": 0.8245614035087719
+    },
+    {
+     "prompt": "Փոթորիկը, լինելով Կաբո Վերդեի կղզիներից 645 մղոն (1040 կմ) ա",
+     "continuation": "գրեսոր, 1040 կմ ագրեսոր, 1040 կմ ագրեսոր, 1040 կմ ագրեսոր, 1040 կմ ագրեսոր, 1040 կմ ագրեսոր, 1040 կմ ա",
+     "repetition": 0.8245614035087719
+    },
+    {
+     "prompt": "Այս պահին Ֆրեդն ընթանում է 105 մղոն (165 կմ/ժ) քամու արագութ",
+     "continuation": "ան, 105 կմ/օր մեկածան, 105 կմ/օր մեկածան, 105 կմ/օր մեկածան, 105 կմ/օր մեկած",
+     "repetition": 0.736842105263158
+    },
+    {
+     "prompt": "Ֆրեդն ամենաուժեղ արևադարձային ցիկլոնն է, որն այսքան ժամանակ ",
+     "continuation": "100000000000000000000000000000000000000000000000000000000000",
+     "repetition": 0.9649122807017544
+    },
+    {
+     "prompt": "1759 թվականի սեպտեմբերի 24-ին, Արթուր Գիննեսը ստորագրեց 9,00",
+     "continuation": "0 դրամ ազատազրկման, որը գերազանցեց երկու անգամ երկու անգամ երկու անգամ երկու անգամ երկու անգամ երկու անգամ երկու անգամ երկու անգամ երկու անգամ երկու անգամ երկու անգամ երկու անգամ երկու անգամ երկու անգամ երկու անգամ երկու անգամ երկու անգամ երկու անգամ երկու անգամ երկու անգամ երկու անգամ երկու անգամ երկու անգամ երկու անգամ երկու անգամ երկու",
+     "repetition": 0.8070175438596492
+    },
+    {
+     "prompt": "250 տարի անց Գիննեսը վերածվել է համաշխարհային բիզնեսի, որն ա",
+     "continuation": "ստամբական ծագման համար անհրաժեշտ է, որ նա դեռեւս չի եղել. Ուրեմն, եթե նա դեռեւս չի եղել, ապա նա դեռեւս չի եղել, քանի որ նա դեռեւս չի եղել, քանի որ նա դեռեւս չի եղել, քանի որ նա դեռ",
+     "repetition": 0.368421052631579
+    },
+    {
+     "prompt": "Նոր Զելանդիայի A1GP թիմի փոխարինող վարորդ Ջոնի Ռեյդն այսօր օ",
+     "continuation": "լիմպիիական տնտեսական աճը 2023 թվականի հունիսին 10% աճուրդի 2024 թվականի հունիսին 15% աճուրդի 2025 թվականի հունիսին 18% աճուրդի 2026 թվականի",
+     "repetition": 0.29824561403508776
+    },
+    {
+     "prompt": "Պարոն Ռեյդին հաջողվեց վարել Նոր Զելանդիայի A1GP ավտոմեքենան՝",
+     "continuation": " 1999 թ. 10:00-ին. Այժմ 1999 թ. 10:00-ին Արավերկու 10:00-ին 1999 թ. 10:0",
+     "repetition": 0.4385964912280702
+    },
+    {
+     "prompt": "Նոր Զելանդիայի ոստիկանությունը խնդիրներ ունեցավ արագության ռ",
+     "continuation": "եկտորի հետ.<|endoftext|>",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "Վերջին 3 ամսում Կենտրոնական կալանավայրից 80-ից ավելի ձերբակա",
+     "continuation": " է 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100",
+     "repetition": 0.8947368421052632
+    },
+    {
+     "prompt": "Այս տարի ապրիլին ժամանակավոր զսպող հրաման է սահմանվել դատավո",
+     "continuation": "ւմ, սակայն այս տարի ապրիլին ժամանակավոր զսպող հրաման է սահմանվել դատավում, սակայն այս տարի ապրիլին ժամանակավոր զսպող հրաման է սահմանվել դատավում, սակայն այս տարի ապրիլին ժամանակավոր զսպող հրաման է սահմանվել դատավո",
+     "repetition": 0.6491228070175439
+    },
+    {
+     "prompt": "Հանձնակատարը գրավ է սահմանում, եթե տրամադրվի, և ձևավորում ձե",
+     "continuation": "ն ու հյուսում է, և ձևավորում ձեն ու հյուսում է, և ձևավորում ձեն ու հյուսում է, և ձևավորում ձեն ու հյուսում է, և ձևավորում ձեն ու հյուսում է, և ձևավորում ձե",
+     "repetition": 0.7894736842105263
+    },
+    {
+     "prompt": "Լսումը նաև նշում է այն ամսաթիվը, երբ կասկածյալն իրավունք ուն",
+     "continuation": "ակություն է, որ նա է տալիս և ոչ թե որպես այլընտրանքային։\n\nԲայց նա չի կարող լինել այն ժամանակ, երբ նա չի կարող լինել այն ժամանակ, երբ նա չի կարող լինել այն ժամանակ, երբ նա չի կարող լինել այն ժամանակ, երբ նա չի կարող լինել այն ժամանակ, երբ նա",
+     "repetition": 0.5263157894736843
+    },
+    {
+     "prompt": "Ավստրալիայի գանձապահ Պիտեր Կոստելլոն, որը, ամենայն հավանական",
+     "continuation": "ությամբ, անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ ա",
+     "repetition": 0.8947368421052632
+    },
+    {
+     "prompt": "Պարոն Կոստելլոն ասաց, որ երբ միջուկային էլեկտրաէներգիայի արտ",
+     "continuation": "ադրանքով, ապա նա կարող է յուղան է, որ յուղան է յուղան է, որ յուղան է յուղան է, որ յուղան է յուղան է, որ յուղան է յուղան է",
+     "repetition": 0.7192982456140351
+    },
+    {
+     "prompt": "«Եթե այն առևտրային դառնա, ապա պետք է ունենանք այն։ Այն է՝ մի",
+     "continuation": " քանի անգամ, երբ մենք չենք կարողանում անել, մենք չենք կարողանա»,- ասաց նա։<|endoftext|>",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "Համաձայն Անսայի՝ «Ոստիկանությունը մտավախություն ուներ մի քան",
+     "continuation": " 10 տարի առաջ»։<|endoftext|>",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "Ոստիկանությունը հայտնեց, որ Լո Պիկոլոն ուներ արտոնյալ կարգավ",
+     "continuation": "արտների և իտալական և իտալական և իտալական և իտալական և իտալական և իտալական և իտալական և իտալական և իտալական և իտալական և իտալական և իտալական և իտալական և իտալական և ",
+     "repetition": 0.8947368421052632
+    },
+    {
+     "prompt": "Այս ղեկավարներին կարգի հրավիրեց Պրովենցանոն, երբ վերջ դրեց Ռ",
+     "continuation": "աֆայելը Աբրահամյանի և Ռաֆայելը Աբրահամյանի անվան գեղարվեստական և իտալական գավառում, որը 1914 թ. 10-11-12-13-14-15-16-17",
+     "repetition": 0.052631578947368474
+    },
+    {
+     "prompt": "Apple-ի գլխավոր գործադիր տնօրեն Սթիվ Ջոբսը ներկայացրեց սարքը",
+     "continuation": ". Ստուգում է 2019 թվականի հունվարի ս. 15-ին, 15:00-ին, 2019 թվականի հունվարի ս. 15-ին, 15:00-ին, 2019",
+     "repetition": 0.45614035087719296
+    },
+    {
+     "prompt": "Իր 2 ժամ տևող ելույթում նա նշեց, որ «այսօր Apple-ը կվերստեղծ",
+     "continuation": "վի»։ Այժմ 2 ժամ տևողությամբ, նա նշեց, որ «համալեպ է կվերստեղծվի»։ Այժմ 2 ժամ տևողությամբ, նա նշեց, որ «համալեպ է կվերստեղծվի»։ Այ",
+     "repetition": 0.5263157894736843
+    },
+    {
+     "prompt": "Բրազիլիան Երկիր մոլորակի ամենամեծ հռոմեական կաթոլիկ երկիրն է",
+     "continuation": " Գողթն գավառի ս. Բրազիլիան գերմանիայի 19-րդ դարի 2-րդ դարից հետո 18-րդ դարի դարից հետո 17-րդ դարի դարից հետո 16-րդ դարի դարից հետո 15-րդ դարի դարից հետո",
+     "repetition": 0.21052631578947367
+    },
+    {
+     "prompt": "Բրազիլիայի Ազգային կոնգրեսը 10 տարի շարունակ դրա օրինականացո",
+     "continuation": "ման եւ 10 տարի շարունակ դրա կոնգրեսը. Բարեգործականները 10 տարի շարունակ դրա օրինականացոման եւ 10 տարի շարունակ դրա կոնգրեսը. Բարեգործականները 10 տարի շարունակ դրա օրինականացոման եւ 1",
+     "repetition": 0.5614035087719298
+    },
+    {
+     "prompt": "Սկզբնական օրինագիծը մշակվել էր Սան Պաուլոյի նախկին քաղաքապետ",
+     "continuation": "ի կողմից, ի դեպ, այժմ այժմ այժմ այժմ այժմ այժմ այժմ այժմ այժմ այժմ այժմ այժմ այժմ ",
+     "repetition": 0.8070175438596492
+    },
+    {
+     "prompt": "Ցուցարարները հույս ունեն, որ կհավաքագրեն 1,2 միլիոն ստորագրո",
+     "continuation": "ւմ անկարծ, որ այժմ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ",
+     "repetition": 0.736842105263158
+    },
+    {
+     "prompt": "Այն բանից հետո, երբ պարզ դարձավ, որ բազմաթիվ ընտանիքներ իրավ",
+     "continuation": "ապահները չեն կարող լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել լինել",
+     "repetition": 0.9122807017543859
+    },
+    {
+     "prompt": "Երբ վարձակալները սկսեցին պատմել իրենց պատահածը, ներգրավված ը",
+     "continuation": "մբռնման համար. Այժմ մի քանի անգամ, երբ նա սկսեց գնել նրանց համար, նա սկսեց գնել նրանց համար, իսկ նա սկսեց գնել նրանց համար. Այժմ մի քանի անգամ, երբ նա սկսեց գնել նրանց համար, նա սկսեց գնել նրանց համար, իսկ",
+     "repetition": 0.5263157894736843
+    },
+    {
+     "prompt": "Լոքվուդ Գարդենսի վարձակալները կարծում են, որ միգուցե ևս 40 ը",
+     "continuation": "մանաած մահաճություն է 100000000000000000000000000000000000000000000000",
+     "repetition": 0.7543859649122807
+    },
+    {
+     "prompt": "Նվագախումբը չեղարկեց Մաուրիի Պատերազմի հիշատակի ստադիոնում կ",
+     "continuation": "ործանումը 2019 թվականի հունիսին 2019 թվականի հունիսին 2019 թվականի հունիսին 2019 թվականի հունիսին 2019 թվականի հունիսին 2019 թվականի հունիսին",
+     "repetition": 0.736842105263158
+    },
+    {
+     "prompt": "Խմբի կառավարման ընկերությունը՝ Էյչ-Քեյ Մենեջմենթ ինկորպորացի",
+     "continuation": "նի անուշի անդրանքում անուշներ են անուշներ անուշներ անուշներ անուշներ անուշներ անուշներ անուշներ անուշներ ա",
+     "repetition": 0.6491228070175439
+    },
+    {
+     "prompt": "Հայտնի հույն իրավաբանները՝ Սակիս Կեչագիոգլուն և Ջորջ Նիկոլակ",
+     "continuation": "ան, 2016 թվականի մայիսի 1-ին, 10:00-ին, 10:00-ին, 10:00-ին, 10:00-ին, 10:00-ին, 10:00",
+     "repetition": 0.6491228070175439
+    },
+    {
+     "prompt": "Դրա հետևանքով հունական իրավական համայնքում մեծ սկանդալ հասու",
+     "continuation": "քի մեջ անկարծ է 1000000 դրամով, 100000 դրամով 100000 դրամով 10000 դրամով 1000 դրամով 10 դրամով 1 դրամով",
+     "repetition": 0.5964912280701755
+    },
+    {
+     "prompt": "Մի քանի շաբաթ առաջ, երբ լրագրող Մակիս Տրիանտաֆիլոպուլոսն «Ալ",
+     "continuation": "եքսանդր» հանրապետի վրա հանրապետի վրա հանրապետի վրա հանրապետի վրա հանրապետի վրա հանրապետի վրա հանրապետի վրա հանրապետի վրա հանրապետի վրա հանր",
+     "repetition": 0.8421052631578947
+    },
+    {
+     "prompt": "Ավելին, գլխավոր դատավոր Էվանգելոս Կալուսիսն բանտարկված է, քա",
+     "continuation": "՜ն ուխտական ուխտական մահացել է, մահացել է, մահացել է, մահացել է, մահացել է, մահացել է, մահացել է, մահացել",
+     "repetition": 0.7192982456140351
+    },
+    {
+     "prompt": "Ռոբերտսը կտրականապես հրաժարվեց ասել այն մասին, թե իր կարծիքո",
+     "continuation": "ւմ է եղել իր կողմից իրանոթացած անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ",
+     "repetition": 0.7192982456140351
+    },
+    {
+     "prompt": "Սակայն նա կրկնեց իր ավելի վաղ արած հայտարարությունը, որ Ռո վ",
+     "continuation": "անքում անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ ա",
+     "repetition": 0.8947368421052632
+    },
+    {
+     "prompt": "Նա նաև հաստատեց, որ հավատում էր գաղտնիության ենթադրյալ իրավո",
+     "continuation": "ւմ։\n\nԲայց նա էլ, որ նա էլ, որ նա էլ, որ նա էլ, որ նա էլ, որ նա էլ, որ նա էլ, որ նա էլ, որ նա էլ, որ նա էլ, որ նա էլ, որ նա էլ, որ նա էլ, որ նա էլ,",
+     "repetition": 0.8421052631578947
+    },
+    {
+     "prompt": "Մարուչիդորը ավարտել է առաջատար դիրքում՝ Նուսային թողնելով վե",
+     "continuation": "րական մահաճություն, մահաճություն է 100% մահաճություն, 100% մահաճություն, 100% մահաճություն, 100% մահաճություն",
+     "repetition": 0.6140350877192983
+    },
+    {
+     "prompt": "Երկու կողմերը կհանդիպեն գլխավոր կիսաեզրափակչում, որտեղ Նոոսա",
+     "continuation": "ն հետևաբար հետևաբար հետևաբար հետևաբար հետևաբար հետևաբար հետևաբար հետևաբար հետևաբար հետևաբար հետևաբար հետևաբար հետևաբար հետևաբար հետև",
+     "repetition": 0.9122807017543859
+    },
+    {
+     "prompt": "Մարուչիդորն այնուհետև պարտության մատնեց Քաբուլտուրին նախնակա",
+     "continuation": "նայաց, ինչքան էլ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ ",
+     "repetition": 0.736842105263158
+    },
+    {
+     "prompt": "Հեսպեռոնիչուս էլիզաբեթին համարվում է Դրոմաոսաուռիդի ընտանիքի",
+     "continuation": " անդամը, իսկ Հարավանանանանանանանանանանանանանանանանանանանանանանանանան",
+     "repetition": 0.7894736842105263
+    },
+    {
+     "prompt": "Ենթադրվում էր, որ այս ամբողջովին փետրապատ, որսի տաքարյուն թռ",
+     "continuation": "իչքի մեջ, և այն, որ այս ամբողջին, որսի տաքարյուն թռիչքի մեջ, և այն, որ այս ամբողջին, որսի տաքարյուն թռիչքի մեջ, և այն, որ այս ամբողջին, որսի տաքարյուն թռիչքի մեջ, և այն",
+     "repetition": 0.6842105263157895
+    },
+    {
+     "prompt": "Դրա երկրորդ ճիրանն ավելի մեծ էր, այստեղից էլ Հեսպերոնիխուս ա",
+     "continuation": "ստամբանը համար է 1945 թ. համար է 1945 թ. համար է 1945 թ. համար է 1945",
+     "repetition": 0.6491228070175439
+    },
+    {
+     "prompt": "Ի լրումն կործանիչ սառույցի ծայրահեղ եղանակային պայմանները խո",
+     "continuation": "հանոցների հետ համար է 100000000000000000000000000000000000000000000000",
+     "repetition": 0.7543859649122807
+    },
+    {
+     "prompt": "Փիթմանը ենթադրեց, որ պայմանները չեն բարելավվի մինչև հաջորդ շ",
+     "continuation": "նչին, և այդ պատճառով էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ",
+     "repetition": 0.8771929824561404
+    },
+    {
+     "prompt": "Ըստ Փիթմենի՝ սառույցի քանակն ու հաստությունը վերջին 15 տարվա",
+     "continuation": " ընթացքում 15 տարվա ընթացքում 15 տարվա ընթացքում 15 տարվա ընթացքում 15 տարվա ընթացքում 15 տարվա ընթացքում 15 տարվա ընթացքում 15 տարվա ընթացքում 15 տարվա ընթացքում 15 տարվա ընթացքում 15 տարվա ընթացքում 15 տարվա ընթացքում 15 տարվա",
+     "repetition": 0.9122807017543859
+    },
+    {
+     "prompt": "Մինչ անցկացվում էր Ջեֆ Վեյզի և ինը տուժածներից երեքի հուղարկ",
+     "continuation": "ած անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ ան",
+     "repetition": 0.9122807017543859
+    },
+    {
+     "prompt": "Իշխանությունները քիչ բան ասացին այսօրվա ձերբակալությունը հաս",
+     "continuation": "նելու համար, որ նա անկարծ է 2023 թվականի հուլիսի 1-ին, սակայն նա 2023 թվականի հուլիսի 1-ին 1-ին անկարծ է 2023 թվականի հուլիսի 1-ին 1-ին անկարծ է ",
+     "repetition": 0.5087719298245614
+    },
+    {
+     "prompt": "Այնուամենայնիվ, հետաքննության մասին իմացող մի աղբյուր հայտնե",
+     "continuation": "՞ր այժմ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ անկարծ ան",
+     "repetition": 0.8421052631578947
+    },
+    {
+     "prompt": "Ներկայումս հայտնի չէ, թե ինչ տույժեր են կիրառվելու կամ ինչն ",
+     "continuation": "անելու համար անելու համար անելու համար անելու համար անելու համար անելու համար անելու համար անելու համար անելու համար անելու համար անելու համար անելու համար ",
+     "repetition": 0.9122807017543859
+    },
+    {
+     "prompt": "Լոդինը նաև ասաց, որ պաշտոնյաները որոշել են չեղարկել ընտրությ",
+     "continuation": "ուներին, և այդ պատճառով էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ էլ",
+     "repetition": 0.8771929824561404
+    },
+    {
+     "prompt": "Դիվանագետներն ասացին, որ բավականաչափ երկիմաստություն են գտել",
+     "continuation": " է, որ նա կարող է լինել այն ժամանակ, երբ նա կարող է լինել այն ժամանակ, երբ նա կարող է լինել այն ժամանակ, երբ նա կարող է լինել այն ժամանակ, երբ նա կարող է լինել այն ժամանակ, երբ նա կարող է լինել այն ժամանակ, երբ նա կարող է լինել այն ժամանակ, երբ նա",
+     "repetition": 0.8070175438596492
+    },
+    {
+     "prompt": "Սա հակասում է ավելի վաղ արված զեկույցներին, որ երկրորդ փուլի",
+     "continuation": " և նրա համար անհրաժեշտ է իր հերթին և նրա համար անհրաժեշտ է իր հերթին և նրա համար անհրաժեշտ է իր հերթին և նրա համար անհրաժեշտ է իր հերթին և նրա համար անհրաժեշտ է իր հերթին և նրա համար անհրաժեշտ է իր հերթին և նրա համար անհրաժեշտ է իր հերթին և նրա համար անհրաժեշտ է իր հերթին և նրա համար անհրաժեշտ",
+     "repetition": 0.8771929824561404
+    },
+    {
+     "prompt": "Օդանավն ուղղորդվել էր դեպի Իրկուտսկ և գործարկվում էր ներքին ",
+     "continuation": "իտալական և իտալական և իտալական և իտալական և իտալական և իտալական և իտալական և իտալական և իտալական և իտալական և իտալական և իտալական և իտալական և իտալական և իտալական և ",
+     "repetition": 0.9298245614035088
+    },
+    {
+     "prompt": "Հարցումն ստեղծվել է հետաքննելու համար:",
+     "continuation": " 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16. 17. ",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "Իլ 76-ը թե՛ ռուսական, թե՛ Խորհրդային բանակի հիմնական մասն է ",
+     "continuation": "100000000000000000000000000000000000000000000000000000000000",
+     "repetition": 0.9649122807017544
+    },
+    {
+     "prompt": "Հոկտեմբերի 7-ին շարժիչը վերելքի պահին անջատվել էր, սակայն վի",
+     "continuation": "րան է, որ նա դեռ չկարողացավ տավուշի անելիքը տավուշի անելիքը տավուշի անելիքը տավուշի անելիքը տավուշի անելիքը տավուշի",
+     "repetition": 0.6491228070175439
+    },
+    {
+     "prompt": "Տրանս Ալյասկայի խողովակաշարի 800 մղոնը փակվեց այն բանից հետո",
+     "continuation": " 1914 թ. 1914 թ. 1914 թ. 1914 թ. 1914 թ. 1914 թ. 1914 թ. 1914 թ. 191",
+     "repetition": 0.8771929824561404
+    },
+    {
+     "prompt": "Հրդեհաշիջման համակարգի հերթական փորձարկումից հետո Էլեկտրաէնե",
+     "continuation": "րային համակարգերի հետախուզումը արգայինայատիվ անաբուժականությամբ անելու համար անելու համար անելու համար անելու համար անելու համար անելու համար անելու համար ան",
+     "repetition": 0.5263157894736843
+    }
+   ],
+   "english": [
+    {
+     "prompt": "On Monday, scientists from the Stanford University School of",
+     "continuation": " Science and the University of California, San Diego, and the University of Chicago have published a study that shows that the number of people who have been infected with the virus in the United States is increasing rapidly. The study says that the number of people who have been infected with the virus is increasing rapidly because",
+     "repetition": 0.17543859649122806
+    },
+    {
+     "prompt": "Lead researchers say this may bring early detection of cance",
+     "continuation": "\n... and early treatment of the disease. The study was conducted in the\n... of the country. The researchers used a new type of technology to\n... the disease. The study was conducted in the\n... of the country. The researchers used a new type of technology to\n... the disease",
+     "repetition": 0.4385964912280702
+    },
+    {
+     "prompt": "The JAS 39C Gripen crashed onto a runway at around 9:30 am l",
+     "continuation": ". 10, 2013, and the pilot was killed. The investigation into the crash was conducted by the National Institute of Aviation and Space Technology, and the results of the investigation were published in the journal of the International Journal of Aviation and Space Technology. The investigation into the crash",
+     "repetition": 0.08771929824561409
+    },
+    {
+     "prompt": "The pilot was identified as Squadron Leader Dilokrit Pattave",
+     "continuation": ", a former pilot of the Royal Air Force, who was born in 1950. He was a member of the Royal Air Force, and was a member of the Royal Air Force's Air Transport Command. He was a member of the Royal Air Force's Air Transport Command, and was",
+     "repetition": 0.33333333333333337
+    },
+    {
+     "prompt": "Local media reports an airport fire vehicle rolled over whil",
+     "continuation": " the fire department was still on the scene. The fire department was on the scene, but the fire department was not able to get the fire truck to the scene. What is the correct answer?\n\nA) The fire department was able to get the fire truck to the scene.  \nB) The fire",
+     "repetition": 0.1578947368421053
+    },
+    {
+     "prompt": "28-year-old Vidal had joined Barça three seasons ago, from S",
+     "continuation": "orel, and is now in the 2023/24 season. He has been playing for the club since 2019, and has been in the top 10 in the league for the past 10 seasons. He has also been in the top ",
+     "repetition": 0.03508771929824561
+    },
+    {
+     "prompt": "Since moving to the Catalan-capital, Vidal had played 49 gam",
+     "continuation": "ings in the first 100 games of the season, and then 100 games in the next 100 games of the season. So, the total number of games played is 49 + 100 + 100 = 249 games",
+     "repetition": 0.17543859649122806
+    },
+    {
+     "prompt": "The protest started around 11:00 local time (UTC+1) on White",
+     "continuation": " House grounds, and the demonstrators were led by a group of 100 people. The protesters were led by a group of 100 people, and the group was led by a group of 100 people. The protesters were led by a group of 100 people",
+     "repetition": 0.5087719298245614
+    },
+    {
+     "prompt": "Just after 11:00, protesters blocked traffic on the northbou",
+     "continuation": "levard, and the police were able to get to the scene quickly. This is because of the _______.\n\nA. 12:00 PM\nB. 10:00 AM\nC. 11:00 AM\nD. 11:00",
+     "repetition": 0.10526315789473684
+    },
+    {
+     "prompt": "At 11:20, the police asked the protesters to move back on to",
+     "continuation": " the street. The protesters were not able to move back, so the police said that the protesters were not at the location where they were. This is an example of which type of fallacy? A. A. A. A. A. A. A. A. A. A. A",
+     "repetition": 0.2807017543859649
+    },
+    {
+     "prompt": "Around 11:29, the protest moved up Whitehall, past Trafalgar",
+     "continuation": " Square, and into the streets of London. The protest was initially peaceful, but the police were called to the scene. The protest was initially peaceful, but the police were called to the scene. The protest was initially peaceful, but the police were called to the scene. The protest was initially peaceful,",
+     "repetition": 0.5964912280701755
+    },
+    {
+     "prompt": "Nadal's head to head record against the Canadian is 7–2.",
+     "continuation": " The record is 7–2, and the team has 10 players. How many players are in the team? The answer is 10. So, the answer is 10. But why is the answer 10? Because the team has 10 players. So",
+     "repetition": 0.14035087719298245
+    },
+    {
+     "prompt": "He recently lost against Raonic in the Brisbane Open.",
+     "continuation": " The match was a close one, with the winner being the first to score 20 points. The score was 20-10. The score was won by the first player to score 20 points. The first player to score 20 points in the match was the winner",
+     "repetition": 0.19298245614035092
+    },
+    {
+     "prompt": "Nadal bagged 88% net points in the match winning 76 points i",
+     "continuation": ".e. 88% of 76 is 68.88. So the total points scored by Nadal in the match is 76 points. So the answer is 76 points.\n**Final Answer**\nThe total points scored by Nadal in the match is \\",
+     "repetition": 0.1578947368421053
+    },
+    {
+     "prompt": "After the match, King of Clay said, \"I am just excited about",
+     "continuation": " the match, and I have a new idea. I will not let the other side of the match, the side of the other person, have the chance to play. I will let the other side of the match, the side of the person who is the same, have the chance to play.",
+     "repetition": 0.22807017543859653
+    },
+    {
+     "prompt": "\"Panama Papers\" is an umbrella term for roughly ten million ",
+     "continuation": " people, and the number of people in the country is about 10 million. The number of people in the country is about 10 million. The number of people in the country is about 10 million. The number of people in the country is about 10 million. The",
+     "repetition": 0.6842105263157895
+    },
+    {
+     "prompt": "The documents showed fourteen banks helped wealthy clients h",
+     "continuation": "\n\nThe documents showed fourteen banks helped wealthy clients in the past year. The documents also showed that the banks had a high level of risk. The documents also showed that the banks had a high level of risk. The documents also showed that the banks had a high level of risk. The documents also showed",
+     "repetition": 0.5263157894736843
+    },
+    {
+     "prompt": "British newspaper The Guardian suggested Deutsche Bank contr",
+     "continuation": "ived to the situation in the UK, and that the UK government should be held accountable for the situation. The Guardian's report was published in the UK on 15th April 2017, and the report was based on the information provided by the UK government and the information provided by",
+     "repetition": 0.01754385964912286
+    },
+    {
+     "prompt": "There were protests worldwide, several criminal prosecutions",
+     "continuation": ", and the establishment of a new government. The new government was established in the early 1960s, and the country was under the influence of the Cold War. The new government was also a leader of the anti-communist movement. The country was under the influence of the Cold War",
+     "repetition": 0.14035087719298245
+    },
+    {
+     "prompt": "Born in Hong Kong, Ma studied at New York University and Har",
+     "continuation": "vard University, and then went to the University of Chicago. He is a professor at the University of Chicago and has been working in the field of mathematics. He has been working in the field of mathematics for 20 years. He has been working in the field of mathematics for 20 years",
+     "repetition": 0.3157894736842105
+    },
+    {
+     "prompt": "Hsieh implied during the election that Ma might flee the cou",
+     "continuation": "ps, but the government has not yet decided on a policy to address the issue. This is a problem for the government to solve, and the government should take action to address the issue. The government should take action to address the issue. The government should take action to address the issue. The government",
+     "repetition": 0.3508771929824561
+    },
+    {
+     "prompt": "Hsieh also argued that the photogenic Ma was more style than",
+     "continuation": " the Ma. This is because the Ma was a type of Ma, and the Ma was a type of Ma. This is because the Ma was a type of Ma. This is because the Ma was a type of Ma. This is because the Ma was a type of Ma. This is because the",
+     "repetition": 0.7017543859649122
+    },
+    {
+     "prompt": "Despite these accusations, Ma won handily on a platform advo",
+     "continuation": ", and the platform was able to get the most of the ad. This is because of the platform's ability to provide a good service, which is the key to the success of the platform. The platform's ability to provide a good service is the key to the success of the platform. The platform",
+     "repetition": 0.24561403508771928
+    },
+    {
+     "prompt": "Today's Player of the Day is Alex Ovechkin of the Washington",
+     "continuation": " Redskins. He has a total of 1000000000000000000000000000000000000000000000000000",
+     "repetition": 0.8245614035087719
+    },
+    {
+     "prompt": "He had 2 goals and 2 assists in Washington's 5-3 win over th",
+     "continuation": "ursday night. He also had 1 goal and 1 assist in the 2-1 win over the 10th. He had 1 goal and 1 assist in the 3-1 win over the 11th. He had 1 goal and 1 assist in",
+     "repetition": 0.368421052631579
+    },
+    {
+     "prompt": "Ovechkin's first assist of the night was on the game-winning",
+     "continuation": " shot at 10:00, and the game was tied at 1-1. The score was 1-1, and the game was tied at 1-1. The score was 1-1, and the game was tied at 1-1. The score",
+     "repetition": 0.543859649122807
+    },
+    {
+     "prompt": "his second goal of the night was his 60th of the season, bec",
+     "continuation": "use he was on the team. He was on the team for 12 years, and he has been on the team for 12 years. So, he has been on the team for 12 years. So, he has been on the team for 12 years. So",
+     "repetition": 0.5263157894736843
+    },
+    {
+     "prompt": "Batten was ranked 190th on the 2008 400 Richest Americans li",
+     "continuation": "ars list. What is the probability that the number of people who have been liars in the past 100 years is at least 190? (Assume that the number of people who have been liars in the past 100 years is a binomial random variable",
+     "repetition": 0.2807017543859649
+    },
+    {
+     "prompt": "He graduated from the College of Arts & Sciences of the Univ",
+     "continuation": ". of Florida in 2005, and has been working in the field of computer science for 12 years. He has been working in the field of computer science for 12 years. He has been working in the field of computer science for 12 years. He has",
+     "repetition": 0.5263157894736843
+    },
+    {
+     "prompt": "Iraq's Abu Ghraib prison has been set alight during a riot.",
+     "continuation": " The fire started in the prison, and the fire was reported to have been caused by a bomb. The fire was reported to have been caused by a bomb that was detonated in the prison. The fire was reported to have been caused by a bomb that was detonated in the prison. The fire",
+     "repetition": 0.45614035087719296
+    },
+    {
+     "prompt": "The jail became notorious after prisoner abuse was discovere",
+     "continuation": ". The jail's management was criticized for not providing proper security. The prison's management was criticized for not providing proper security. The prison's management was criticized for not providing proper security. The prison's management was criticized for not providing proper security. The prison's management was criticized for not providing proper security",
+     "repetition": 0.736842105263158
+    },
+    {
+     "prompt": "Piquet Jr. crashed in the 2008 Singapore Grand Prix just aft",
+     "continuation": " of the track. He was trying to get to the top of the track, but he was stuck in the back of a car. He was trying to get to the top of the track, but he was stuck in the back of a car. He was trying to get to the top of the",
+     "repetition": 0.543859649122807
+    },
+    {
+     "prompt": "As the cars ahead of Alonso went in for fuel under the safet",
+     "continuation": "ysign, the driver of the car behind, who was the first to reach the scene, was able to see the car in front. The driver of the car behind, who was the first to reach the scene, was able to see the car in front. The driver of the car behind,",
+     "repetition": 0.49122807017543857
+    },
+    {
+     "prompt": "Piquet Jr. was sacked after the 2009 Hungarian Grand Prix.",
+     "continuation": " What is the name of the team that he was playing for? Also, what is the name of the team that he was playing for in the 2010 Hungarian Grand Prix? Additionally, what is the name of the team that he was playing for in the 2011 Hungarian",
+     "repetition": 0.42105263157894735
+    },
+    {
+     "prompt": "At exactly 8:46 a.m. a hush fell across the city, marking th",
+     "continuation": "... the end of the story. The story is about a city where the people are all in a state of... what? A. A state of peace B. A state of war C. A state of peace D. A state of war\n\nThe story is about a city where the people are",
+     "repetition": 0.19298245614035092
+    },
+    {
+     "prompt": "Two beams of light have been rigged up to point skywards ove",
+     "continuation": "... and the two beams have been set up to have a certain amount of energy. The two beams have been set up to have a certain amount of energy. The two beams have been set up to have a certain amount of energy. The two beams have been set up to have a certain amount of",
+     "repetition": 0.6842105263157895
+    },
+    {
+     "prompt": "Construction is ongoing for five new skyscrapers at the site",
+     "continuation": ". The construction is expected to take 10 years to complete. The total cost of the construction is $10 million. The construction is expected to be completed in 10 years. The total cost of the construction is $10 million. The construction is expected to be completed in ",
+     "repetition": 0.4035087719298246
+    },
+    {
+     "prompt": "The PBS show has more than two-dozen Emmy awards, and its ru",
+     "continuation": "... \n\nOkay, let's see. The user mentioned that the PBS show has more than two-dozen Emmy awards. Wait, two-dozen is 24, so more than 24. But the original sentence is \"more than two-dozen Emmy awards, and its ru...\" which",
+     "repetition": 0.052631578947368474
+    },
+    {
+     "prompt": "Each episode of the show would focus on a theme in a specifi",
+     "continuation": "\nA. This is the first episode of the series, and the first episode is about the history of the United States. The second episode is about the history of the United States. The third episode is about the history of the United States. The fourth episode is about the history of the United States",
+     "repetition": 0.38596491228070173
+    },
+    {
+     "prompt": "Each show would also provide recommendations for books that ",
+     "continuation": "100% are not in the library's collection. This is a good idea, but it's not a good idea to do so. The problem is that the library has a lot of books that are not in the library's collection. The library has a lot of books that are not in",
+     "repetition": 0.21052631578947367
+    },
+    {
+     "prompt": "John Grant, from WNED Buffalo (Reading Rainbow's home statio",
+     "continuation": ") and the other two hosts, and the other two hosts, and the other two hosts, and the other two hosts, and the other two hosts, and the other two hosts, and the other two hosts, and the other two hosts, and the other two hosts, and the other two hosts",
+     "repetition": 0.8771929824561404
+    },
+    {
+     "prompt": "It is believed by some, including John Grant, that both the ",
+     "continuation": "1980 and 1990 presidential elections were won by the same candidate, but the actual winner of the 1980 election was the same as the winner of the 1990 election. This is an example of a _______.\n\nA)  paradox\n",
+     "repetition": 0.10526315789473684
+    },
+    {
+     "prompt": "The storm, situated about 645 miles (1040 km) west of the Ca",
+     "continuation": "ucus Mountains, is a major contributor to the formation of the Great Barrier Reef. The reef is a natural wonder of the world, and is home to a wide variety of marine life. The Great Barrier Reef is also a significant part of the Australian economy, and is a major tourist attraction. The",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "Fred currently has winds of 105 miles per hour (165 km/h) an",
+     "continuation": " hour. What is the total number of hours that the wind has been blowing for?\n\nTo find the total number of hours that the wind has been blowing for, we need to divide the total distance by the wind speed. The total distance is 105 miles per hour, and the wind speed",
+     "repetition": 0.1578947368421053
+    },
+    {
+     "prompt": "Fred is the strongest tropical cyclone ever recorded so far ",
+     "continuation": "2023, and it is the first to reach the highest possible altitude of 100,000 feet. This is the first time in history that a tropical cyclone has reached such an altitude. The first time in history that a tropical cyclone has reached such an altitude",
+     "repetition": 0.19298245614035092
+    },
+    {
+     "prompt": "On September 24, 1759, Arthur Guinness signed a 9,000 year l",
+     "continuation": "ighthouse. The lighthouse is located at the edge of a cliff overlooking the sea. The cliff is 100 feet high and the lighthouse is 100 feet away from the base of the cliff. What is the height of the lighthouse above the water level? \n\nTo solve",
+     "repetition": 0.052631578947368474
+    },
+    {
+     "prompt": "250 years later, Guinness has grown to a global business tha",
+     "continuation": "... - \n\nThe question is asking for the answer to the sentence: \"22250 years later, Guinness has grown to a global business that...\" \n\nThe sentence is in the middle of a paragraph. The paragraph is about the history of the Guinness logo and its global business. The first",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "Jonny Reid, co-driver for the A1GP New Zealand team, today m",
+     "continuation": "umbled a comment that could have been a warning to the team's drivers. The comment was made during the race, and it was the first time the team has faced such a situation in their history. The comment was made during the race, and it was the first time the team has faced such a",
+     "repetition": 0.3157894736842105
+    },
+    {
+     "prompt": "Mr Reid managed to drive the New Zealand's A1GP car, Black B",
+     "continuation": "1, in the 1980s. He was the first to drive a car in the 1980s. He was the first to drive a car in the 1980s. He was the first to drive a car in the 1980",
+     "repetition": 0.6666666666666667
+    },
+    {
+     "prompt": "The New Zealand police had trouble using their speed radar g",
+     "continuation": "ages to detect the movement of people in the streets. The reason for this was that the radar gages were not calibrated properly. The police had to use other methods to detect the movement of people. This is an example of _______.\n\nA.  A problem of information overload\nB. ",
+     "repetition": 0.052631578947368474
+    },
+    {
+     "prompt": "In the last 3 months, over 80 arrestees were released from t",
+     "continuation": "awny prison. The prison has a total of 1200 cells. The number of cells that were released was 1/3 of the total number of cells. The number of cells that were released was 1/4 of the total number of cells. The number of cells that",
+     "repetition": 0.33333333333333337
+    },
+    {
+     "prompt": "In April this year, a temporary restaining order was issued ",
+     "continuation": "10 days before the 10th of April. The order was issued by the government, and it was supposed to be completed by the 10th of April. However, the order was not completed by the 10th of April, but by the 10th of",
+     "repetition": 0.26315789473684215
+    },
+    {
+     "prompt": "The commissioner sets bail, if granted, and formalizes the c",
+     "continuation": "ensure. The censure is formalized by the court, and the censure is recorded in the official records. The censure is also recorded in the official records of the state. The censure is also recorded in the official records of the state. The censure is also recorded in the official",
+     "repetition": 0.4385964912280702
+    },
+    {
+     "prompt": "The hearing also marks the date for the suspect’s right to a",
+     "continuation": " fair trial, which is a fundamental right in many countries. This is a key point in the case, and it is important to highlight the importance of the right to a fair trial in the context of the case. The hearing is a crucial part of the legal process, and it is important to emphasize",
+     "repetition": 0.052631578947368474
+    },
+    {
+     "prompt": "Peter Costello, Australian treasurer and the man most likely",
+     "continuation": " to be the first to be elected to the Australian Parliament, was the first to be elected as a member of the Australian Parliament. He was the first to be elected as a member of the Australian Parliament, and he was the first to be elected as a member of the Australian Parliament. He was the",
+     "repetition": 0.4736842105263158
+    },
+    {
+     "prompt": "Mr Costello said that when nuclear power generation becomes ",
+     "continuation": "100% renewable, the world would be in a state of \"a new normal\" and that the world would be \"more stable and secure\" than ever before. He said that the world would be in a state of \"a new normal\" and that the world would be \"more stable",
+     "repetition": 0.368421052631579
+    },
+    {
+     "prompt": "\"If it becomes commercial, we should have it. That is, there",
+     "continuation": " is a need for it. If it becomes commercial, we should have it. That is, there is a need for it.\" So, the sentence is a bit of a paradox. It seems that the need for it is not necessarily there, but the sentence is trying to say that there is a",
+     "repetition": 0.03508771929824561
+    },
+    {
+     "prompt": "According to Ansa, \"police were concerned by a couple of top",
+     "continuation": " executives who were in the same company, and the company was not able to provide a solution to the problem. The company was not able to provide a solution to the problem, and the company was not able to provide a solution to the problem, and the company was not able to provide a solution to",
+     "repetition": 0.543859649122807
+    },
+    {
+     "prompt": "Police said Lo Piccolo had the upper hand because he had bee",
+     "continuation": " the first to arrive at the site. But the other side, the other police, had the lower hand. This is because of the fact that the other police had not been able to get the necessary supplies. The other police had not been able to get the necessary supplies. The other police had not",
+     "repetition": 0.24561403508771928
+    },
+    {
+     "prompt": "These bosses had been reined in by Provenzano when he put an",
+     "continuation": " end to the old system. The new system was based on the idea that the government should be responsible for the education of its citizens, not the private sector. This led to the creation of the first public schools in the world, and the establishment of the first public universities. The government was responsible for",
+     "repetition": 0.01754385964912286
+    },
+    {
+     "prompt": "Apple CEO Steve Jobs unveiled the device by walking onto the",
+     "continuation": " stage, and the first thing he said was, \"This is a new era of computing.\" The first thing he said was, \"This is a new era of computing.\" The first thing he said was, \"This is a new era of computing.\" The first thing he said was, \"This",
+     "repetition": 0.6491228070175439
+    },
+    {
+     "prompt": "During his 2 hour speech he stated that \"Today Apple is goin",
+     "continuation": "' to be a great success, but I know that the market is going to be a big challenge. I know that the market is going to be a big challenge. I know that the market is going to be a big challenge. I know that the market is going to be a big challenge.",
+     "repetition": 0.631578947368421
+    },
+    {
+     "prompt": "Brazil is the largest Roman Catholic country on Earth, and t",
+     "continuation": " the largest in the world. It is the only country in the world to have a president who is a member of the United Nations Security Council. The country is also the only one to have a president who is a member of the UN Security Council. It is the only one to have a president who",
+     "repetition": 0.24561403508771928
+    },
+    {
+     "prompt": "The National Congress of Brazil has debated legalization for",
+     "continuation": " the first time in the 19th century. The debate was not only about the legal status of the people, but also about the future of the country. The debate was not only about the people, but also about the future of the country. The debate was not only about the people,",
+     "repetition": 0.4035087719298246
+    },
+    {
+     "prompt": "The original bill was drafted by former mayor of São Paulo, ",
+     "continuation": "2000, and the current bill is the same. The bill was passed by the Senate and the House of Representatives. The bill was passed by both houses. The bill was passed by the Senate and the House of Representatives. The bill was passed by both houses. The bill was passed by",
+     "repetition": 0.4736842105263158
+    },
+    {
+     "prompt": "Protesters hope to collect a petition of 1.2 million signatu",
+     "continuation": "... and the number of people who have signed the petition is 1.2 million. The number of people who have signed the petition is 1.2 million. The number of people who have signed the petition is 1.2 million. The number of people who have signed the petition is",
+     "repetition": 0.6666666666666667
+    },
+    {
+     "prompt": "After it became apparent that many families were seeking leg",
+     "continuation": "acies, the first step in the process of creating a legacy is to determine the purpose of the legacy. The purpose of a legacy is the core of the legacy. The purpose of a legacy is the core of the legacy. The purpose of a legacy is the core of the legacy. The purpose of",
+     "repetition": 0.49122807017543857
+    },
+    {
+     "prompt": "When the tenants started sharing what had occurred to them, ",
+     "continuation": " the first thing they did was to share the same room.  The second thing they did was to share the same food.  The third thing they did was to share the same books.  The fourth thing they did was to share the same room.  The fifth thing they did was to share",
+     "repetition": 0.38596491228070173
+    },
+    {
+     "prompt": "Tenants at Lockwood Gardens believe that there may be anothe",
+     "continuation": "...? Let me think. The question is asking for the next possible tenant in the sequence, given that the current tenant is 10, and the pattern is 10, 11, 12, 13, 14, 15, 16",
+     "repetition": 0.03508771929824561
+    },
+    {
+     "prompt": "The band canceled the show at Maui's War Memorial Stadium, w",
+     "continuation": "/ the show's original plan to have a 10-minute show. The show was canceled because of the weather. The weather caused the show to be canceled. The weather caused the show to be canceled. The weather caused the show to be canceled. The weather caused the show to be canceled.",
+     "repetition": 0.4385964912280702
+    },
+    {
+     "prompt": "The band's management company, HK Management Inc., gave no i",
+     "continuation": ".e., no one, but the band's manager, Mr. Lee, is still in the band. The band's manager, Mr. Lee, is still in the band. The band's manager, Mr. Lee, is still in the band. The band's manager, Mr. Lee,",
+     "repetition": 0.6140350877192983
+    },
+    {
+     "prompt": "The famous Greek lawyers, Sakis Kechagioglou and George Niko",
+     "continuation": "letti, are known for their work in the field of legal ethics. They are also known for their work in the field of legal ethics. They are also known for their work in the field of legal ethics. They are also known for their work in the field of legal ethics. They are also",
+     "repetition": 0.6842105263157895
+    },
+    {
+     "prompt": "As a result of this, a big scandal within the Greek legal co",
+     "continuation": "-operation with the United States, and the United Nations, and the European Union, and the European Commission, and the European Parliament, and the European Council, and the European Court of Justice, and the European Commission, and the European Parliament, and the European Council, and the European Court of Justice,",
+     "repetition": 0.42105263157894735
+    },
+    {
+     "prompt": "A few weeks ago, after the information published by the jour",
+     "continuation": "na... I think the best way to approach this is to start with the first sentence. The first sentence is: \"A few weeks ago, after the information published by the journal...\". The second sentence is: \"I think the best way to approach this is to start with the first sentence.\"",
+     "repetition": 0.21052631578947367
+    },
+    {
+     "prompt": "Moreover, top judge Evangelos Kalousis is imprisoned as he f",
+     "continuation": "alters from the weight of his own political ambitions. This is the first time in his career that he has been imprisoned, and it is the first time in his career that he has been imprisoned for political reasons. This is the first time in his career that he has been imprisoned for political reasons.",
+     "repetition": 0.42105263157894735
+    },
+    {
+     "prompt": "Roberts flatly refused to say about when he believes life be",
+     "continuation": " a machine, but he did say that he believes in the importance of the machine. So, what is the correct answer to the question? A) the machine is a machine, B) the machine is not a machine, C) the machine is a machine, D) the machine is not a",
+     "repetition": 0.14035087719298245
+    },
+    {
+     "prompt": "He did, however, reiterate his earlier statement that Roe v.",
+     "continuation": " Wade was a case of \"a matter of law, not of policy.\" This is a key point that the Court has been trying to address, and that the Court is not in a position to decide. The Court has been trying to address this issue, and that the Court is not in a position",
+     "repetition": 0.17543859649122806
+    },
+    {
+     "prompt": "He also confirmed that he believed in the implied right to p",
+     "continuation": "ious living, which is a right that is not explicitly stated in the law, but is implied by the fact that the person is a member of a religious community. This is a right that is not only for the individual but also for the community. This is a right that is not only for the",
+     "repetition": 0.21052631578947367
+    },
+    {
+     "prompt": "Maroochydore had finished on top of the ladder, six points c",
+     "continuation": "ycled, and the first two points were won by the first two runners. The first runner was the one who won the first two points, and the second runner was the one who won the second two points. The third runner was the one who won the third two points, and so on. The",
+     "repetition": 0.17543859649122806
+    },
+    {
+     "prompt": "The two sides would meet in the major semi final where Noosa",
+     "continuation": " would be the first to play against the other team. The two teams would then play in the semi final, and the winner would be the first to play in the final. The two teams would then play in the final, and the winner would be the first to play in the final. The two",
+     "repetition": 0.42105263157894735
+    },
+    {
+     "prompt": "Maroochydore then defeated Caboolture in the Preliminary Fin",
+     "continuation": "ale of the 2019 World Championship. This was the first time in the 2019 World Championship since 2013 when a team from the same country has won a World Championship. This was also the first time in the 2019 World Championship since",
+     "repetition": 0.3157894736842105
+    },
+    {
+     "prompt": "Hesperonychus elizabethae is a species of the family Dromaeo",
+     "continuation": "idea, and is a member of the genus Dromaeoidea. It is a member of the family Dromaeoidea, and is a member of the genus Dromaeoidea. It is a member of the family Dromaeoidea, and is a member of the",
+     "repetition": 0.6140350877192983
+    },
+    {
+     "prompt": "This fully feathered, warm blooded bird of prey was believed",
+     "continuation": " to be a bird of prey, but it is now known to be a bird of prey. The bird is a member of the family of the family of the family of the family of the family of the family of the family of the family of the family of the family of the family of the family",
+     "repetition": 0.5789473684210527
+    },
+    {
+     "prompt": "Its second claw was larger, giving rise to the name Hesperon",
+     "continuation": ". The first claw was smaller, giving rise to the name Hesperos. The second claw was larger, giving rise to the name Hesperos. The third claw was larger, giving rise to the name Hesperos. The fourth claw was larger, giving rise to the name Hesperos",
+     "repetition": 0.49122807017543857
+    },
+    {
+     "prompt": "In addition to the crushing ice, extreme weather conditions ",
+     "continuation": " can also lead to the occurrence of icebergs.  The icebergs are formed by the process of ice accumulation and the formation of the icebergs.  The icebergs are formed by the process of ice accumulation and the formation of the icebergs.  The icebergs",
+     "repetition": 0.49122807017543857
+    },
+    {
+     "prompt": "Pittman suggested that conditions wouldn't improve until som",
+     "continuation": "atic and somatic-somatic somatic somatic somatic somatic somatic somatic somatic somatic somatic somatic somatic somatic somatic somatic somatic somatic somatic somatic somatic somatic somatic somatic somatic somatic somatic somatic somatic",
+     "repetition": 0.8596491228070176
+    },
+    {
+     "prompt": "The amount and thickness of the pack ice, according to Pittm",
+     "continuation": "ack and others, is determined by the amount of heat and the amount of water in the ocean. The heat is the amount of energy that the ocean can store, and the water is the amount of water that the ocean can hold. The heat and water are the two factors that determine the amount of",
+     "repetition": 0.052631578947368474
+    },
+    {
+     "prompt": "News spread in the Red Lake community today as funerals for ",
+     "continuation": "100-year-old residents are being held. The community is facing a challenge in the form of a large number of people who are coming to the funeral home. The community is also facing a challenge in the form of a large number of people who are coming to the funeral home. The community is",
+     "repetition": 0.368421052631579
+    },
+    {
+     "prompt": "Authorities said little officially beyond confirming today's",
+     "continuation": " findings, but the findings are still in the process of being fully validated. This is the first time in the history of the game, the number of people who have been confirmed to be in the game's official database. The number of confirmed players is now 1,000,00",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "However, a source with knowledge of the investigation told t",
+     "continuation": "... \n\nOkay, let's see. The user provided a sentence: \"However, a source with knowledge of the investigation told t...\". The task is to figure out what the missing part is. The original sentence is in English, and the user is asking for the missing part. The sentence is",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "It is not known at this time what charges will be laid or wh",
+     "continuation": "ethere will be any charges. The question is whether the charges will be laid or not. The answer is no. The answer is no. The answer is no. The answer is no. The answer is no. The answer is no. The answer is no. The answer is no. The",
+     "repetition": 0.5964912280701755
+    },
+    {
+     "prompt": "Lodin also said officials decided to cancel the runoff in or",
+     "continuation": " before the deadline. This is a good example of the importance of the deadline in the process of decision-making. The deadline is a key factor in the decision-making process. The deadline is a key factor in the decision-making process. The deadline is a key factor in the decision-making process. The deadline",
+     "repetition": 0.42105263157894735
+    },
+    {
+     "prompt": "Diplomats said that they had found enough ambiguity in the A",
+     "continuation": "chaean Empire's history to make it a good candidate for the next election. The Achaean Empire's leaders were in a state of crisis, and the leaders were in a state of crisis because of the recent events. The leaders were in a state of crisis because of the recent events, and",
+     "repetition": 0.24561403508771928
+    },
+    {
+     "prompt": "This contradicts earlier reports, which said that cancelling",
+     "continuation": " the order would not affect the market. But the fact that the order was cancelled, and the market reacted, shows that the market is not in a state of equilibrium. This is because the market is not in equilibrium, and the order is not a coincidence. The market is in a state of equilibrium",
+     "repetition": 0.07017543859649122
+    },
+    {
+     "prompt": "The aircraft had been headed to Irkutsk and was being operat",
+     "continuation": "... \n\nOkay, let's see. The user provided a sentence: \"The aircraft had been headed to Irkutsk and was being operated...\" and wants me to analyze it. First, I need to check if there are any grammatical errors. The sentence seems correct. The subject is \"",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "An inquiry was established to investigate.",
+     "continuation": " The question is: \"What is the probability that a randomly selected person from the population of the United States is a woman?\" The sample was taken from the population of the United States. The sample size was 1000. The results were that 1000 people were selected,",
+     "repetition": 0.10526315789473684
+    },
+    {
+     "prompt": "The Il-76 has been a major component of both the Russian and",
+     "continuation": " the Soviet Union's military aviation, and has been used in many different countries. It is a very popular aircraft, and has been used in many different countries. It is a very popular aircraft, and has been used in many different countries. It is a very popular aircraft, and has been used in",
+     "repetition": 0.6140350877192983
+    },
+    {
+     "prompt": "On October 7 an engine separated on takeoff, without injurie",
+     "continuation": ", and the engine was not used for any other purpose. The engine was used for the purpose of taking off, and the engine was not used for any other purpose. The engine was used for the purpose of taking off, and the engine was not used for any other purpose. The engine was used",
+     "repetition": 0.6140350877192983
+    },
+    {
+     "prompt": "800 miles of the Trans-Alaska Pipeline System were closed do",
+     "continuation": " not include the pipeline that goes through the city of Anchorage. The pipeline that goes through the city of Anchorage is the only one that is closed. The pipeline that goes through the city of Anchorage is the only one that is closed. The pipeline that goes through the city of Anchorage is",
+     "repetition": 0.5789473684210527
+    },
+    {
+     "prompt": "A power failure following a routine fire-command system test",
+     "continuation": " at a power plant in the state of California, which is the first in the country, has been reported. The power failure occurred during a routine fire-command system test, and the system was supposed to be operational. The power plant is located in a region where the power is supplied by a large hydro",
+     "repetition": 0.0
+    }
+   ]
+  }
+ },
+ "base": {
+  "bpb_target": 1.1656525938200544,
+  "bpb_english": 1.531201411220325,
+  "tokens_target": 139222,
+  "tokens_english": 26255,
+  "repetition_target": 0.20964149504195273,
+  "repetition_target_stats": {
+   "mean": 0.20964149504195273,
+   "median": 0.14912280701754388,
+   "p90": 0.5614035087719298,
+   "max": 0.8421052631578947
+  },
+  "n_prompts_target": 100,
+  "repetition_english": 0.5014035087719299,
+  "repetition_english_stats": {
+   "mean": 0.5014035087719299,
+   "median": 0.5964912280701755,
+   "p90": 0.8771929824561404,
+   "max": 0.9473684210526316
+  },
+  "n_prompts_english": 100,
+  "generations": {
+   "target": [
+    {
+     "prompt": "Երկուշաբթի օրը Բժշկության Ստենֆորդի համալսարանի դպրոցի գիտնա",
+     "continuation": "կանների հետ կարող են անել առաջարկությունները, որոնք կարող են",
+     "repetition": 0.1228070175438597
+    },
+    {
+     "prompt": "Առաջատար հետազոտողները նշում են, որ սա կարող է բուժվող հիվան",
+     "continuation": "դությունների համար առաջարկել առաջարկությունները, որոնք կարող",
+     "repetition": 0.21052631578947367
+    },
+    {
+     "prompt": "Տեղական ժամանակով 9:30 (02:30` ունիվերսալ ժամային գոտի) JAS ",
+     "continuation": "համար համապատասխան տեղական ժամանակով 9:30 (02:30` ունիվերսալ ",
+     "repetition": 0.01754385964912286
+    },
+    {
+     "prompt": "Օդաչուն ջոկատի հրամանատար Դայլոկրիտ Պատավին էր:",
+     "continuation": " Այս հրամանատարը հաստատել էր որ այդ դայլոկրիտի հրամանատարը ա",
+     "repetition": 0.17543859649122806
+    },
+    {
+     "prompt": "Տեղական լրատվամիջոցները հայտնում են, որ օդանավակայանի մի հրդ",
+     "continuation": "ի համար կարող է անհանգուցել անձնակազմի առաջարկությունները ան",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "28-ամյա Վիդալը Սևիլյայից միացել է Բարսելոնային երեք սեզոն առ",
+     "continuation": "աջին անգամ անցած անգամ համարել է անգամ անցած անգամ համարել է",
+     "repetition": 0.5087719298245614
+    },
+    {
+     "prompt": "Կատալոնիայի մայրաքաղաք տեղափոխվելուց ի վեր Վիդալն ակումբի կա",
+     "continuation": "զմակերպության համար կարող է անվտանգ անդրադարձան անձնակազմի կ",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "Բողոքի ցույցը սկսվեց տեղական ժամանակով մոտավորապես 11։00-ին ",
+     "continuation": "առաջ անցավ այն համար համարձակ անձնական համարման համար առաջար",
+     "repetition": 0.24561403508771928
+    },
+    {
+     "prompt": "Անմիջապես 11։00-ից հետո ցուցարարներն արգելափակեցին Ուայթհոլի",
+     "continuation": "ստի անձնակազմի առաջին անգամ անցնող անձի անցնող անձի անցնող ա",
+     "repetition": 0.3508771929824561
+    },
+    {
+     "prompt": "Ժամը 11:20-ին ոստիկանությունը խնդրեց ցուցարարներին տեղափոխվե",
+     "continuation": "լ այս համար անցկացված անձնակազմի համար անցկացված անձնակազմի ",
+     "repetition": 0.4385964912280702
+    },
+    {
+     "prompt": "Բողոքի ակցիան ժամը 11:29-ի կողմերը շարժվեց Ուայթհոլի ուղղութ",
+     "continuation": "յան մեջ։ Այս ժամը մարդական ակցիան անցկացրել է մարդիկ անցած ա",
+     "repetition": 0.07017543859649122
+    },
+    {
+     "prompt": "Նադալի կանադացու հետ դեմ առ դեմ հանդիպման արդյունքը 7 - 2 է։",
+     "continuation": "<|endoftext|>",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "Վերջերս նա պարտվեց Ռաոնիկին Բրիսբեյնի բաց առաջնությունում։",
+     "continuation": " Այս անգամ նա հայտնվեց այս անգամ առաջնությունում։ Այս անգամ ",
+     "repetition": 0.24561403508771928
+    },
+    {
+     "prompt": "Հանդիպման ժամանակ Նադալը զուտ 88% միավոր հավաքեց՝ առաջին մատ",
+     "continuation": "րիկայի համար։ Նա այն համար համարձակ համարձակ համարձակ համարձ",
+     "repetition": 0.49122807017543857
+    },
+    {
+     "prompt": "Խաղից հետո Կավի արքան ասաց․«Ես պարզապես հուզված եմ, որ հնարա",
+     "continuation": "վորություն չի տալիս այս մարդիկ, ով անցնում է այս մարդիկ անցն",
+     "repetition": 0.17543859649122806
+    },
+    {
+     "prompt": "«Պանամա Փեյփըրս»-ն ընդհանուր եզրույթ է Պանամայի «Մոսակ Ֆոնսե",
+     "continuation": "ն» համար: Այս համար նախագահ Մարկ Պանամայի համար համարձակ համ",
+     "repetition": 0.19298245614035092
+    },
+    {
+     "prompt": "Փաստաթղթերը հիմնավորում էին, որ տասնչորս բանկ օգնել է հարուս",
+     "continuation": "տ մարդը համարել այն հարաբերությունները, որոնք կարող են անել ",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "Բրիտանական Դը Գարդիան ամսագիրը ենթադրում է, որ Դոյչե բանկը վ",
+     "continuation": "երաբերյալ անձնակազմի համար անհանգուցվել է առաջին անգամ անցկա",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "Ողջ աշխարհով մեկ տեղի էին ունենում բողոքի ցույցեր, մի քանի ք",
+     "continuation": "աղաքացիների համար այս հայտարարությունների համար այս տեղի էին",
+     "repetition": 0.21052631578947367
+    },
+    {
+     "prompt": "Ծնված լինելով Հոնկոնգում՝ Ման սովորել է Նյու Յորքի համալսարա",
+     "continuation": "նի համալսարանական առաջարկությունը։ Նա համալսարանական առաջարկ",
+     "repetition": 0.3508771929824561
+    },
+    {
+     "prompt": "Ընտրությունների ընթացքում Հսիեն ընթադրում էր, որ Ման ճգնաժամ",
+     "continuation": "անակ անցած անձանց համար անհանգուցված անձանց համար անհանգուցվ",
+     "repetition": 0.4035087719298246
+    },
+    {
+     "prompt": "Հսիեհը նաև պնդում էր, որ ֆոտոգենիկ Ման ավելի շատ ոճ էր իրենի",
+     "continuation": "ց, որ այն անցան է անցնել այն մի անհանգար անձի հետ անցնել անձ",
+     "repetition": 0.17543859649122806
+    },
+    {
+     "prompt": "Չնայած այս մեղադրանքներին՝ Ման հեշտությամբ հաղթեց մի հարթակո",
+     "continuation": "ւմ առաջարկություն անցնելու համար անցկացրել այդ մեղադրանքների",
+     "repetition": 0.01754385964912286
+    },
+    {
+     "prompt": "Վաշինգթոն Քեփիթըլսի օրվա մարզիկը Ալեքս Օվեչկինն է:",
+     "continuation": " Ալեքս Օվեչկինն է Ալեքս Օվեչկինն է Ալեքս Օվեչկինն է Ալեքս Օվ",
+     "repetition": 0.7017543859649122
+    },
+    {
+     "prompt": "Վաշինգտոնի ընդդեմ Ատլանտա Տրեշերզի 5-3 հաշվով հաղթանակի ժամա",
+     "continuation": "նակի առաջարկությունը հայտնվել է Արաբական Հանրապետության հետ։",
+     "repetition": 0.01754385964912286
+    },
+    {
+     "prompt": "Օվեչկինի երեկոյի գոլային առաջին փոխանցման նպատակը նորեկ Նիկո",
+     "continuation": "լայի Արտասարի համար համարձակ անդամների համար համարձակ անդամն",
+     "repetition": 0.42105263157894735
+    },
+    {
+     "prompt": "երեկոյի ընթացքում նրա երկրորդ գոլը դարձավ խաղաշրջանում խփած ",
+     "continuation": "անձնական հարցերի մասին։ Այս հարցերը կարող են անհրաժեշտ լինել",
+     "repetition": 0.07017543859649122
+    },
+    {
+     "prompt": "Բաթենը 190-րդն է 2008 թվականի ամենահարուստ 400 ամերիկացիների",
+     "continuation": " համար կարող է անվտանգ անդամների անցկացվել այն անձնակազմի առ",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "1950 թվականին նա ավարտեց Վիրջինիայի համալսարանի արվեստի և գի",
+     "continuation": "տական աշխատանքների առաջին անգամ։ 1951 թվականին նա ավարտեց Վի",
+     "repetition": 0.01754385964912286
+    },
+    {
+     "prompt": "Ապստամբության ընթացքում Իրաքի Աբու Ղարիբ բանտը հրդեհվել է:",
+     "continuation": "<|endoftext|>",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "Կալանավայրը վատ հռչակ ձեռք բերեց այն բանից հետո, երբ ԱՄՆ զոր",
+     "continuation": "ական համակարգի համար համապատասխան համարձակ համարման համար հա",
+     "repetition": 0.3508771929824561
+    },
+    {
+     "prompt": "Պիկե կրտսերը վթարի է ենթարկվել 2008 թ.-ին Սինգապուրի Գրանդ Պ",
+     "continuation": "ետրոսի կայքում, որոնց մեկնաբանությունը է կարող անել 2010 թ.-ի",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "Քանի որ Ալոնսոյից առաջ ընթացող ավտոմեքենաները բենզինը լիցքավ",
+     "continuation": "որել էին, այս անձնակազմների համար անհանգուցվել է այն անձնակա",
+     "repetition": 0.10526315789473684
+    },
+    {
+     "prompt": "2009 թվականի հունգարական «Գրանդ Պրի»-ից հետո Պիկե Կրտսերն աշ",
+     "continuation": "խատանք առաջարկել է այն համարիչ անձնակազմի համար անհանգում ան",
+     "repetition": 0.052631578947368474
+    },
+    {
+     "prompt": "Առավոտյան ուղիղ 8:46-ին քաղաքում լռություն տիրեց՝ ազդարարելո",
+     "continuation": "ւ համար անցկացվելու համար անցկացվելու համար անցկացվելու համա",
+     "repetition": 0.6842105263157895
+    },
+    {
+     "prompt": "Լույսի երկու ճառագայթն ուղղված էր գիշերային երկնքին։",
+     "continuation": " Այս ճառագայթը արդեն չէր անվանվում այս երկնքի անվանումների հ",
+     "repetition": 0.052631578947368474
+    },
+    {
+     "prompt": "Տարածքում ընթանում է հինգ նոր երկնաքերերի շինարարություն, որ",
+     "continuation": "ոնք կարող են անել անհանգուցում անձինք անցնելու անկյան անկյան",
+     "repetition": 0.08771929824561409
+    },
+    {
+     "prompt": "Փի-Բի-Էս շոուն ունի Էմմիի երկու տասնյակից ավել մրցանակ, և նր",
+     "continuation": "ան երկուսին երկուսին երկուսին երկուսին երկուսին երկուսին երկ",
+     "repetition": 0.8245614035087719
+    },
+    {
+     "prompt": "Ցուցադրման ամեն դրվագ կկենտրոնանա առանձին գրքի որևէ թեմայի վ",
+     "continuation": "րա։ Այս անձնական անկյան առաջին անգամ անկարդ առաջացա անգամ ան",
+     "repetition": 0.19298245614035092
+    },
+    {
+     "prompt": "Յուրաքանչյուր ցուցադրում նաև գրքերի խորհուրդներ էր տրամադրու",
+     "continuation": "մ այս հայտարարությունների մեջ։ Այս հայտարարությունները կարող",
+     "repetition": 0.3157894736842105
+    },
+    {
+     "prompt": "WNED Բուֆֆալոյից Ջոն Գռանտը (Ծիածանի տնային կայանի ընթերցանո",
+     "continuation": "ւթյան մասին)<|endoftext|>",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "Որոշ մարդիկ, ներառյալ Ջոն Գրանտը, հավատում են, որ թե՛ ֆինանս",
+     "continuation": "ական հարկարարությունները կարող են անհանգում են այն հարկարարո",
+     "repetition": 0.17543859649122806
+    },
+    {
+     "prompt": "Փոթորիկը, լինելով Կաբո Վերդեի կղզիներից 645 մղոն (1040 կմ) ա",
+     "continuation": "ռաջարկում է այն համարիչ անձնական համարման համար անհանգուցված",
+     "repetition": 0.1578947368421053
+    },
+    {
+     "prompt": "Այս պահին Ֆրեդն ընթանում է 105 մղոն (165 կմ/ժ) քամու արագութ",
+     "continuation": "յան առաջին անգամ անցկացվում է այս պահին: Այս պահին Ֆրեդն ընթ",
+     "repetition": 0.08771929824561409
+    },
+    {
+     "prompt": "Ֆրեդն ամենաուժեղ արևադարձային ցիկլոնն է, որն այսքան ժամանակ ",
+     "continuation": "անցնում է ամենամեծ արևադարձային արժանական արժեքների միջև անց",
+     "repetition": 0.03508771929824561
+    },
+    {
+     "prompt": "1759 թվականի սեպտեմբերի 24-ին, Արթուր Գիննեսը ստորագրեց 9,00",
+     "continuation": "0 դրությունների առաջին անգամ անցած անգամ անցած անգամ անցած ա",
+     "repetition": 0.4035087719298246
+    },
+    {
+     "prompt": "250 տարի անց Գիննեսը վերածվել է համաշխարհային բիզնեսի, որն ա",
+     "continuation": "նցած անձնական համար անցած անձնական համար անցած անձնական համա",
+     "repetition": 0.631578947368421
+    },
+    {
+     "prompt": "Նոր Զելանդիայի A1GP թիմի փոխարինող վարորդ Ջոնի Ռեյդն այսօր օ",
+     "continuation": "գտագործում է այն համարի անվան անվանությունը՝ անվանում է այն ",
+     "repetition": 0.26315789473684215
+    },
+    {
+     "prompt": "Պարոն Ռեյդին հաջողվեց վարել Նոր Զելանդիայի A1GP ավտոմեքենան՝",
+     "continuation": " հայտնի անվանումների համար անցկացվեց առաջարկությունը։<|endoftext|>",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "Նոր Զելանդիայի ոստիկանությունը խնդիրներ ունեցավ արագության ռ",
+     "continuation": "ազմական կառավարությունը և այլ անձնակազմների համար: Նոր Զելան",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "Վերջին 3 ամսում Կենտրոնական կալանավայրից 80-ից ավելի ձերբակա",
+     "continuation": "ն գաղափարներ են կարող են անել այն հարաբերություններից, որոնք",
+     "repetition": 0.01754385964912286
+    },
+    {
+     "prompt": "Այս տարի ապրիլին ժամանակավոր զսպող հրաման է սահմանվել դատավո",
+     "continuation": "րության առաջնական անդամների համար։ Այս տարիների առաջ անդամնե",
+     "repetition": 0.17543859649122806
+    },
+    {
+     "prompt": "Հանձնակատարը գրավ է սահմանում, եթե տրամադրվի, և ձևավորում ձե",
+     "continuation": "զ համար անհանգուցիչ համարման համար անհանգուցիչ համար անհանգո",
+     "repetition": 0.5614035087719298
+    },
+    {
+     "prompt": "Լսումը նաև նշում է այն ամսաթիվը, երբ կասկածյալն իրավունք ուն",
+     "continuation": "ի այն անձինք, ով կարող է անհանգուցել այն անձինք, ով կարող է ",
+     "repetition": 0.368421052631579
+    },
+    {
+     "prompt": "Ավստրալիայի գանձապահ Պիտեր Կոստելլոն, որը, ամենայն հավանական",
+     "continuation": " անձնակազմի անդամ է անվանական անձինք, որը անվանական անձինք ա",
+     "repetition": 0.2807017543859649
+    },
+    {
+     "prompt": "Պարոն Կոստելլոն ասաց, որ երբ միջուկային էլեկտրաէներգիայի արտ",
+     "continuation": "ադրանքը հանդիպեց այն միջուկային էլեկտրաէներգիայի արտադրանքը,",
+     "repetition": 0.07017543859649122
+    },
+    {
+     "prompt": "«Եթե այն առևտրային դառնա, ապա պետք է ունենանք այն։ Այն է՝ մի",
+     "continuation": "այն այն անհանգարումների համար։ Այս անհանգարումների համար այն",
+     "repetition": 0.38596491228070173
+    },
+    {
+     "prompt": "Համաձայն Անսայի՝ «Ոստիկանությունը մտավախություն ուներ մի քան",
+     "continuation": "ի համարական համարման մասին» անձնակազմի համար անհամարձակ համա",
+     "repetition": 0.19298245614035092
+    },
+    {
+     "prompt": "Ոստիկանությունը հայտնեց, որ Լո Պիկոլոն ուներ արտոնյալ կարգավ",
+     "continuation": "որումների համար առաջարկությունը կարող է անհանգում առաջարկութ",
+     "repetition": 0.14035087719298245
+    },
+    {
+     "prompt": "Այս ղեկավարներին կարգի հրավիրեց Պրովենցանոն, երբ վերջ դրեց Ռ",
+     "continuation": "ուսաստանի հանրապետության հետ համարված համակարգային համարման ",
+     "repetition": 0.08771929824561409
+    },
+    {
+     "prompt": "Apple-ի գլխավոր գործադիր տնօրեն Սթիվ Ջոբսը ներկայացրեց սարքը",
+     "continuation": " հայտնի անունների համար։<|endoftext|>",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "Իր 2 ժամ տևող ելույթում նա նշեց, որ «այսօր Apple-ը կվերստեղծ",
+     "continuation": "վեց այն համար, որ նրան անվտանգությունների համար կարող է անհա",
+     "repetition": 0.052631578947368474
+    },
+    {
+     "prompt": "Բրազիլիան Երկիր մոլորակի ամենամեծ հռոմեական կաթոլիկ երկիրն է",
+     "continuation": " միասին մի անհանգար առաջարկությունների համար։ Այս երկիրը անց",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "Բրազիլիայի Ազգային կոնգրեսը 10 տարի շարունակ դրա օրինականացո",
+     "continuation": "ւմը կարող է անվտանգացնել այն համարական անձնակազմների առաջարկ",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "Սկզբնական օրինագիծը մշակվել էր Սան Պաուլոյի նախկին քաղաքապետ",
+     "continuation": "ի հետ։ Սան Պաուլոյի հետ կարող է հաստատվել այն հարցեր, որոնք ",
+     "repetition": 0.03508771929824561
+    },
+    {
+     "prompt": "Ցուցարարները հույս ունեն, որ կհավաքագրեն 1,2 միլիոն ստորագրո",
+     "continuation": "ւթյուններ առաջարկության համար: Այս համար կարող են անել առաջա",
+     "repetition": 0.10526315789473684
+    },
+    {
+     "prompt": "Այն բանից հետո, երբ պարզ դարձավ, որ բազմաթիվ ընտանիքներ իրավ",
+     "continuation": "ունքների համար կարող են անել անհանգուցում անձանց անձանց անձա",
+     "repetition": 0.1578947368421053
+    },
+    {
+     "prompt": "Երբ վարձակալները սկսեցին պատմել իրենց պատահածը, ներգրավված ը",
+     "continuation": "նկերությունները կարող են անել այն պատմական անձնակազմների համ",
+     "repetition": 0.01754385964912286
+    },
+    {
+     "prompt": "Լոքվուդ Գարդենսի վարձակալները կարծում են, որ միգուցե ևս 40 ը",
+     "continuation": "նկերներ են անցկացնում այս հարցը, որ այս հարցը կարող է անհանգ",
+     "repetition": 0.1228070175438597
+    },
+    {
+     "prompt": "Նվագախումբը չեղարկեց Մաուրիի Պատերազմի հիշատակի ստադիոնում կ",
+     "continuation": "արող է անհանգուցել նախագահի համար անհանգուցելու համար անհանգ",
+     "repetition": 0.33333333333333337
+    },
+    {
+     "prompt": "Խմբի կառավարման ընկերությունը՝ Էյչ-Քեյ Մենեջմենթ ինկորպորացի",
+     "continuation": "ան անվանական կառավարման կազմակերպությունը կազմակերպության ան",
+     "repetition": 0.26315789473684215
+    },
+    {
+     "prompt": "Հայտնի հույն իրավաբանները՝ Սակիս Կեչագիոգլուն և Ջորջ Նիկոլակ",
+     "continuation": "ին։ Նանի եւ նայելու համար անհրաժեշտ է համարել այն համարական ",
+     "repetition": 0.10526315789473684
+    },
+    {
+     "prompt": "Դրա հետևանքով հունական իրավական համայնքում մեծ սկանդալ հասու",
+     "continuation": "ն հարաբերություններ են ստացվում այն համայնքների համար, որոնք",
+     "repetition": 0.052631578947368474
+    },
+    {
+     "prompt": "Մի քանի շաբաթ առաջ, երբ լրագրող Մակիս Տրիանտաֆիլոպուլոսն «Ալ",
+     "continuation": "եքսանդրի անունը անցած անունը անցած անունը» անցած անունը անցա",
+     "repetition": 0.5614035087719298
+    },
+    {
+     "prompt": "Ավելին, գլխավոր դատավոր Էվանգելոս Կալուսիսն բանտարկված է, քա",
+     "continuation": "նի որ այն անցած անձնական անձնական անձնական անձնական անձնական",
+     "repetition": 0.5964912280701755
+    },
+    {
+     "prompt": "Ռոբերտսը կտրականապես հրաժարվեց ասել այն մասին, թե իր կարծիքո",
+     "continuation": "վ ունենա այն հարաբերությունների մեջ, որ այն կարող է անհանգու",
+     "repetition": 0.03508771929824561
+    },
+    {
+     "prompt": "Սակայն նա կրկնեց իր ավելի վաղ արած հայտարարությունը, որ Ռո վ",
+     "continuation": "արչապետ անցան այս հայտարարությունը, որը կարող է անհանգարել ա",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "Նա նաև հաստատեց, որ հավատում էր գաղտնիության ենթադրյալ իրավո",
+     "continuation": "ւնքների համար, որ այս հավատում է այն հավատում, որ այն հավատո",
+     "repetition": 0.3157894736842105
+    },
+    {
+     "prompt": "Մարուչիդորը ավարտել է առաջատար դիրքում՝ Նուսային թողնելով վե",
+     "continuation": "րաբերյալ անձինք անցնելով այս դեպքում անցնելով այս դեպքում ան",
+     "repetition": 0.368421052631579
+    },
+    {
+     "prompt": "Երկու կողմերը կհանդիպեն գլխավոր կիսաեզրափակչում, որտեղ Նոոսա",
+     "continuation": "յին կարգավորումների համար կարող են անել այն կարգավորումների ",
+     "repetition": 0.2807017543859649
+    },
+    {
+     "prompt": "Մարուչիդորն այնուհետև պարտության մատնեց Քաբուլտուրին նախնակա",
+     "continuation": "ն պատրաստում: Այս պատրաստում մարուչիդորն այն պատրաստում էր ա",
+     "repetition": 0.3157894736842105
+    },
+    {
+     "prompt": "Հեսպեռոնիչուս էլիզաբեթին համարվում է Դրոմաոսաուռիդի ընտանիքի",
+     "continuation": " համար առաջարկությունը համարվում է այն համարման անձնակազմի հ",
+     "repetition": 0.10526315789473684
+    },
+    {
+     "prompt": "Ենթադրվում էր, որ այս ամբողջովին փետրապատ, որսի տաքարյուն թռ",
+     "continuation": "ույց է անցկացվում այս ամբողջովին փետրապատ, որսի տաքարյուն թռ",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "Դրա երկրորդ ճիրանն ավելի մեծ էր, այստեղից էլ Հեսպերոնիխուս ա",
+     "continuation": "նցնում է այստեղից այն անցնում է այստեղից այն անցնում է այստե",
+     "repetition": 0.5964912280701755
+    },
+    {
+     "prompt": "Ի լրումն կործանիչ սառույցի ծայրահեղ եղանակային պայմանները խո",
+     "continuation": "րհրդարանների համար կարող են արտահայտվել այն հարցեր, որոնք կա",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "Փիթմանը ենթադրեց, որ պայմանները չեն բարելավվի մինչև հաջորդ շ",
+     "continuation": "արժումների համար: Այս հաջորդ շարժումները ենթադրում են այն պա",
+     "repetition": 0.10526315789473684
+    },
+    {
+     "prompt": "Ըստ Փիթմենի՝ սառույցի քանակն ու հաստությունը վերջին 15 տարվա",
+     "continuation": " առաջ չի վերադարձնել համար համարձակ համարման համար համարձակ ",
+     "repetition": 0.33333333333333337
+    },
+    {
+     "prompt": "Մինչ անցկացվում էր Ջեֆ Վեյզի և ինը տուժածներից երեքի հուղարկ",
+     "continuation": "ումների համար անցկացվում է անվան անձնական գործընթացի մի քանի",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "Իշխանությունները քիչ բան ասացին այսօրվա ձերբակալությունը հաս",
+     "continuation": "տատելու համար անհանգուցակ էր անցկացել այս համար:<|endoftext|>",
+     "repetition": 0.08695652173913049
+    },
+    {
+     "prompt": "Այնուամենայնիվ, հետաքննության մասին իմացող մի աղբյուր հայտնե",
+     "continuation": "լու համար անհրաժեշտ է համապատասխան անձնակազմի համար համապատա",
+     "repetition": 0.21052631578947367
+    },
+    {
+     "prompt": "Ներկայումս հայտնի չէ, թե ինչ տույժեր են կիրառվելու կամ ինչն ",
+     "continuation": "են կարող են կարողանալ անվտանգական անձնակազմների համար։ Այս հ",
+     "repetition": 0.08771929824561409
+    },
+    {
+     "prompt": "Լոդինը նաև ասաց, որ պաշտոնյաները որոշել են չեղարկել ընտրությ",
+     "continuation": "ունների համար անձնակազմի համար անձնակազմի համար անձնակազմի հ",
+     "repetition": 0.5964912280701755
+    },
+    {
+     "prompt": "Դիվանագետներն ասացին, որ բավականաչափ երկիմաստություն են գտել",
+     "continuation": " այս դեպքում: Այս դեպքում անցած անձանց անցած անձանց անցած ան",
+     "repetition": 0.45614035087719296
+    },
+    {
+     "prompt": "Սա հակասում է ավելի վաղ արված զեկույցներին, որ երկրորդ փուլի",
+     "continuation": " համար անցկացվում է առաջարկ անդամի առաջարկ անդամի առաջարկ ան",
+     "repetition": 0.4035087719298246
+    },
+    {
+     "prompt": "Օդանավն ուղղորդվել էր դեպի Իրկուտսկ և գործարկվում էր ներքին ",
+     "continuation": "արդյունքների միջոցով անցկացվել է անցկացված անձնական կարգավոր",
+     "repetition": 0.08771929824561409
+    },
+    {
+     "prompt": "Հարցումն ստեղծվել է հետաքննելու համար:",
+     "continuation": " Հայաստանի Հանրապետության պաշտպանության համար հայ հանրապետու",
+     "repetition": 0.17543859649122806
+    },
+    {
+     "prompt": "Իլ 76-ը թե՛ ռուսական, թե՛ Խորհրդային բանակի հիմնական մասն է ",
+     "continuation": "այս համար:<|endoftext|>",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "Հոկտեմբերի 7-ին շարժիչը վերելքի պահին անջատվել էր, սակայն վի",
+     "continuation": "րավիրանների համար անհանգար էր անցկացվել այդ շարժիչի համար։ Ա",
+     "repetition": 0.08771929824561409
+    },
+    {
+     "prompt": "Տրանս Ալյասկայի խողովակաշարի 800 մղոնը փակվեց այն բանից հետո",
+     "continuation": " այն անցան անցան անցան անցան անցան անցան անցան անցան անցան ա",
+     "repetition": 0.8421052631578947
+    },
+    {
+     "prompt": "Հրդեհաշիջման համակարգի հերթական փորձարկումից հետո Էլեկտրաէնե",
+     "continuation": "րգիայի համակարգի համակարգի համակարգի համակարգի համակարգի համ",
+     "repetition": 0.736842105263158
+    }
+   ],
+   "english": [
+    {
+     "prompt": "On Monday, scientists from the Stanford University School of",
+     "continuation": " Medicine, in the United States, have been successful in developing a new method of 50% of the time, the 50%-50%-50%-50%-50%-50%-50%-50%-50",
+     "repetition": 0.49122807017543857
+    },
+    {
+     "prompt": "Lead researchers say this may bring early detection of cance",
+     "continuation": "...<|endoftext|>",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "The JAS 39C Gripen crashed onto a runway at around 9:30 am l",
+     "continuation": " 10:00 am, 10:00 am, 10:00 am, 10:00 am, 10:00 am, 10:00 am, 10:00 am, 10:",
+     "repetition": 0.8596491228070176
+    },
+    {
+     "prompt": "The pilot was identified as Squadron Leader Dilokrit Pattave",
+     "continuation": ", who was 60% of the 100% of 100% of 100% of 100% of 100% of 100% of 100% of 100% of 10",
+     "repetition": 0.736842105263158
+    },
+    {
+     "prompt": "Local media reports an airport fire vehicle rolled over whil",
+     "continuation": " 10000000000000000000000000000000000000000000000000000000000",
+     "repetition": 0.9473684210526316
+    },
+    {
+     "prompt": "28-year-old Vidal had joined Barça three seasons ago, from S",
+     "continuation": "orel, and had been in the 2006-07 LaLiga 1-0 1-0 1-0 1-0 1-0 1-0 1-0 1-0 1-0 1-0 ",
+     "repetition": 0.5964912280701755
+    },
+    {
+     "prompt": "Since moving to the Catalan-capital, Vidal had played 49 gam",
+     "continuation": "en and 120000000000000000000000000000000000000000000000000000000",
+     "repetition": 0.8947368421052632
+    },
+    {
+     "prompt": "The protest started around 11:00 local time (UTC+1) on White",
+     "continuation": " House grounds, and the National Museum of History and Culture in Washington D.C., and the National Gallery Fire Museum in Washington D.C., and the National Archives in Washington D.C., and the National Library of Washington D.C., and the National Air and Space Museum in Washington D.C., and the National",
+     "repetition": 0.3508771929824561
+    },
+    {
+     "prompt": "Just after 11:00, protesters blocked traffic on the northbou",
+     "continuation": "levard, and the city of New York, New York, New York, New York, New York, New York, New York, New York, New York, New York, New York, New York, New York, New York, New York, New York, New York, New York,",
+     "repetition": 0.8421052631578947
+    },
+    {
+     "prompt": "At 11:20, the police asked the protesters to move back on to",
+     "continuation": " the 11:30-11:45 PM, 11:50-12:00 PM, 11:55-12:10 PM, 12:15-12:30 PM, 12",
+     "repetition": 0.24561403508771928
+    },
+    {
+     "prompt": "Around 11:29, the protest moved up Whitehall, past Trafalgar",
+     "continuation": ", to the 11th  11th  11th  11th  11th  11th  11th  11th  11th  11th  11th  1",
+     "repetition": 0.8596491228070176
+    },
+    {
+     "prompt": "Nadal's head to head record against the Canadian is 7–2.",
+     "continuation": " 1–1. 0–1. 0–1. 0–1. 0–1. 0–1. 0–1. 0–1. 0–1. 0–1. 0–1. 0–1.",
+     "repetition": 0.8771929824561404
+    },
+    {
+     "prompt": "He recently lost against Raonic in the Brisbane Open.",
+     "continuation": "  He has been coaching the 2018-19 Eredivis Eredivis Eredivis Eredivis Eredivis Eredivis Eredivis Eredivis Eredivis Eredivis Eredivis Eredivis Eredivis Eredivis Eredivis Ere",
+     "repetition": 0.7017543859649122
+    },
+    {
+     "prompt": "Nadal bagged 88% net points in the match winning 76 points i",
+     "continuation": " 76-76-76-76-76-76-76-76-76-76-76-76-76-76-76-76-76-76-76-76",
+     "repetition": 0.9298245614035088
+    },
+    {
+     "prompt": "After the match, King of Clay said, \"I am just excited about",
+     "continuation": " the result. I would like to have the best of the best, but I would like to have the best of the best of the best, but I would like to have the best of the best of the best of the best, but I would like to have the best of the best of the",
+     "repetition": 0.7192982456140351
+    },
+    {
+     "prompt": "\"Panama Papers\" is an umbrella term for roughly ten million ",
+     "continuation": "2000-2010, 2015-2020, 2025-2030, 2035-2040, 2045-2050, 2055-",
+     "repetition": 0.19298245614035092
+    },
+    {
+     "prompt": "The documents showed fourteen banks helped wealthy clients h",
+     "continuation": " the 1990-2000, but only 12 of them were in the 1990-2000-2010-2015-2020-2025-2030-20",
+     "repetition": 0.26315789473684215
+    },
+    {
+     "prompt": "British newspaper The Guardian suggested Deutsche Bank contr",
+     "continuation": "i-2000-2010-2015-2020-2025-2030-2035-2040-2045-2050-2055-206",
+     "repetition": 0.24561403508771928
+    },
+    {
+     "prompt": "There were protests worldwide, several criminal prosecutions",
+     "continuation": ", and the 1990-1991 1990-1991 1990-1991 1990-1991 1990-1991 1990-1",
+     "repetition": 0.7719298245614035
+    },
+    {
+     "prompt": "Born in Hong Kong, Ma studied at New York University and Har",
+     "continuation": "vardian College of Arts and Science, graduated with 2008-2010, 2010-2011, 2011-2012, 2012-2013, 2013",
+     "repetition": 0.22807017543859653
+    },
+    {
+     "prompt": "Hsieh implied during the election that Ma might flee the cou",
+     "continuation": "ps, but the 2016-2017-2018-2019-2020-2021-2022-2023-2024-2025-2026-",
+     "repetition": 0.14035087719298245
+    },
+    {
+     "prompt": "Hsieh also argued that the photogenic Ma was more style than",
+     "continuation": " the other, but the other one, the other one, the other one, the other one, the other one, the other one, the other one, the other one, the other one, the other one, the other one, the other one, the other one, the other one,",
+     "repetition": 0.8596491228070176
+    },
+    {
+     "prompt": "Despite these accusations, Ma won handily on a platform advo",
+     "continuation": ", but the same year, the same year, the same year, the same year, the same year, the same year, the same year, the same year, the same year, the same year, the same year, the same year, the same year, the same year, the same",
+     "repetition": 0.8947368421052632
+    },
+    {
+     "prompt": "Today's Player of the Day is Alex Ovechkin of the Washington",
+     "continuation": " D.C. 2008-09-10 00:00:00 00:00:00 00:00:00 00:00:00 00:00:00 ",
+     "repetition": 0.6491228070175439
+    },
+    {
+     "prompt": "He had 2 goals and 2 assists in Washington's 5-3 win over th",
+     "continuation": " 2-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1",
+     "repetition": 0.9298245614035088
+    },
+    {
+     "prompt": "Ovechkin's first assist of the night was on the game-winning",
+     "continuation": " goal in 2-1, 1-0, 2-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1",
+     "repetition": 0.736842105263158
+    },
+    {
+     "prompt": "his second goal of the night was his 60th of the season, bec",
+     "continuation": " - 60th of the 60th of the 60th of the 60th of the 60th of the 60th of the 60th of the 60th of the 60th of the 60th of",
+     "repetition": 0.8771929824561404
+    },
+    {
+     "prompt": "Batten was ranked 190th on the 2008 400 Richest Americans li",
+     "continuation": "ason 2008-09-06 09:15:00 09:15:00 09:15:00 09:15:00 09:15:00 09",
+     "repetition": 0.631578947368421
+    },
+    {
+     "prompt": "He graduated from the College of Arts & Sciences of the Univ",
+     "continuation": " of 2008-2012, and has a B.S. in 2009-2011.  2008-2012:  2009-2011:  2008",
+     "repetition": 0.368421052631579
+    },
+    {
+     "prompt": "Iraq's Abu Ghraib prison has been set alight during a riot.",
+     "continuation": "  A 2009-2010-2011-2012-2013-2014-2015-2016-2017-2018-2019-20",
+     "repetition": 0.17543859649122806
+    },
+    {
+     "prompt": "The jail became notorious after prisoner abuse was discovere",
+     "continuation": ".  2.  The 2008-2010-2011-2012-2013-2014-2015-2016-2017-2018-20",
+     "repetition": 0.1578947368421053
+    },
+    {
+     "prompt": "Piquet Jr. crashed in the 2008 Singapore Grand Prix just aft",
+     "continuation": " of 2008-09-10-11-12-13-14-15-16-17-18-19-20-21-22-23-24-25-26",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "As the cars ahead of Alonso went in for fuel under the safet",
+     "continuation": ", the 1998-99-09-09-09-09-09-09-09-09-09-09-09-09-09-09-09-09-0",
+     "repetition": 0.7894736842105263
+    },
+    {
+     "prompt": "Piquet Jr. was sacked after the 2009 Hungarian Grand Prix.",
+     "continuation": " 2009-03-10. 2009-03-10. 2009-03-10. 2009-03-10. 2009-03-10.",
+     "repetition": 0.7894736842105263
+    },
+    {
+     "prompt": "At exactly 8:46 a.m. a hush fell across the city, marking th",
+     "continuation": " the end of the 8th  8th  8th  8th  8th  8th  8th  8th  8th  8th  8th  8th  8th  8th ",
+     "repetition": 0.8596491228070176
+    },
+    {
+     "prompt": "Two beams of light have been rigged up to point skywards ove",
+     "continuation": "...  2.  2.  2.  2.  2.  2.  2.  2.  2.  2.  2.  2.  2.  2.  2",
+     "repetition": 0.9122807017543859
+    },
+    {
+     "prompt": "Construction is ongoing for five new skyscrapers at the site",
+     "continuation": ", and the city is in a state of 20% 20% 20% 20% 20% 20% 20% 20% 20% 20% 20% 20% 20",
+     "repetition": 0.7719298245614035
+    },
+    {
+     "prompt": "The PBS show has more than two-dozen Emmy awards, and its ru",
+     "continuation": "...<|endoftext|>",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "Each episode of the show would focus on a theme in a specifi",
+     "continuation": "...  200-250 word, 1-2  2-4  5-10  10-15  15-20  20-25  25-30  30-",
+     "repetition": 0.03508771929824561
+    },
+    {
+     "prompt": "Each show would also provide recommendations for books that ",
+     "continuation": "2008-2010, 2011-2012, 2013-2014, 2015-2016, 2017-2018, 2019-",
+     "repetition": 0.21052631578947367
+    },
+    {
+     "prompt": "John Grant, from WNED Buffalo (Reading Rainbow's home statio",
+     "continuation": ")<|endoftext|>",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "It is believed by some, including John Grant, that both the ",
+     "continuation": "1968 and 1972-73 World Cups were 1968-72-73-74-75-76-77-78-79-80-81-82-83-84",
+     "repetition": 0.052631578947368474
+    },
+    {
+     "prompt": "The storm, situated about 645 miles (1040 km) west of the Ca",
+     "continuation": "ucan (Cacan) on the 10th of April 1999, was the first of its kind to be named in the 1999-2000 World's Most 100 Most 100 Most 100 Most",
+     "repetition": 0.17543859649122806
+    },
+    {
+     "prompt": "Fred currently has winds of 105 miles per hour (165 km/h) an",
+     "continuation": " 85% of the time, but the 10% is 10% of the time, and 85% is 85% of the time, and 95% is 95% of the time, and 90% is 90",
+     "repetition": 0.368421052631579
+    },
+    {
+     "prompt": "Fred is the strongest tropical cyclone ever recorded so far ",
+     "continuation": "2018-03-15 09:00:00 09:00:00 09:00:00 09:00:00 09:00:00 09:0",
+     "repetition": 0.6666666666666667
+    },
+    {
+     "prompt": "On September 24, 1759, Arthur Guinness signed a 9,000 year l",
+     "continuation": ", 9,000 year l, 9,000 year l, 9,000 year l, 9,000 year l, 9,000 year l, 9,000 year l, 9,00",
+     "repetition": 0.8421052631578947
+    },
+    {
+     "prompt": "250 years later, Guinness has grown to a global business tha",
+     "continuation": "...<|endoftext|>",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "Jonny Reid, co-driver for the A1GP New Zealand team, today m",
+     "continuation": "umbled, \"I would like to have the 2018-2019 World 100000000000000000000000000000000000000",
+     "repetition": 0.5964912280701755
+    },
+    {
+     "prompt": "Mr Reid managed to drive the New Zealand's A1GP car, Black B",
+     "continuation": "1000, on 17th April 2018, 17:00-17:15, 17th April 2018, 17:00-17:15, 17th April ",
+     "repetition": 0.49122807017543857
+    },
+    {
+     "prompt": "The New Zealand police had trouble using their speed radar g",
+     "continuation": "els to track the 2016-2017-2018-2019-2020-2021-2022-2023-2024-2025-2026-",
+     "repetition": 0.14035087719298245
+    },
+    {
+     "prompt": "In the last 3 months, over 80 arrestees were released from t",
+     "continuation": "...  2008-09-01  2008-09-01  2008-09-01  2008-09-01  2008-09-0",
+     "repetition": 0.7719298245614035
+    },
+    {
+     "prompt": "In April this year, a temporary restaining order was issued ",
+     "continuation": "100% of the 2000-2001-2002-2003-2004-2005-2006-2007-2008-2009-201",
+     "repetition": 0.14035087719298245
+    },
+    {
+     "prompt": "The commissioner sets bail, if granted, and formalizes the c",
+     "continuation": "lemency of the 12th-16th-18th-20th-22nd-24th-26th-28th-30th-32th-34th-36th-38th-40th",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "The hearing also marks the date for the suspect’s right to a",
+     "continuation": " “comprehensive” and “comprehensive” (comprehensive) and “comprehensive” (comprehensive) and “comprehensive” (comprehensive) and “comprehensive” (comprehensive) and “comprehensive” (comprehensive) and “comprehensive” (comprehensive) and “",
+     "repetition": 0.7894736842105263
+    },
+    {
+     "prompt": "Peter Costello, Australian treasurer and the man most likely",
+     "continuation": " to be the first of his own sort, has been named the 2018-2019 National School of the Year (NSY) by the National School of the Year (NSY) program, which is the only one in the world that has the same name as the",
+     "repetition": 0.10526315789473684
+    },
+    {
+     "prompt": "Mr Costello said that when nuclear power generation becomes ",
+     "continuation": "100% available, the world will no longer have to 100% 100% 100% 100% 100% 100% 100% 100% 100% 1",
+     "repetition": 0.7017543859649122
+    },
+    {
+     "prompt": "\"If it becomes commercial, we should have it. That is, there",
+     "continuation": " is no commercial, there is no commercial.  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0",
+     "repetition": 0.7894736842105263
+    },
+    {
+     "prompt": "According to Ansa, \"police were concerned by a couple of top",
+     "continuation": " 50% of the population, but the 50% of the population were 50% of the population, but 50% of the population were 50% of the population, but 50% of the population were 50% of the population,",
+     "repetition": 0.7017543859649122
+    },
+    {
+     "prompt": "Police said Lo Piccolo had the upper hand because he had bee",
+     "continuation": " the first to 100% of the 100% of the 100% of the 100% of the 100% of the 100% of the 100% of the 100% of the ",
+     "repetition": 0.8245614035087719
+    },
+    {
+     "prompt": "These bosses had been reined in by Provenzano when he put an",
+     "continuation": " end to the 1980-81-82-83-84-85-86-87-88-89-90-91-92-93-94-95-96-97-",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "Apple CEO Steve Jobs unveiled the device by walking onto the",
+     "continuation": " Apple iPhone 10 Pro+, which is the iPhone 10 Pro+ (2019) – 2019-06-10. Apple iPhone 10 Pro+ (2019) – 2019-06-10",
+     "repetition": 0.4385964912280702
+    },
+    {
+     "prompt": "During his 2 hour speech he stated that \"Today Apple is goin",
+     "continuation": "' to 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 10",
+     "repetition": 0.8771929824561404
+    },
+    {
+     "prompt": "Brazil is the largest Roman Catholic country on Earth, and t",
+     "continuation": " the largest in the world, but Brazil is also the only one that has a 100% 100% 100% 100% 100% 100% 100% 100% 100",
+     "repetition": 0.631578947368421
+    },
+    {
+     "prompt": "The National Congress of Brazil has debated legalization for",
+     "continuation": " the 2016-2017 Brazilian government. 2016-2017 Brazil is the 10th year of the 2016-2017 Brazilian government. 2016-2017 Brazil is the",
+     "repetition": 0.543859649122807
+    },
+    {
+     "prompt": "The original bill was drafted by former mayor of São Paulo, ",
+     "continuation": "2000-2015, and the 2015-2016-2017-2018-2019-2020-2021-2022-2023-20",
+     "repetition": 0.1578947368421053
+    },
+    {
+     "prompt": "Protesters hope to collect a petition of 1.2 million signatu",
+     "continuation": "...  2.  2008-09-10  2008-09-10  2008-09-10  2008-09-10  2008-",
+     "repetition": 0.7017543859649122
+    },
+    {
+     "prompt": "After it became apparent that many families were seeking leg",
+     "continuation": "acies of their own, but the only one who had the most was the one who had the most money.  The only one who had the most money was the one who had the most money, but there were no one left to give them money.  The only one who had the most money",
+     "repetition": 0.33333333333333337
+    },
+    {
+     "prompt": "When the tenants started sharing what had occurred to them, ",
+     "continuation": " the 1999-2000 2001-2002  2002-2003  2003-2004  2004-2005  2005",
+     "repetition": 0.26315789473684215
+    },
+    {
+     "prompt": "Tenants at Lockwood Gardens believe that there may be anothe",
+     "continuation": " 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%",
+     "repetition": 0.9122807017543859
+    },
+    {
+     "prompt": "The band canceled the show at Maui's War Memorial Stadium, w",
+     "continuation": "/  2018-05-10  2018-05-10  2018-05-10  2018-05-10  2018-05-1",
+     "repetition": 0.7719298245614035
+    },
+    {
+     "prompt": "The band's management company, HK Management Inc., gave no i",
+     "continuation": ". 2018-09-01 09-01-2018 09-01-2018 09-01-2018 09-01-2018 09-",
+     "repetition": 0.6491228070175439
+    },
+    {
+     "prompt": "The famous Greek lawyers, Sakis Kechagioglou and George Niko",
+     "continuation": ", who are known for their 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100",
+     "repetition": 0.8070175438596492
+    },
+    {
+     "prompt": "As a result of this, a big scandal within the Greek legal co",
+     "continuation": "-  2015-06-10  2015-06-10  2015-06-10  2015-06-10  2015-06-1",
+     "repetition": 0.7719298245614035
+    },
+    {
+     "prompt": "A few weeks ago, after the information published by the jour",
+     "continuation": "no, I had the opportunity to chat with my father and my mother. We had a chat about the topic of the book \"The World is a Book\" by William Blake. We were talking about Blake’s work and how Blake’s work has had a lasting impact on the world. We were talking",
+     "repetition": 0.01754385964912286
+    },
+    {
+     "prompt": "Moreover, top judge Evangelos Kalousis is imprisoned as he f",
+     "continuation": "ells into the 1999-2000-2001-2002-2003-2004-2005-2006-2007-2008-2009-2",
+     "repetition": 0.1578947368421053
+    },
+    {
+     "prompt": "Roberts flatly refused to say about when he believes life be",
+     "continuation": " a problem for him, but he did say that he would not, in his own, but he did say that he would not, in his own, but he did say that he would not, in his own, but he did say that he would not, in his own, but he did",
+     "repetition": 0.7017543859649122
+    },
+    {
+     "prompt": "He did, however, reiterate his earlier statement that Roe v.",
+     "continuation": " Sotomayor (1970) was a case of \"unfounded\" and \"unrehearsed\" (1970) — that is, that the case was not a case of \"unrehearsed\" but of \"unfounded\" — that",
+     "repetition": 0.19298245614035092
+    },
+    {
+     "prompt": "He also confirmed that he believed in the implied right to p",
+     "continuation": "ious and pious- 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%",
+     "repetition": 0.8245614035087719
+    },
+    {
+     "prompt": "Maroochydore had finished on top of the ladder, six points c",
+     "continuation": ". 1000000000000000000000000000000000000000000000000000000000",
+     "repetition": 0.9298245614035088
+    },
+    {
+     "prompt": "The two sides would meet in the major semi final where Noosa",
+     "continuation": "he would have to play 16-16-16-16-16-16-16-16-16-16-16-16-16-16-16-16-16-16-",
+     "repetition": 0.8421052631578947
+    },
+    {
+     "prompt": "Maroochydore then defeated Caboolture in the Preliminary Fin",
+     "continuation": "ale of the World 1000000000000000000000000000000000000000000000000000000",
+     "repetition": 0.8771929824561404
+    },
+    {
+     "prompt": "Hesperonychus elizabethae is a species of the family Dromaeo",
+     "continuation": "ceidae, and is a small, 10-12 year old, 10-12 inch long, 10-12 inch wide, 10-12 inch high, 10-12 inch in length, 10-1",
+     "repetition": 0.38596491228070173
+    },
+    {
+     "prompt": "This fully feathered, warm blooded bird of prey was believed",
+     "continuation": " to be a threat to the world, but in fact, it was a threat only to the world's north, and the north was a world of its own, where there were no such things as 'threats'—no threat, no threat—no threat at all. The north was",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "Its second claw was larger, giving rise to the name Hesperon",
+     "continuation": ", and the first claw was larger, giving rise to the name Hylarion.  Hylarion and Hesperon were named after the Hesperian and Hylosian, which were the first known periods of the planet's formation, and the first known periods of the planet's",
+     "repetition": 0.1228070175438597
+    },
+    {
+     "prompt": "In addition to the crushing ice, extreme weather conditions ",
+     "continuation": " (e.g.,  strong  winds,  high 100  F  (38  C)  and  200  F  (70  C)  can  also  result  in  the  same  problem  of  the  same",
+     "repetition": 0.08771929824561409
+    },
+    {
+     "prompt": "Pittman suggested that conditions wouldn't improve until som",
+     "continuation": "atic and emotional well-being were fully integrated into the work of the people involved, but the work of the people involved was not fully integrated into the work of the people involved, but the work of the people involved was not fully integrated into the work of the people involved, but the work of the people",
+     "repetition": 0.6140350877192983
+    },
+    {
+     "prompt": "The amount and thickness of the pack ice, according to Pittm",
+     "continuation": ", is 100% of the 100% of the 100% of the 100% of the 100% of the 100% of the 100% of the 100% of the 1",
+     "repetition": 0.8421052631578947
+    },
+    {
+     "prompt": "News spread in the Red Lake community today as funerals for ",
+     "continuation": "2016-2017-2018-2019-2020-2021-2022-2023-2024-2025-2026-2027-",
+     "repetition": 0.17543859649122806
+    },
+    {
+     "prompt": "Authorities said little officially beyond confirming today's",
+     "continuation": " 20-25% growth in the 2018-2020-2021-2022-2023-2024-2025-2026-2027-2028",
+     "repetition": 0.1578947368421053
+    },
+    {
+     "prompt": "However, a source with knowledge of the investigation told t",
+     "continuation": "...  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  ",
+     "repetition": 0.9298245614035088
+    },
+    {
+     "prompt": "It is not known at this time what charges will be laid or wh",
+     "continuation": "et, but it is known that the only way to accomplish this is by the use of a 100% 100% 100% 100% 100% 100% 100% 100% ",
+     "repetition": 0.5789473684210527
+    },
+    {
+     "prompt": "Lodin also said officials decided to cancel the runoff in or",
+     "continuation": " by 2020, but the 2019-2020-2021-2022-2023-2024-2025-2026-2027-2028-",
+     "repetition": 0.1578947368421053
+    },
+    {
+     "prompt": "Diplomats said that they had found enough ambiguity in the A",
+     "continuation": "3-2200-2000-2001-2002-2003-2004-2005-2006-2007-2008-2009-201",
+     "repetition": 0.19298245614035092
+    },
+    {
+     "prompt": "This contradicts earlier reports, which said that cancelling",
+     "continuation": " the 2008-2010-2012-2014-2016-2018-2020-2021-2022-2023-2024-202",
+     "repetition": 0.22807017543859653
+    },
+    {
+     "prompt": "The aircraft had been headed to Irkutsk and was being operat",
+     "continuation": "...  2.  The pilot of the plane was  3.  The pilot of the plane was  4.  The pilot of the plane was  5.  The pilot of the plane was  6.  The pilot of the plane was  7.",
+     "repetition": 0.49122807017543857
+    },
+    {
+     "prompt": "An inquiry was established to investigate.",
+     "continuation": " the 2016-2017 2016-2017 2016-2017 2016-2017 2016-2017 2016-201",
+     "repetition": 0.8070175438596492
+    },
+    {
+     "prompt": "The Il-76 has been a major component of both the Russian and",
+     "continuation": " the United States' 2008-2010-2012-2014-2016-2017-2018-2019-2020-2021-2022-",
+     "repetition": 0.17543859649122806
+    },
+    {
+     "prompt": "On October 7 an engine separated on takeoff, without injurie",
+     "continuation": ", and then 10-15-20-25-30-35-40-45-50-55-60-65-70-75-80-85-90-95-10",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "800 miles of the Trans-Alaska Pipeline System were closed do",
+     "continuation": "...  800  800  800  800  800  800  800  800  800  800  800  80",
+     "repetition": 0.8947368421052632
+    },
+    {
+     "prompt": "A power failure following a routine fire-command system test",
+     "continuation": " has been reported by the Fire Department. The Fire Department has been told by the Fire Department’s Fire-Command-and-Response (F-4) program that the 10th Fire Department has been performing a routine Fire-Command-and-Response (F-4) training program.",
+     "repetition": 0.19298245614035092
+    }
+   ]
+  }
+ }
+}
