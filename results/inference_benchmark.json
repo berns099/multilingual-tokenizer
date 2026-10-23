@@ -1,0 +1,61 @@
+{
+  "benchmark": {
+    "lang": "hye_Armn",
+    "split": "dev",
+    "sentences": 100,
+    "warmup": 5,
+    "repeats": 20
+  },
+  "environment": {
+    "device": "mps",
+    "platform": "macOS-15.7.3-arm64-arm-64bit-Mach-O",
+    "python": "3.13.13",
+    "torch": "2.14.1",
+    "transformers": "5.20.2",
+    "dtype": "bfloat16"
+  },
+  "models": {
+    "stock": {
+      "sentences": 100,
+      "input_bytes": 27877,
+      "input_tokens": 15094,
+      "bytes_per_token": 1.8468928050881144,
+      "median_seconds": 12.272178978979355,
+      "p90_seconds": 12.93714562500827,
+      "tokens_per_second": 1229.9364298592823,
+      "bytes_per_second": 2271.560743022871
+    },
+    "stage1": {
+      "sentences": 100,
+      "input_bytes": 27877,
+      "input_tokens": 4442,
+      "bytes_per_token": 6.275776677172445,
+      "median_seconds": 5.947100875026081,
+      "p90_seconds": 6.033710458024871,
+      "tokens_per_second": 746.918556342887,
+      "bytes_per_second": 4687.494055644002
+    },
+    "base": {
+      "sentences": 100,
+      "input_bytes": 27877,
+      "input_tokens": 15094,
+      "bytes_per_token": 1.8468928050881144,
+      "median_seconds": 12.115025875013089,
+      "p90_seconds": 12.224855125008617,
+      "tokens_per_second": 1245.8908594764923,
+      "bytes_per_second": 2301.0268642921806
+    }
+  },
+  "comparisons": {
+    "stage1_vs_stock": {
+      "token_ratio": 0.29428912150523384,
+      "prefill_time_ratio": 0.48460023971396526,
+      "bytes_per_second_ratio": 2.063556552490046
+    },
+    "base_vs_stock": {
+      "token_ratio": 1.0,
+      "prefill_time_ratio": 0.9871943601673795,
+      "bytes_per_second_ratio": 1.0129717514091645
+    }
+  }
+}
