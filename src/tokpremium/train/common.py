@@ -2,7 +2,13 @@
 
 from __future__ import annotations
 
+import hashlib
 import math
+import platform
+import subprocess
+from argparse import Namespace
+from datetime import datetime, timezone
+from importlib.metadata import version
 from pathlib import Path
 
 import torch
@@ -18,6 +24,65 @@ def device() -> torch.device:
 
 def read_lines(path: str | Path) -> list[str]:
     return [normalize(x) for x in Path(path).read_text(encoding="utf-8").splitlines() if x.strip()]
+
+
+def file_fingerprint(path: str | Path) -> dict[str, str | int]:
+    """Return a stable identity for an input file without loading it into memory."""
+    path = Path(path)
+    digest = hashlib.sha256()
+    with path.open("rb") as stream:
+        for chunk in iter(lambda: stream.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return {
+        "path": str(path),
+        "bytes": path.stat().st_size,
+        "sha256": digest.hexdigest(),
+    }
+
+
+def git_provenance() -> dict[str, str | bool | None]:
+    """Return the checked-out revision and whether tracked or untracked files differ."""
+    cwd = Path(__file__).resolve().parent
+    try:
+        revision = subprocess.run(
+            ["git", "rev-parse", "HEAD"],
+            cwd=cwd,
+            check=True,
+            capture_output=True,
+            text=True,
+            timeout=5,
+        ).stdout.strip()
+        status = subprocess.run(
+            ["git", "status", "--porcelain=v1", "--untracked-files=all"],
+            cwd=cwd,
+            check=True,
+            capture_output=True,
+            text=True,
+            timeout=5,
+        ).stdout
+    except (OSError, subprocess.SubprocessError):
+        return {"commit": None, "dirty": None}
+    return {"commit": revision, "dirty": bool(status)}
+
+
+def build_provenance(args: Namespace, dev: torch.device) -> dict:
+    """Describe the code, runtime, and exact input files used by a training run."""
+    inputs = {
+        name: file_fingerprint(path)
+        for name in ("corpus", "heldout", "english")
+        if (path := getattr(args, name, None))
+    }
+    return {
+        "started_at_utc": datetime.now(timezone.utc).isoformat(),
+        "git": git_provenance(),
+        "environment": {
+            "python": platform.python_version(),
+            "torch": str(torch.__version__),
+            "transformers": version("transformers"),
+            "device": str(dev),
+        },
+        "inputs": inputs,
+    }
 
 
 def pack(tok, texts: list[str], seq_len: int) -> torch.Tensor:
@@ -48,9 +113,7 @@ def bits_per_byte(model, tok, texts: list[str], max_chars: int = 600) -> float:
         t = t[:max_chars]
         ids = torch.tensor([[EOT] + tok(t, add_special_tokens=False)["input_ids"]], device=dev)
         logits = model(ids).logits[:, :-1].float()
-        nll += torch.nn.functional.cross_entropy(
-            logits[0], ids[0, 1:], reduction="sum"
-        ).item()
+        nll += torch.nn.functional.cross_entropy(logits[0], ids[0, 1:], reduction="sum").item()
         n_bytes += len(t.encode("utf-8"))
     return nll / math.log(2) / n_bytes
 
@@ -81,12 +144,18 @@ def run_training(model, tok, args, params, old_rows: int | None = None) -> dict:
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
     ckpt_path = out / "ckpt.pt"
-    resume = torch.load(ckpt_path, map_location="cpu") if ckpt_path.exists() else None
+    resume = (
+        torch.load(ckpt_path, map_location="cpu", weights_only=True) if ckpt_path.exists() else None
+    )
     if resume:
         rep = resume["rep"]
         print(f"resuming from step {resume['step']}", flush=True)
     else:
-        rep = {"args": vars(args), "tokens_seen": 0}
+        rep = {
+            "args": vars(args),
+            "provenance": build_provenance(args, dev),
+            "tokens_seen": 0,
+        }
         rep["bpb_tel_before"] = bits_per_byte(model, tok, held)
         if eng:
             rep["bpb_eng_before"] = bits_per_byte(model, tok, eng)
@@ -107,7 +176,7 @@ def run_training(model, tok, args, params, old_rows: int | None = None) -> dict:
     start = 0
     if resume:
         with torch.no_grad():
-            for p, v in zip(params, resume["params"]):
+            for p, v in zip(params, resume["params"], strict=True):
                 p.copy_(v.to(p.device))
         opt.load_state_dict(resume["opt"])
         sched.load_state_dict(resume["sched"])
@@ -173,4 +242,9 @@ def add_common_args(ap) -> None:
     ap.add_argument("--lr", type=float, default=1e-3)
     ap.add_argument("--eval-docs", type=int, default=100)
     ap.add_argument("--seed", type=int, default=0)
-    ap.add_argument("--save-every", type=int, default=50, help="steps between resumable checkpoints; 0=off")
+    ap.add_argument(
+        "--save-every",
+        type=int,
+        default=50,
+        help="steps between resumable checkpoints; 0=off",
+    )

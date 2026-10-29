@@ -37,9 +37,17 @@ def _setup(tmp_path):
 
 def _args(tmp_path, out):
     return argparse.Namespace(
-        out=str(out), corpus=str(tmp_path / "t.txt"), heldout=str(tmp_path / "t.txt"),
-        english=None, tokens=8 * 2 * 16, seq_len=16, batch=2, lr=1e-2, eval_docs=3,
-        seed=0, save_every=2,
+        out=str(out),
+        corpus=str(tmp_path / "t.txt"),
+        heldout=str(tmp_path / "t.txt"),
+        english=None,
+        tokens=8 * 2 * 16,
+        seq_len=16,
+        batch=2,
+        lr=1e-2,
+        eval_docs=3,
+        seed=0,
+        save_every=2,
     )
 
 
@@ -76,9 +84,13 @@ def test_resume_matches_uninterrupted(tmp_path, dev):
     with pytest.raises(Boom):
         common.run_training(m, tok, _args(tmp_path, tmp_path / "b"), [w], old_rows=first_new)
     assert (tmp_path / "b" / "ckpt.pt").exists(), "crash fired before any checkpoint"
+    original_provenance = torch.load(
+        tmp_path / "b" / "ckpt.pt", map_location="cpu", weights_only=True
+    )["rep"]["provenance"]
 
     m, w = make()
     rep = common.run_training(m, tok, _args(tmp_path, tmp_path / "b"), [w], old_rows=first_new)
     assert rep["old_rows_unchanged"] is True
+    assert rep["provenance"] == original_provenance
     assert torch.allclose(w.detach().cpu().float(), ref.float(), atol=1e-5)
     assert not (tmp_path / "b" / "ckpt.pt").exists()
