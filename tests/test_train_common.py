@@ -128,3 +128,22 @@ def test_replay_rejects_a_ratio_outside_the_open_unit_interval():
     for bad in (0.0, 1.0, 1.5, -0.1):
         with pytest.raises(ValueError, match="replay ratio"):
             common.mix_replay(_fake_tok(), ["x" * 40], ["y" * 40], bad, 0, {})
+
+
+def test_split_disjoint_is_lossless_and_seed_deterministic():
+    """The train/heldout split was made by hand in October and never committed.
+
+    A split that silently overlaps turns bits-per-byte on the heldout set into
+    a training-set measurement, which is the kind of error that reads as a
+    good result.
+    """
+    from tokpremium.data.prepare import split_disjoint
+
+    lines = [f"line {i}" for i in range(1000)]
+    train, held = split_disjoint(lines, 200, seed=0)
+
+    assert len(held) == 200 and len(train) == 800
+    assert not set(train) & set(held)
+    assert sorted(train + held) == sorted(lines)
+    assert split_disjoint(lines, 200, seed=0) == (train, held)
+    assert split_disjoint(lines, 200, seed=1)[0] != train
