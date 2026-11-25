@@ -8,6 +8,10 @@
 FLORES dev is held out from the FineWeb-2 training text (a different domain),
 and the English side is the full parallel dev set, not a 5-sentence sample.
 
+Every row carries a `provenance` block naming the checkpoint it came from,
+including a hash of its tokenizer.json, so a result can always be tied back to
+the exact artifact that produced it.
+
 The generation check reports repeated token 4-gram statistics. Repetition is
 reported as a distribution rather than only a mean because a small number of
 severely looping generations can otherwise be hidden by the aggregate.
@@ -17,8 +21,11 @@ from __future__ import annotations
 
 import argparse
 import json
+import platform
 import statistics
 import sys
+from datetime import datetime, timezone
+from importlib.metadata import version
 from pathlib import Path
 
 import torch
@@ -75,6 +82,52 @@ def generate(
 
     new = out[0, ids.shape[1] :].tolist()
     return tok.decode(new), repetition_rate(new)
+
+
+def model_provenance(path: str, tok, model) -> dict:
+    """Identify exactly which artifact produced a row of results.
+
+    The midterm feedback was that evaluation files could not be linked to
+    exact checkpoints, and two runs of the Armenian pipeline disagreed with
+    nothing in the repository recording which vocabulary build each used. A
+    row is only as traceable as the identity stored beside it, so every row
+    carries its own: hashing tokenizer.json distinguishes two extensions of
+    the same base model even when every other field matches, and repeating
+    the run-level git and environment block per row keeps each row readable
+    on its own rather than only as part of the file it arrived in.
+    """
+    p = Path(path)
+    prov: dict = {
+        "spec": path,
+        "local": p.exists(),
+        "vocab_size": len(tok),
+        "n_parameters": sum(x.numel() for x in model.parameters()),
+        "git": common.git_provenance(),
+        "environment": {
+            "python": platform.python_version(),
+            "torch": str(torch.__version__),
+            "transformers": version("transformers"),
+        },
+        "evaluated_at_utc": datetime.now(timezone.utc).isoformat(),
+    }
+
+    if not p.exists():
+        # A hub id: record the revision transformers resolved, when it kept one.
+        prov["hub_id"] = path
+        commit = getattr(model.config, "_commit_hash", None)
+        if commit:
+            prov["hub_commit"] = commit
+        return prov
+
+    prov["resolved_path"] = str(p.resolve())
+    # tokenizer.json is the file that distinguishes two vocabulary builds;
+    # the weight shards identify the trained model itself.
+    wanted = [p / "tokenizer.json", p / "config.json"]
+    wanted += sorted(p.glob("*.safetensors")) + sorted(p.glob("*.bin"))
+    prov["files"] = {
+        f.name: common.file_fingerprint(f) for f in wanted if f.is_file()
+    }
+    return prov
 
 
 def clear_device_cache(dev: torch.device) -> None:
@@ -163,12 +216,13 @@ def main(argv: list[str] | None = None) -> int:
             row[f"n_prompts_{key}"] = len(reps)
 
         row["generations"] = gens
+        row["provenance"] = model_provenance(path, tok, model)
         results[name] = row
 
         printable = {
             key: round(value, 4) if isinstance(value, float) else value
             for key, value in row.items()
-            if key != "generations"
+            if key not in ("generations", "provenance")
         }
         print(name, printable, flush=True)
 
