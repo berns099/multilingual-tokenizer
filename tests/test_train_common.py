@@ -93,3 +93,38 @@ def test_byte_budget_equalizes_text_across_differing_tokenizers():
         assert abs(seen - target_bytes) / target_bytes < 0.01
 
     assert steps["baseline"] > steps["extended"] * 3
+
+
+def _fake_tok():
+    class Tok:  # one token per four characters
+        def __call__(self, texts, add_special_tokens=False):
+            return {"input_ids": [[0] * max(1, len(t) // 4) for t in texts]}
+
+    return Tok()
+
+
+def test_replay_hits_the_requested_token_share():
+    """The share is counted in tokens, which is what the optimizer sees."""
+    target = ["telugu line " * 10] * 100
+    replay = ["english line " * 10] * 20
+    for ratio in (0.1, 0.25, 0.5):
+        rep = {}
+        common.mix_replay(_fake_tok(), list(target), list(replay), ratio, 0, rep)
+        assert abs(rep["replay"]["ratio_actual"] - ratio) < 0.01
+
+
+def test_replay_cycles_a_small_corpus_and_is_seed_deterministic():
+    target = ["telugu line " * 10] * 100
+    replay = ["english line " * 10] * 5
+    rep = {}
+    a = common.mix_replay(_fake_tok(), list(target), list(replay), 0.25, 7, rep)
+    b = common.mix_replay(_fake_tok(), list(target), list(replay), 0.25, 7, {})
+    c = common.mix_replay(_fake_tok(), list(target), list(replay), 0.25, 8, {})
+    assert rep["replay"]["cycled"] is True
+    assert a == b and a != c
+
+
+def test_replay_rejects_a_ratio_outside_the_open_unit_interval():
+    for bad in (0.0, 1.0, 1.5, -0.1):
+        with pytest.raises(ValueError, match="replay ratio"):
+            common.mix_replay(_fake_tok(), ["x" * 40], ["y" * 40], bad, 0, {})
