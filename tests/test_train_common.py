@@ -62,3 +62,34 @@ def test_build_provenance_records_runtime_and_present_inputs(tmp_path, monkeypat
     assert set(provenance["inputs"]) == {"corpus", "heldout"}
     assert provenance["inputs"]["corpus"]["sha256"]
     assert provenance["inputs"]["heldout"]["sha256"]
+
+
+def test_token_and_byte_budgets_are_mutually_exclusive():
+    """The two budgets are different experiments; a run must pick one."""
+    import argparse
+
+    ap = argparse.ArgumentParser()
+    common.add_common_args(ap)
+    base = ["--out", "o", "--corpus", "c", "--heldout", "h"]
+
+    assert ap.parse_args(base).byte_budget is None
+    assert ap.parse_args(base + ["--bytes", "1e7"]).byte_budget == 1e7
+    with pytest.raises(SystemExit):
+        ap.parse_args(base + ["--tokens", "2e6", "--bytes", "1e7"])
+
+
+def test_byte_budget_equalizes_text_across_differing_tokenizers():
+    """Equal bytes, unequal steps: the inverse of what a token budget gives.
+
+    The extended tokenizer packs ~3.4x more bytes per token, so budgeting by
+    tokens hands it that much more text. Budgeting by bytes is what makes a
+    matched-text comparison possible.
+    """
+    batch, seq, target_bytes = 16, 256, 12_950_000
+    steps = {}
+    for name, bytes_per_tok in (("extended", 6.28), ("baseline", 1.85)):
+        steps[name] = int((target_bytes / bytes_per_tok) // (batch * seq))
+        seen = steps[name] * batch * seq * bytes_per_tok
+        assert abs(seen - target_bytes) / target_bytes < 0.01
+
+    assert steps["baseline"] > steps["extended"] * 3

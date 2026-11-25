@@ -166,7 +166,29 @@ def run_training(model, tok, args, params, old_rows: int | None = None) -> dict:
     tot_bytes = sum(len(t.encode()) for t in texts)
     n_tok_corpus = sum(len(x) for x in tok(texts, add_special_tokens=False)["input_ids"])
     bytes_per_tok = tot_bytes / n_tok_corpus
-    steps = int(args.tokens // (args.batch * args.seq_len))
+    # Matched compute and matched text are different experiments and cannot be
+    # satisfied at once. An extended tokenizer packs more bytes into every
+    # token, so an equal token budget hands it roughly 3.5x the Armenian text
+    # that the original-tokenizer arm sees (12.95 MB against 3.72 MB in our
+    # October run). Budgeting by bytes equalizes the text and leaves the step
+    # counts unequal instead. Which one a run chose is recorded in the report
+    # so a result is never read as the other kind of comparison.
+    if getattr(args, "byte_budget", None):
+        token_budget = args.byte_budget / bytes_per_tok
+        rep["budget"] = {"kind": "bytes", "requested_bytes": float(args.byte_budget)}
+    else:
+        token_budget = args.tokens
+        rep["budget"] = {"kind": "tokens", "requested_tokens": float(args.tokens)}
+
+    steps = int(token_budget // (args.batch * args.seq_len))
+    rep["budget"].update(
+        {
+            "steps": steps,
+            "bytes_per_token": bytes_per_tok,
+            "planned_tokens": steps * args.batch * args.seq_len,
+            "planned_bytes": int(steps * args.batch * args.seq_len * bytes_per_tok),
+        }
+    )
     opt = torch.optim.AdamW(params, lr=args.lr, weight_decay=0.0)
     sched = torch.optim.lr_scheduler.LambdaLR(
         opt, lambda s: min(1.0, (s + 1) / 20) * max(0.05, 1 - s / max(steps, 1))
@@ -236,7 +258,22 @@ def add_common_args(ap) -> None:
     ap.add_argument("--corpus", required=True)
     ap.add_argument("--heldout", required=True)
     ap.add_argument("--english")
-    ap.add_argument("--tokens", type=float, default=2e6, help="training token budget (compute)")
+    budget = ap.add_mutually_exclusive_group()
+    budget.add_argument(
+        "--tokens",
+        type=float,
+        default=2e6,
+        help="token budget: MATCHED COMPUTE. Both arms do the same number of "
+        "optimizer steps on the same batch shape.",
+    )
+    budget.add_argument(
+        "--bytes",
+        type=float,
+        default=None,
+        dest="byte_budget",
+        help="byte budget: MATCHED TEXT. Converted to steps using this corpus's "
+        "own bytes-per-token, so both arms read the same amount of the language.",
+    )
     ap.add_argument("--seq-len", type=int, default=256)
     ap.add_argument("--batch", type=int, default=16)
     ap.add_argument("--lr", type=float, default=1e-3)
