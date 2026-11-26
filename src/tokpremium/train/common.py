@@ -211,6 +211,28 @@ def mix_replay(
     return mixture
 
 
+def load_eval_docs(args) -> tuple[list[str], list[str]]:
+    """Heldout and English probe documents, both capped at --eval-docs.
+
+    Capping both matters for two separate reasons.
+
+    Cost: bits_per_byte runs one forward pass per document with no batching, so
+    an uncapped probe is not merely slow. prepare.py writes an English probe of
+    around 55,000 lines, which costs roughly forty minutes to score, twice per
+    arm, across three arms of a run. An uncapped probe consumed a whole job.
+
+    Comparability: the target-language number and the English number are read
+    side by side. Measuring one over 100 documents and the other over 55,000
+    gives them very different precision while presenting them as a pair.
+
+    --eval-docs is cheap now that it binds, so raising it buys tighter numbers:
+    500 documents costs seconds rather than the better part of an hour.
+    """
+    held = read_lines(args.heldout)[: args.eval_docs]
+    eng = read_lines(args.english)[: args.eval_docs] if args.english else []
+    return held, eng
+
+
 def run_training(model, tok, args, params, old_rows: int | None = None) -> dict:
     """Shared loop for every arm, so arms differ only in tokenizer/trainables.
 
@@ -222,8 +244,7 @@ def run_training(model, tok, args, params, old_rows: int | None = None) -> dict:
 
     dev = next(model.parameters()).device
     torch.manual_seed(args.seed)
-    held = read_lines(args.heldout)[: args.eval_docs]
-    eng = read_lines(args.english) if args.english else []
+    held, eng = load_eval_docs(args)
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
     ckpt_path = out / "ckpt.pt"

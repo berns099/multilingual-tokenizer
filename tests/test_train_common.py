@@ -168,3 +168,24 @@ def test_replay_may_not_be_the_english_probe(tmp_path):
         common.check_replay_not_probe(probe, probe)
     with pytest.raises(ValueError, match="same file"):
         common.check_replay_not_probe(str(probe), tmp_path / "." / "eng_probe.txt")
+
+
+def test_eval_docs_caps_the_english_probe_as_well_as_the_heldout(tmp_path):
+    """An uncapped probe is fatal, not slow.
+
+    bits_per_byte scores one document per forward pass, so the ~55,000-line
+    probe that prepare.py writes took about forty minutes per measurement and
+    timed out a job before stage 1 produced a single line of output.
+    """
+    heldout = tmp_path / "heldout.txt"
+    english = tmp_path / "eng_probe.txt"
+    heldout.write_text("\n".join(f"hy line {i}" for i in range(500)), encoding="utf-8")
+    english.write_text("\n".join(f"en line {i}" for i in range(500)), encoding="utf-8")
+
+    args = SimpleNamespace(heldout=str(heldout), english=str(english), eval_docs=7)
+    held, eng = common.load_eval_docs(args)
+    assert len(held) == 7
+    assert len(eng) == 7
+
+    args.english = None
+    assert common.load_eval_docs(args)[1] == []
