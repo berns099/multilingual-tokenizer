@@ -62,6 +62,24 @@ def write(path: Path, lines: list[str]) -> Path:
     return path
 
 
+def dedupe(lines: list[str]) -> list[str]:
+    """Drop repeated lines, keeping first occurrence and therefore the order.
+
+    Web corpora repeat boilerplate heavily: navigation text, cookie notices,
+    stock sentences. Splitting by position leaves an identical line in both
+    halves, which quietly turns the heldout bits-per-byte into a partial
+    training-set measurement. Deduplicating first is what makes the split
+    mean what its name says.
+    """
+    seen: set[str] = set()
+    unique = []
+    for line in lines:
+        if line not in seen:
+            seen.add(line)
+            unique.append(line)
+    return unique
+
+
 def split_disjoint(lines: list[str], n_second: int, seed: int) -> tuple[list[str], list[str]]:
     """Shuffle under `seed`, then cut. Returns (first, second)."""
     shuffled = list(lines)
@@ -98,7 +116,10 @@ def main(argv: list[str] | None = None) -> int:
     evaluation = {normalize(s.strip()) for s in flores.load_sentences(args.lang, split="dev")}
     evaluation |= {normalize(s.strip()) for s in flores.load_sentences(args.lang, split="devtest")}
     kept = [ln for ln in target if normalize(ln.strip()) not in evaluation]
-    dropped = len(target) - len(kept)
+    dropped_flores = len(target) - len(kept)
+    before_dedupe = len(kept)
+    kept = dedupe(kept)
+    dropped_dupes = before_dedupe - len(kept)
 
     if len(kept) <= args.heldout_lines:
         ap.error(f"only {len(kept)} usable lines; need more than --heldout-lines")
@@ -107,7 +128,7 @@ def main(argv: list[str] | None = None) -> int:
 
     # ---- English: probe and replay, from one stream, cut in half ----------
     eng_path = corpus.fetch("eng_Latn_train", ENGLISH_SOURCE, args.english_chars, cache)
-    english = [ln for ln in corpus.read_lines(eng_path) if ln.strip()]
+    english = dedupe([ln for ln in corpus.read_lines(eng_path) if ln.strip()])
     replay, probe = split_disjoint(english, len(english) // 2, args.seed)
 
     files = {
@@ -123,7 +144,8 @@ def main(argv: list[str] | None = None) -> int:
     assert not (set(probe) & set(replay)), "probe and replay overlap"
     assert not ({normalize(x.strip()) for x in train} & evaluation), "train contains FLORES"
 
-    print(f"dropped {dropped} line(s) of {args.lang} found in FLORES dev/devtest")
+    print(f"dropped {dropped_flores} line(s) of {args.lang} found in FLORES dev/devtest")
+    print(f"dropped {dropped_dupes} duplicate line(s) of {args.lang}")
     for name, path in written.items():
         n = len(files[name])
         size = path.stat().st_size
