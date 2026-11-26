@@ -147,3 +147,24 @@ def test_split_disjoint_is_lossless_and_seed_deterministic():
     assert sorted(train + held) == sorted(lines)
     assert split_disjoint(lines, 200, seed=0) == (train, held)
     assert split_disjoint(lines, 200, seed=1)[0] != train
+
+
+def test_replay_may_not_be_the_english_probe(tmp_path):
+    """Probe and replay are one stream cut in half, so they are easy to swap.
+
+    Training on the probe does not fail loudly; it just makes the English
+    retention number flattering, because the model saw the text the number is
+    computed over.
+    """
+    probe = tmp_path / "eng_probe.txt"
+    replay = tmp_path / "eng_replay.txt"
+    probe.write_text("probe\n", encoding="utf-8")
+    replay.write_text("replay\n", encoding="utf-8")
+
+    common.check_replay_not_probe(replay, probe)
+    common.check_replay_not_probe(replay, None)
+
+    with pytest.raises(ValueError, match="same file"):
+        common.check_replay_not_probe(probe, probe)
+    with pytest.raises(ValueError, match="same file"):
+        common.check_replay_not_probe(str(probe), tmp_path / "." / "eng_probe.txt")

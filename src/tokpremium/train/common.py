@@ -5,6 +5,7 @@ from __future__ import annotations
 import hashlib
 import math
 import platform
+import random
 import subprocess
 from argparse import Namespace
 from datetime import datetime, timezone
@@ -69,7 +70,7 @@ def build_provenance(args: Namespace, dev: torch.device) -> dict:
     """Describe the code, runtime, and exact input files used by a training run."""
     inputs = {
         name: file_fingerprint(path)
-        for name in ("corpus", "heldout", "english")
+        for name in ("corpus", "heldout", "english", "replay")
         if (path := getattr(args, name, None))
     }
     return {
@@ -128,6 +129,88 @@ def freeze_old_rows(weight: torch.nn.Parameter, first_new: int) -> None:
     weight.register_hook(lambda g: torch.cat([torch.zeros_like(g[:first_new]), g[first_new:]]))
 
 
+def check_replay_not_probe(replay: str | Path, english: str | Path | None) -> None:
+    """Refuse to train on the file held out for measuring English retention.
+
+    The probe and the replay come from one stream cut in half, so the two paths
+    are easy to swap by accident, and the failure is silent: the English number
+    would simply look good, because the model had been trained on the very text
+    the number is computed over. Compared after resolving, so a relative path
+    and an absolute one naming the same file are still caught.
+    """
+    if english is None:
+        return
+    if Path(replay).resolve() == Path(english).resolve():
+        raise ValueError(
+            "--replay and --english are the same file. The probe is held out "
+            "for measuring English retention; training on it makes that "
+            "measurement meaningless."
+        )
+
+
+def mix_replay(
+    tok,
+    target: list[str],
+    replay: list[str],
+    ratio: float,
+    seed: int,
+    rep: dict,
+) -> list[str]:
+    """Mix English replay lines into the target corpus at a token share.
+
+    The share is counted in TOKENS, not lines or bytes, because tokens are what
+    the optimizer consumes and what the budget is denominated in. Counting by
+    lines would make the share depend on line length, which differs sharply
+    between a web-scraped Armenian corpus and FineWeb English.
+
+    `ratio` is the replay share of the mixture, so 0.25 means one replay token
+    for every three target tokens. A short replay file is cycled rather than
+    truncated, because the alternative is silently training on less English
+    than the ratio claims. Cycling is recorded so a run that leaned on a thin
+    replay corpus is visible in the report instead of inferred.
+
+    The mixture is shuffled under `seed`, which both interleaves the two
+    languages and keeps the result reproducible: resuming a run re-derives a
+    byte-identical mixture, so the permutation over packed rows still lines up.
+
+    Returns the shuffled mixture and writes a `replay` block into `rep`.
+    """
+    if not 0 < ratio < 1:
+        raise ValueError(f"replay ratio must be in (0, 1), got {ratio}")
+    if not replay:
+        raise ValueError("replay corpus is empty")
+
+    n_target = sum(len(x) for x in tok(target, add_special_tokens=False)["input_ids"])
+    counts = [len(x) for x in tok(replay, add_special_tokens=False)["input_ids"]]
+
+    # ratio = want / (n_target + want), solved for want.
+    want = ratio / (1 - ratio) * n_target
+
+    chosen: list[str] = []
+    taken = 0
+    cycled = False
+    i = 0
+    while taken < want:
+        if i >= len(replay):
+            i, cycled = 0, True
+        chosen.append(replay[i])
+        taken += counts[i]
+        i += 1
+
+    mixture = target + chosen
+    random.Random(seed).shuffle(mixture)
+
+    rep["replay"] = {
+        "lines": len(chosen),
+        "tokens": taken,
+        "target_tokens": n_target,
+        "ratio_requested": ratio,
+        "ratio_actual": taken / (n_target + taken),
+        "cycled": cycled,
+    }
+    return mixture
+
+
 def run_training(model, tok, args, params, old_rows: int | None = None) -> dict:
     """Shared loop for every arm, so arms differ only in tokenizer/trainables.
 
@@ -162,6 +245,13 @@ def run_training(model, tok, args, params, old_rows: int | None = None) -> dict:
     print(rep, flush=True)
 
     texts = read_lines(args.corpus)
+    rep["target_bytes"] = sum(len(t.encode()) for t in texts)
+    if getattr(args, "replay", None):
+        check_replay_not_probe(args.replay, args.english)
+        texts = mix_replay(
+            tok, texts, read_lines(args.replay), args.replay_ratio, args.seed, rep
+        )
+        print(f"replay: {rep['replay']}", flush=True)
     data = pack(tok, texts, args.seq_len)
     tot_bytes = sum(len(t.encode()) for t in texts)
     n_tok_corpus = sum(len(x) for x in tok(texts, add_special_tokens=False)["input_ids"])
@@ -277,6 +367,22 @@ def add_common_args(ap) -> None:
     ap.add_argument("--seq-len", type=int, default=256)
     ap.add_argument("--batch", type=int, default=16)
     ap.add_argument("--lr", type=float, default=1e-3)
+    ap.add_argument(
+        "--replay",
+        help="English text mixed into training to limit forgetting. MUST NOT "
+        "be the --english probe, which is held out to measure retention; "
+        "run_training refuses if the two resolve to the same file. Both arms "
+        "of a comparison must replay identically, or the English result "
+        "measures the replay instead of the tokenizer.",
+    )
+    ap.add_argument(
+        "--replay-ratio",
+        type=float,
+        default=0.25,
+        help="replay share of the mixture, counted in tokens. configs/vocab.yaml "
+        "names target-plus-English for stage 2 but fixes no number, so this is "
+        "a starting point rather than a finding.",
+    )
     ap.add_argument("--eval-docs", type=int, default=100)
     ap.add_argument("--seed", type=int, default=0)
     ap.add_argument(
