@@ -20,7 +20,22 @@ EOT = 151643  # <|endoftext|>, Qwen's document separator; used as context-start
 
 
 def device() -> torch.device:
-    return torch.device("mps" if torch.backends.mps.is_available() else "cpu")
+    """Pick the accelerator, preferring CUDA.
+
+    This previously returned mps-or-cpu, which is correct on a MacBook and
+    silently wrong on a cluster: every CARC run allocated a GPU, left it idle,
+    and trained a 0.6B model on the CPU. That is why jobs hit their walltime,
+    and why the host ran out of memory holding parameters, gradients and two
+    AdamW moments (around 10 GB at float32) that belonged on the device.
+
+    Brian's provenance block is what surfaced it, by recording "device": "cpu"
+    in a run that had just printed the name of an A40.
+    """
+    if torch.cuda.is_available():
+        return torch.device("cuda")
+    if torch.backends.mps.is_available():
+        return torch.device("mps")
+    return torch.device("cpu")
 
 
 def read_lines(path: str | Path) -> list[str]:
@@ -86,15 +101,37 @@ def build_provenance(args: Namespace, dev: torch.device) -> dict:
     }
 
 
-def pack(tok, texts: list[str], seq_len: int) -> torch.Tensor:
+TOK_CHUNK = 2000  # texts per tokenizer call; see count_tokens
+
+
+def count_tokens(tok, texts: list[str], chunk: int = TOK_CHUNK) -> int:
+    """Total tokens in `texts`, tokenized in chunks.
+
+    A fast tokenizer called on a whole corpus at once returns Encoding objects
+    carrying ids, offsets, token strings and several masks for every token, and
+    holds all of them before returning. On the 89 MB Armenian corpus that is
+    gigabytes of host memory, and it got the job OOM-killed inside three
+    minutes. Chunking bounds the peak; each chunk is freed before the next.
+    """
+    total = 0
+    for i in range(0, len(texts), chunk):
+        batch = tok(texts[i : i + chunk], add_special_tokens=False)["input_ids"]
+        total += sum(len(x) for x in batch)
+    return total
+
+
+def pack(tok, texts: list[str], seq_len: int, chunk: int = TOK_CHUNK) -> torch.Tensor:
     """Concatenate docs with EOT between, cut into [N, seq_len] rows.
 
     Returns exactly the tokens a run will see, so budget = N * seq_len and
     "data exposure" is a number we can log for the matched-compute comparison.
+
+    Chunked for the reason count_tokens explains.
     """
     stream: list[int] = []
-    for ids in tok(texts, add_special_tokens=False)["input_ids"]:
-        stream += ids + [EOT]
+    for i in range(0, len(texts), chunk):
+        for ids in tok(texts[i : i + chunk], add_special_tokens=False)["input_ids"]:
+            stream += ids + [EOT]
     n = len(stream) // seq_len
     return torch.tensor(stream[: n * seq_len]).view(n, seq_len)
 
@@ -180,8 +217,11 @@ def mix_replay(
     if not replay:
         raise ValueError("replay corpus is empty")
 
-    n_target = sum(len(x) for x in tok(target, add_special_tokens=False)["input_ids"])
-    counts = [len(x) for x in tok(replay, add_special_tokens=False)["input_ids"]]
+    n_target = count_tokens(tok, target)
+    counts: list[int] = []
+    for i in range(0, len(replay), TOK_CHUNK):
+        batch = tok(replay[i : i + TOK_CHUNK], add_special_tokens=False)["input_ids"]
+        counts.extend(len(x) for x in batch)
 
     # ratio = want / (n_target + want), solved for want.
     want = ratio / (1 - ratio) * n_target
@@ -275,7 +315,7 @@ def run_training(model, tok, args, params, old_rows: int | None = None) -> dict:
         print(f"replay: {rep['replay']}", flush=True)
     data = pack(tok, texts, args.seq_len)
     tot_bytes = sum(len(t.encode()) for t in texts)
-    n_tok_corpus = sum(len(x) for x in tok(texts, add_special_tokens=False)["input_ids"])
+    n_tok_corpus = count_tokens(tok, texts)
     bytes_per_tok = tot_bytes / n_tok_corpus
     # Matched compute and matched text are different experiments and cannot be
     # satisfied at once. An extended tokenizer packs more bytes into every

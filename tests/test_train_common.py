@@ -189,3 +189,46 @@ def test_eval_docs_caps_the_english_probe_as_well_as_the_heldout(tmp_path):
 
     args.english = None
     assert common.load_eval_docs(args)[1] == []
+
+
+def test_device_prefers_cuda_then_mps_then_cpu(monkeypatch):
+    """device() returned mps-or-cpu, so every CARC run trained on the CPU.
+
+    Right on a MacBook, silently wrong on a cluster. The GPU was requested,
+    allocated and left idle while a 0.6B model ran on four cores, which is what
+    exhausted the walltime, and the ~10 GB of parameters, gradients and AdamW
+    moments stayed in host memory, which is what exhausted the RAM.
+    """
+    monkeypatch.setattr(torch.cuda, "is_available", lambda: True)
+    assert common.device().type == "cuda"
+
+    monkeypatch.setattr(torch.cuda, "is_available", lambda: False)
+    monkeypatch.setattr(torch.backends.mps, "is_available", lambda: True)
+    assert common.device().type == "mps"
+
+    monkeypatch.setattr(torch.backends.mps, "is_available", lambda: False)
+    assert common.device().type == "cpu"
+
+
+def test_count_tokens_does_not_depend_on_chunk_size():
+    """Chunking is a memory bound, so it must not change the answer.
+
+    n_tok_corpus feeds bytes_per_token, which converts a byte budget into a
+    step count. A chunk-dependent total would make the matched-text comparison
+    depend on an implementation detail.
+    """
+    texts = [f"text number {i} " * (i % 7 + 1) for i in range(500)]
+    tok = _fake_tok()
+    expected = sum(len(x) for x in tok(texts)["input_ids"])
+
+    for chunk in (1, 7, 100, 10_000):
+        assert common.count_tokens(tok, texts, chunk=chunk) == expected
+
+
+def test_pack_does_not_depend_on_chunk_size():
+    texts = [f"text number {i} " * (i % 5 + 1) for i in range(300)]
+    tok = _fake_tok()
+    reference = common.pack(tok, texts, seq_len=8, chunk=10_000)
+
+    for chunk in (1, 13, 50):
+        assert torch.equal(common.pack(tok, texts, seq_len=8, chunk=chunk), reference)

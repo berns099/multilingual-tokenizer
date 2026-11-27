@@ -23,7 +23,7 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=4
 #SBATCH --gpus-per-task=1
-#SBATCH --mem=24G
+#SBATCH --mem=48G
 #SBATCH --time=0:50:00
 #SBATCH --job-name=hye-smoke
 #SBATCH --output=logs/%x-%j.out
@@ -47,6 +47,25 @@ PY="$WORK/venv/bin/python"
 
 $PY -c "import torch; print('torch', torch.__version__, '| cuda', torch.cuda.is_available(),
        '|', torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'NO GPU')"
+
+# Refuse the allocation rather than waste it. common.device() once returned
+# mps-or-cpu, so every run here held an idle GPU and trained on the CPU. The
+# only honest check is to ask the function the training code actually calls.
+$PY - <<'GUARD'
+import sys
+import torch
+from tokpremium.train import common
+
+dev = common.device()
+print(f"common.device() -> {dev}")
+if dev.type != "cuda":
+    sys.exit(
+        f"refusing to run: a GPU was allocated but common.device() returns {dev}. "
+        "Training would use the CPU and exhaust the walltime."
+    )
+x = torch.randn(512, 512, device=dev)
+print(f"matmul on {torch.cuda.get_device_name(0)} ok: {(x @ x).sum().item():.3f}")
+GUARD
 
 stage() { echo; echo "=== $* === $(date +%H:%M:%S)"; }
 
