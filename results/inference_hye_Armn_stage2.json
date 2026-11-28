@@ -1,0 +1,46 @@
+{
+  "benchmark": {
+    "lang": "hye_Armn",
+    "split": "dev",
+    "sentences": 100,
+    "warmup": 5,
+    "repeats": 20
+  },
+  "environment": {
+    "device": "cuda",
+    "platform": "Linux-4.18.0-553.126.1.el8_10.x86_64-x86_64-with-glibc2.28",
+    "python": "3.11.9",
+    "torch": "2.15.0+cu132",
+    "transformers": "5.24.1",
+    "dtype": "bfloat16"
+  },
+  "models": {
+    "stock": {
+      "sentences": 100,
+      "input_bytes": 27877,
+      "input_tokens": 15094,
+      "bytes_per_token": 1.8468928050881144,
+      "median_seconds": 2.267950195935555,
+      "p90_seconds": 2.2698213510448113,
+      "tokens_per_second": 6655.348969765871,
+      "bytes_per_second": 12291.716127611182
+    },
+    "stage2": {
+      "sentences": 100,
+      "input_bytes": 27877,
+      "input_tokens": 4442,
+      "bytes_per_token": 6.275776677172445,
+      "median_seconds": 2.271546693518758,
+      "p90_seconds": 2.278456361964345,
+      "tokens_per_second": 1955.4957917766083,
+      "bytes_per_second": 12272.254882340501
+    }
+  },
+  "comparisons": {
+    "stage2_vs_stock": {
+      "token_ratio": 0.29428912150523384,
+      "prefill_time_ratio": 1.0015857921349633,
+      "bytes_per_second_ratio": 0.9984167186201962
+    }
+  }
+}

@@ -1,0 +1,433 @@
+{
+ "stock": {
+  "bpb_target": 1.5375707361421491,
+  "bpb_english": 1.2589644054977294,
+  "tokens_target": 139222,
+  "tokens_english": 26255,
+  "repetition_target": 0.4631578947368421,
+  "repetition_target_stats": {
+   "mean": 0.4631578947368421,
+   "median": 0.49122807017543857,
+   "p90": 0.6491228070175439,
+   "max": 0.6491228070175439
+  },
+  "n_prompts_target": 5,
+  "repetition_english": 0.43508771929824563,
+  "repetition_english_stats": {
+   "mean": 0.43508771929824563,
+   "median": 0.4385964912280702,
+   "p90": 0.6140350877192983,
+   "max": 0.6140350877192983
+  },
+  "n_prompts_english": 5,
+  "generations": {
+   "target": [
+    {
+     "prompt": "Երկուշաբթի օրը Բժշկության Ստենֆորդի համալսարանի դպրոցի գիտնա",
+     "continuation": "կան աշխատանքների առանձ անդամների անդամների անդամների անդամնե",
+     "repetition": 0.49122807017543857
+    },
+    {
+     "prompt": "Առաջատար հետազոտողները նշում են, որ սա կարող է բուժվող հիվան",
+     "continuation": "ասանի առանձ անդամների առանձ անդամների առանձ անդամների առանձ ",
+     "repetition": 0.6491228070175439
+    },
+    {
+     "prompt": "Տեղական ժամանակով 9:30 (02:30` ունիվերսալ ժամային գոտի) JAS ",
+     "continuation": "կարող է կարողանալ անական անական համարել անական համարելու համ",
+     "repetition": 0.368421052631579
+    },
+    {
+     "prompt": "Օդաչուն ջոկատի հրամանատար Դայլոկրիտ Պատավին էր:",
+     "continuation": " Նա համարեց այն հրամանատար անակ համարման անդաման անակ համարմ",
+     "repetition": 0.2807017543859649
+    },
+    {
+     "prompt": "Տեղական լրատվամիջոցները հայտնում են, որ օդանավակայանի մի հրդ",
+     "continuation": "ի համար կարող են կարողանել կարողանալ կարողանալ կարողանալ կար",
+     "repetition": 0.5263157894736843
+    }
+   ],
+   "english": [
+    {
+     "prompt": "On Monday, scientists from the Stanford University School of",
+     "continuation": " Science and the University of California, San Diego, and the University of Chicago have published a study that shows that the number of people who have been infected with the virus in the United States is increasing rapidly. The study says that the number of people who have been infected with the virus is increasing rapidly because",
+     "repetition": 0.17543859649122806
+    },
+    {
+     "prompt": "Lead researchers say this may bring early detection of cance",
+     "continuation": "\n... and early treatment of the disease. The study was conducted in the\n... of the country. The researchers used a new type of technology to\n... the disease. The study was conducted in the\n... of the country. The researchers used a new type of technology to\n... the disease",
+     "repetition": 0.4385964912280702
+    },
+    {
+     "prompt": "The JAS 39C Gripen crashed onto a runway at around 9:30 am l",
+     "continuation": ". 10, 2013, and the pilot, Mr. D. A. S. S. S. S. S. S. S. S. S. S. S. S. S. S. S. S. S. S. S. S",
+     "repetition": 0.6140350877192983
+    },
+    {
+     "prompt": "The pilot was identified as Squadron Leader Dilokrit Pattave",
+     "continuation": ", a former pilot of the Royal Air Force, who was born in 1950. He was a member of the Royal Air Force, and was a member of the Royal Air Force's Air Transport Command. He was a member of the Royal Air Force's Air Transport Command, and was",
+     "repetition": 0.33333333333333337
+    },
+    {
+     "prompt": "Local media reports an airport fire vehicle rolled over whil",
+     "continuation": " the fire department was still on the scene. The fire department was able to get to the scene quickly, but the fire department was still on the scene. The fire department was able to get to the scene quickly, but the fire department was still on the scene. The fire department was able to get",
+     "repetition": 0.6140350877192983
+    }
+   ]
+  },
+  "provenance": {
+   "spec": "Qwen/Qwen3-0.6B",
+   "local": false,
+   "vocab_size": 151669,
+   "n_parameters": 596049920,
+   "git": {
+    "commit": "d5627327f6887be28585125a7a107e7b6d526eec",
+    "dirty": true
+   },
+   "environment": {
+    "python": "3.11.9",
+    "torch": "2.15.0+cu132",
+    "transformers": "5.24.1"
+   },
+   "evaluated_at_utc": "2026-11-28T04:32:30.020840+00:00",
+   "hub_id": "Qwen/Qwen3-0.6B"
+  }
+ },
+ "stage1": {
+  "bpb_target": 1.2300021972165545,
+  "bpb_english": 1.2593674747396781,
+  "tokens_target": 39009,
+  "tokens_english": 26255,
+  "repetition_target": 0.456140350877193,
+  "repetition_target_stats": {
+   "mean": 0.456140350877193,
+   "median": 0.5263157894736843,
+   "p90": 0.8771929824561404,
+   "max": 0.8771929824561404
+  },
+  "n_prompts_target": 5,
+  "repetition_english": 0.43508771929824563,
+  "repetition_english_stats": {
+   "mean": 0.43508771929824563,
+   "median": 0.4385964912280702,
+   "p90": 0.6140350877192983,
+   "max": 0.6140350877192983
+  },
+  "n_prompts_english": 5,
+  "generations": {
+   "target": [
+    {
+     "prompt": "Երկուշաբթի օրը Բժշկության Ստենֆորդի համալսարանի դպրոցի գիտնա",
+     "continuation": " 2023 թվականի 12-ին 12:00-ի սահմաններում 12:00-ի սահմաններում 12:00-ի սահմաններում 12:00-ի սահմաններում 12:00-ի սահմաններում 12:00-ի սահմաններում 1",
+     "repetition": 0.6842105263157895
+    },
+    {
+     "prompt": "Առաջատար հետազոտողները նշում են, որ սա կարող է բուժվող հիվան",
+     "continuation": " է, որ այպեսպիտալարական անկալության մեջ է, որ այն էլ անկալության մեջ է, որ այն էլ անկալության մեջ է, որ անկալության մեջ է,",
+     "repetition": 0.5263157894736843
+    },
+    {
+     "prompt": "Տեղական ժամանակով 9:30 (02:30` ունիվերսալ ժամային գոտի) JAS ",
+     "continuation": "1000-ը 100000000000000000000000000000000000000000000000000000",
+     "repetition": 0.8771929824561404
+    },
+    {
+     "prompt": "Օդաչուն ջոկատի հրամանատար Դայլոկրիտ Պատավին էր:",
+     "continuation": " 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16. 17. ",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "Տեղական լրատվամիջոցները հայտնում են, որ օդանավակայանի մի հրդ",
+     "continuation": "անամանակության մեջ են, որ 2023 թվականի մայիսի 15-ին 10:00-ին 11:00-ին 12:00-ին 13:00-ին 14:00-ին ",
+     "repetition": 0.19298245614035092
+    }
+   ],
+   "english": [
+    {
+     "prompt": "On Monday, scientists from the Stanford University School of",
+     "continuation": " Science and the University of California, San Diego, and the University of Chicago have published a study that shows that the number of people who have been infected with the virus in the United States is increasing rapidly. The study says that the number of people who have been infected with the virus is increasing rapidly because",
+     "repetition": 0.17543859649122806
+    },
+    {
+     "prompt": "Lead researchers say this may bring early detection of cance",
+     "continuation": "\n... and early treatment of the disease. The study was conducted in the\n... of the country. The researchers used a new type of technology to\n... the disease. The study was conducted in the\n... of the country. The researchers used a new type of technology to\n... the disease",
+     "repetition": 0.4385964912280702
+    },
+    {
+     "prompt": "The JAS 39C Gripen crashed onto a runway at around 9:30 am l",
+     "continuation": ". 10, 2013, and the pilot, Mr. D. A. S. S. S. S. S. S. S. S. S. S. S. S. S. S. S. S. S. S. S. S",
+     "repetition": 0.6140350877192983
+    },
+    {
+     "prompt": "The pilot was identified as Squadron Leader Dilokrit Pattave",
+     "continuation": ", a former pilot of the Royal Air Force, who was born in 1950. He was a member of the Royal Air Force, and was a member of the Royal Air Force's Air Transport Command. He was a member of the Royal Air Force's Air Transport Command, and was",
+     "repetition": 0.33333333333333337
+    },
+    {
+     "prompt": "Local media reports an airport fire vehicle rolled over whil",
+     "continuation": " the fire department was still on the scene. The fire department was able to get to the scene quickly, but the fire department was still on the scene. The fire department was able to get to the scene quickly, but the fire department was still on the scene. The fire department was able to get",
+     "repetition": 0.6140350877192983
+    }
+   ]
+  },
+  "provenance": {
+   "spec": "/scratch1/bwyu/tokpremium/checkpoints/hye_Armn_stage1",
+   "local": true,
+   "vocab_size": 155765,
+   "n_parameters": 599970816,
+   "git": {
+    "commit": "d5627327f6887be28585125a7a107e7b6d526eec",
+    "dirty": true
+   },
+   "environment": {
+    "python": "3.11.9",
+    "torch": "2.15.0+cu132",
+    "transformers": "5.24.1"
+   },
+   "evaluated_at_utc": "2026-11-28T04:33:42.503838+00:00",
+   "resolved_path": "/scratch1/bwyu/tokpremium/checkpoints/hye_Armn_stage1",
+   "files": {
+    "tokenizer.json": {
+     "path": "/scratch1/bwyu/tokpremium/checkpoints/hye_Armn_stage1/tokenizer.json",
+     "bytes": 11830400,
+     "sha256": "4aabffbca0a40297d9b8fa31c2f94c73e11744282f15b6b3a2f2c9786b481d0f"
+    },
+    "config.json": {
+     "path": "/scratch1/bwyu/tokpremium/checkpoints/hye_Armn_stage1/config.json",
+     "bytes": 1417,
+     "sha256": "f69dc64f90a3cbc64cff791e0923fd5ce888f947dd52ab590b95b6ea777abbe8"
+    },
+    "model.safetensors": {
+     "path": "/scratch1/bwyu/tokpremium/checkpoints/hye_Armn_stage1/model.safetensors",
+     "bytes": 1199976896,
+     "sha256": "a6d733c4e4f88af5cafd532ed902717139964dc766afefb2272aef49760c55c5"
+    }
+   }
+  }
+ },
+ "stage2": {
+  "bpb_target": 1.0330907683002446,
+  "bpb_english": 1.1463029987878566,
+  "tokens_target": 39009,
+  "tokens_english": 26255,
+  "repetition_target": 0.5228070175438596,
+  "repetition_target_stats": {
+   "mean": 0.5228070175438596,
+   "median": 0.7894736842105263,
+   "p90": 0.9298245614035088,
+   "max": 0.9298245614035088
+  },
+  "n_prompts_target": 5,
+  "repetition_english": 0.028070175438596513,
+  "repetition_english_stats": {
+   "mean": 0.028070175438596513,
+   "median": 0.0,
+   "p90": 0.1228070175438597,
+   "max": 0.1228070175438597
+  },
+  "n_prompts_english": 5,
+  "generations": {
+   "target": [
+    {
+     "prompt": "Երկուշաբթի օրը Բժշկության Ստենֆորդի համալսարանի դպրոցի գիտնա",
+     "continuation": ", 2019թ.<|endoftext|>",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "Առաջատար հետազոտողները նշում են, որ սա կարող է բուժվող հիվան",
+     "continuation": "ալիքային, ինչպես նաև, որ այդպիսին է, որ այդպիսին է, որ այդպիսին է, որ այդպիսին է, որ այդպիսին է, որ այդպիսին է, որ այդպիսին է, որ այդպիսին է, որ այդպիսին է",
+     "repetition": 0.7894736842105263
+    },
+    {
+     "prompt": "Տեղական ժամանակով 9:30 (02:30` ունիվերսալ ժամային գոտի) JAS ",
+     "continuation": "1000-1000000000000000000000000000000000000000000000000000000",
+     "repetition": 0.8947368421052632
+    },
+    {
+     "prompt": "Օդաչուն ջոկատի հրամանատար Դայլոկրիտ Պատավին էր:",
+     "continuation": "<|endoftext|>",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "Տեղական լրատվամիջոցները հայտնում են, որ օդանավակայանի մի հրդ",
+     "continuation": "ով 1000000000000000000000000000000000000000000000000000000000",
+     "repetition": 0.9298245614035088
+    }
+   ],
+   "english": [
+    {
+     "prompt": "On Monday, scientists from the Stanford University School of",
+     "continuation": " Medicine have discovered a new type of cancer called \"adenocarcinoma,\" which is a type of breast cancer. The researchers found that the cancer cells contain a protein called \"CDK2,\" which is a key regulator of the cell cycle. The CDK2 protein is involved in the regulation",
+     "repetition": 0.01754385964912286
+    },
+    {
+     "prompt": "Lead researchers say this may bring early detection of cance",
+     "continuation": "...<|endoftext|>",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "The JAS 39C Gripen crashed onto a runway at around 9:30 am l",
+     "continuation": "unched at the airport and was reported to have been damaged.<|endoftext|>",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "The pilot was identified as Squadron Leader Dilokrit Pattave",
+     "continuation": ", who was born in 1959 in the village of Kandahariya, in the district of Kandahariya, in the state of Assam, India. He was a member of the Indian Army and was awarded the Army's highest decoration, the Army's highest",
+     "repetition": 0.1228070175438597
+    },
+    {
+     "prompt": "Local media reports an airport fire vehicle rolled over whil",
+     "continuation": " the fire was still burning.<|endoftext|>",
+     "repetition": 0.0
+    }
+   ]
+  },
+  "provenance": {
+   "spec": "/scratch1/bwyu/tokpremium/checkpoints/hye_Armn_stage2",
+   "local": true,
+   "vocab_size": 155765,
+   "n_parameters": 599970816,
+   "git": {
+    "commit": "d5627327f6887be28585125a7a107e7b6d526eec",
+    "dirty": true
+   },
+   "environment": {
+    "python": "3.11.9",
+    "torch": "2.15.0+cu132",
+    "transformers": "5.24.1"
+   },
+   "evaluated_at_utc": "2026-11-28T04:34:48.127736+00:00",
+   "resolved_path": "/scratch1/bwyu/tokpremium/checkpoints/hye_Armn_stage2",
+   "files": {
+    "tokenizer.json": {
+     "path": "/scratch1/bwyu/tokpremium/checkpoints/hye_Armn_stage2/tokenizer.json",
+     "bytes": 11830400,
+     "sha256": "4aabffbca0a40297d9b8fa31c2f94c73e11744282f15b6b3a2f2c9786b481d0f"
+    },
+    "config.json": {
+     "path": "/scratch1/bwyu/tokpremium/checkpoints/hye_Armn_stage2/config.json",
+     "bytes": 1417,
+     "sha256": "f69dc64f90a3cbc64cff791e0923fd5ce888f947dd52ab590b95b6ea777abbe8"
+    },
+    "model.safetensors": {
+     "path": "/scratch1/bwyu/tokpremium/checkpoints/hye_Armn_stage2/model.safetensors",
+     "bytes": 1199976896,
+     "sha256": "f103bf02fe29ff8dfa2756485108b86eadd2447c5cb116853f502eb46817304f"
+    }
+   }
+  }
+ },
+ "base": {
+  "bpb_target": 1.0240988589459372,
+  "bpb_english": 1.1368981844997388,
+  "tokens_target": 139222,
+  "tokens_english": 26255,
+  "repetition_target": 0.2105263157894737,
+  "repetition_target_stats": {
+   "mean": 0.2105263157894737,
+   "median": 0.17543859649122806,
+   "p90": 0.368421052631579,
+   "max": 0.368421052631579
+  },
+  "n_prompts_target": 5,
+  "repetition_english": 0.020844564240790665,
+  "repetition_english_stats": {
+   "mean": 0.020844564240790665,
+   "median": 0.0,
+   "p90": 0.05660377358490565,
+   "max": 0.05660377358490565
+  },
+  "n_prompts_english": 5,
+  "generations": {
+   "target": [
+    {
+     "prompt": "Երկուշաբթի օրը Բժշկության Ստենֆորդի համալսարանի դպրոցի գիտնա",
+     "continuation": "կանների համար հայտնվել է արտադրանքի համար անհրաժեշտ անձանց հ",
+     "repetition": 0.08771929824561409
+    },
+    {
+     "prompt": "Առաջատար հետազոտողները նշում են, որ սա կարող է բուժվող հիվան",
+     "continuation": "դությունների համար համապատասխան համակարգերի համար համապատասխ",
+     "repetition": 0.368421052631579
+    },
+    {
+     "prompt": "Տեղական ժամանակով 9:30 (02:30` ունիվերսալ ժամային գոտի) JAS ",
+     "continuation": "1000 հարաբերությունների համար համապատասխան հարցերի համար կար",
+     "repetition": 0.17543859649122806
+    },
+    {
+     "prompt": "Օդաչուն ջոկատի հրամանատար Դայլոկրիտ Պատավին էր:",
+     "continuation": " Այս հարցում այս հարցը հայտնվել է Հայաստանի Հանրապետության ն",
+     "repetition": 0.07017543859649122
+    },
+    {
+     "prompt": "Տեղական լրատվամիջոցները հայտնում են, որ օդանավակայանի մի հրդ",
+     "continuation": "երի մասին հայտնվել է այն մարմինը, որը հայտնվել է այն մարմինը",
+     "repetition": 0.3508771929824561
+    }
+   ],
+   "english": [
+    {
+     "prompt": "On Monday, scientists from the Stanford University School of",
+     "continuation": " Medicine and the University of California, San Francisco, and the University of California, Berkeley, all of whom are members of the NIH, have published a study showing that the human body is capable of producing a large amount of the protein that is necessary for the body to function.<|endoftext|>",
+     "repetition": 0.05660377358490565
+    },
+    {
+     "prompt": "Lead researchers say this may bring early detection of cance",
+     "continuation": "\n- 10/10/2019 10:00:00 AM<|endoftext|>",
+     "repetition": 0.04761904761904767
+    },
+    {
+     "prompt": "The JAS 39C Gripen crashed onto a runway at around 9:30 am l",
+     "continuation": "apsed on 17th April 2009.<|endoftext|>",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "The pilot was identified as Squadron Leader Dilokrit Pattave",
+     "continuation": ", who was born on 23 April 1970 in Kandahar, Pakistan. He was a pilot of the Pakistan Air Force and was awarded the Padma Vibhag, the highest decoration of the Indian Army.<|endoftext|>",
+     "repetition": 0.0
+    },
+    {
+     "prompt": "Local media reports an airport fire vehicle rolled over whil",
+     "continuation": " the plane was in the air.<|endoftext|>",
+     "repetition": 0.0
+    }
+   ]
+  },
+  "provenance": {
+   "spec": "/scratch1/bwyu/tokpremium/checkpoints/hye_Armn_baseline_stage2",
+   "local": true,
+   "vocab_size": 151669,
+   "n_parameters": 596049920,
+   "git": {
+    "commit": "d5627327f6887be28585125a7a107e7b6d526eec",
+    "dirty": true
+   },
+   "environment": {
+    "python": "3.11.9",
+    "torch": "2.15.0+cu132",
+    "transformers": "5.24.1"
+   },
+   "evaluated_at_utc": "2026-11-28T04:35:56.807751+00:00",
+   "resolved_path": "/scratch1/bwyu/tokpremium/checkpoints/hye_Armn_baseline_stage2",
+   "files": {
+    "tokenizer.json": {
+     "path": "/scratch1/bwyu/tokpremium/checkpoints/hye_Armn_baseline_stage2/tokenizer.json",
+     "bytes": 11422654,
+     "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+    },
+    "config.json": {
+     "path": "/scratch1/bwyu/tokpremium/checkpoints/hye_Armn_baseline_stage2/config.json",
+     "bytes": 1417,
+     "sha256": "89e1d8124b49f8d4a809d181d1e1dfcdbb2539457c4dd9e3104321a8ae37ed8f"
+    },
+    "model.safetensors": {
+     "path": "/scratch1/bwyu/tokpremium/checkpoints/hye_Armn_baseline_stage2/model.safetensors",
+     "bytes": 1192135096,
+     "sha256": "1508838da797a778b70adb0c1c8f2b30c9e737f23197c4e0d6f47922d0a32771"
+    }
+   }
+  }
+ }
+}
